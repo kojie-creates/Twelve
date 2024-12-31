@@ -54,14 +54,14 @@ const Landing = () => {
           Recordings are available in easy to digest formats with links for free
           publications.
         </StyledParagraph>
-        <StyledParagraph>
-          If you would like to support through donations, you can donate through
-          paypal or venmo.
-        </StyledParagraph>
         <ImageContainer>
           <ImageIcons image={paypal} height="200px" />
           <ImageIcons image={venmo} height="200px" />
         </ImageContainer>
+        <StyledParagraph>
+          If you would like to support through donations, you can donate through
+          paypal or venmo.
+        </StyledParagraph>
       </main>
     </div>
   );
