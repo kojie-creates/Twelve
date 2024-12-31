@@ -26,6 +26,10 @@ const StyledInput = styled.input`
   margin-left: 10px;
 `;
 
+const StyledParagraph = styled.p`
+  padding: 20px;
+`;
+
 const Landing = () => {
   return (
     <div className="text-center cover-container d-flex p-3 mx-auto flex-column">
@@ -39,22 +43,21 @@ const Landing = () => {
       </Helmet>
       <main role="main" className="inner cover">
         <h1 className="cover-heading">Story Driven Recovery</h1>
-        <p>
-          Twelve Community is a donation-welcomed spiritually-based social
+        <StyledParagraph>
+          Twelve Community is a spiritually-based, donation-welcomed social
           platform with a mission to deliver high-quality audio recordings that
           focus on recovery in various programs such as Alcoholics Anonymous,
           Codependents Anonymous and Adult Children of Alcoholic and
           Dysfunctional homes.
-        </p>
-        <p>
+        </StyledParagraph>
+        <StyledParagraph>
           Recordings are available in easy to digest formats with links for free
           publications.
-        </p>
-
-        <p>
+        </StyledParagraph>
+        <StyledParagraph>
           If you would like to support through donations, you can donate through
           paypal or venmo.
-        </p>
+        </StyledParagraph>
         <ImageContainer>
           <ImageIcons image={paypal} height="200px" />
           <ImageIcons image={venmo} height="200px" />
