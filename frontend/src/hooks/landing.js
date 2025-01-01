@@ -62,7 +62,7 @@ const Landing = () => {
         <StyledParagraph className="text-left">
           <h1>Recorded Episodes</h1>
           <h3>Shameless LA We Win Wednesdays</h3>
-          <p>These brief shares were recorded with permission from the Los Angleles ACA We Win Wednesdays meeting.</p>
+          <p>These brief shares were recorded with permission from the Shameless LA We Win Wednesdays ACA meeting.</p>
           <figure>
             <figcaption>Episode One - ACA We Win Wednesdays, January 2024</figcaption>
             <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
