@@ -63,6 +63,9 @@ const Landing = () => {
         </StyledParagraph>
        <h1 className="text-left">Recorded Literature</h1>
        <h3 className="text-left">A New Hope</h3>
+       <h3 className="text-left">Strengthening My Recovery</h3>
+       <h3 className="text-left">Loving Parent GuideBook</h3>
+       <h3 className="text-left">Fellowship Text (Big Red Book)</h3>
         <br/>
         <StyledParagraph>
           If you would like to hear more literature, please consider support through charitable donations, through
