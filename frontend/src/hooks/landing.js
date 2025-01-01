@@ -3,8 +3,17 @@ import { Helmet } from "react-helmet-async";
 import styled from "styled-components";
 
 import Avatar from "../components/Avatar";
+import Book from '../components/Book';
+
 import paypal from "../assets/paypal_qrcode.png";
 import venmo from "../assets/venmo_qrcode2.png";
+
+// books
+import anewhope from '../assets/ANewHope_Cover.jpg';
+import bigredbook from '../assets/BigRedBook_Cover.jpg';
+import lovingparentguidebook from '../assets/LovingParentGuideBook_cover.jpg';
+import strengtheningmyrecovery from '../assets/StrengtheningMyRecovery_cover.jpg';
+
 
 const ImageIcons = styled(Avatar)`
   margin-left: 10px;
@@ -50,23 +59,22 @@ const Landing = () => {
           Codependents Anonymous and Adult Children of Alcoholic and
           Dysfunctional homes.
         </StyledParagraph>
-        <h1 className="text-left">Recorded Episodes</h1>
-        <h3 className="text-left">Shameless LA We Win Wednesdays</h3>
         <StyledParagraph className="text-left">
-          These brief shares were recorded with permission from the Los Angleles ACA We Win Wednesdays meeting.
+          <h1>Recorded Episodes</h1>
+          <h3>Shameless LA We Win Wednesdays</h3>
+          <p>These brief shares were recorded with permission from the Los Angleles ACA We Win Wednesdays meeting.</p>
+          <figure>
+            <figcaption>Episode One - ACA We Win Wednesdays, January 2024</figcaption>
+            <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+          </figure>
         </StyledParagraph>
         <StyledParagraph className="text-left">
-        <figure>
-          <figcaption>Episode One - ACA We Win Wednesdays, January 2024</figcaption>
-          <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-        </figure>
+          <h1 className="text-left">Recorded Literature</h1>
+          <Book title={"A New Hope"} image={anewhope} subtitle={"ACA Beginner's Handbook"}></Book>
+          <Book title={"Strengthening My Recovery"} image={strengtheningmyrecovery} subtitle={"Our Daily Reader"}></Book>
+          <Book title={"Loving Parent GuideBook"} image={lovingparentguidebook} subtitle={"The solution is to become your own loving parent"}></Book>
+          <Book title={"ACA Fellowship Text"} image={bigredbook} subtitle={"The Big Red Book"}></Book>
         </StyledParagraph>
-       <h1 className="text-left">Recorded Literature</h1>
-       <h3 className="text-left">A New Hope</h3>
-       <h3 className="text-left">Strengthening My Recovery</h3>
-       <h3 className="text-left">Loving Parent GuideBook</h3>
-       <h3 className="text-left">Fellowship Text (Big Red Book)</h3>
-        <br/>
         <StyledParagraph>
           If you would like to hear more literature, please consider support through charitable donations, through
           paypal or venmo.
@@ -75,7 +83,6 @@ const Landing = () => {
           <ImageIcons image={paypal} height="200px" />
           <ImageIcons image={venmo} height="200px" />
         </ImageContainer>
-
       </main>
     </div>
   );
