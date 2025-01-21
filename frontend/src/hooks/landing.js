@@ -64,8 +64,16 @@ const Landing = () => {
           <h3>Shameless LA We Win Wednesdays</h3>
           <p>These brief shares were recorded with permission from the Shameless LA We Win Wednesdays ACA meeting.</p>
           <figure>
-            <figcaption>Episode One - ACA We Win Wednesdays, January 2024</figcaption>
+            <figcaption>Episode One - Cookie, Ris, Padawan Marc, Diyan, Veronica, January 2024</figcaption>
             <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+          </figure>
+          <figure>
+            <figcaption>Episode Two - Ivanne, Marc C and Bridget Y, February 2024</figcaption>
+            <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeTwo_ShamelessLA_ACA.mp3.mp3"></audio>
+          </figure>
+          <figure>
+            <figcaption>Episode Three - Isaak, Colin & Katherine, March 2024</figcaption>
+            <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeThree-IsaakColinKatherineMarch2024.mp3"></audio>
           </figure>
         </StyledParagraph>
         <StyledParagraph className="text-left">
