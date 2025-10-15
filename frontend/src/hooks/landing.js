@@ -3,45 +3,51 @@ import { Helmet } from "react-helmet-async";
 import styled from "styled-components";
 
 import Avatar from "../components/Avatar";
-import Book from '../components/Book';
-
+import kojie from "../assets/Kojie.jpg";
 import paypal from "../assets/paypal_qrcode.png";
 import venmo from "../assets/venmo_qrcode2.png";
 
-// books
-import anewhope from '../assets/ANewHope_Cover.jpg';
-import bigredbook from '../assets/BigRedBook_Cover.jpg';
-import lovingparentguidebook from '../assets/LovingParentGuideBook_cover.jpg';
-import strengtheningmyrecovery from '../assets/StrengtheningMyRecovery_cover.jpg';
+const Wrapper = styled.div`
+  padding: 20px;
+  margin-bottom: 150px;
+`;
 
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0px auto;
+  text-align: left;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: auto;
+  }
+`;
 
+const StyledParagraph = styled.p`
+  padding: 10px;
+`;
+
+const ImageContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  img {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+  }
+`;
 const ImageIcons = styled(Avatar)`
   margin-left: 10px;
   margin-right: 10px;
 `;
 
-// Something here
-const ImageContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  img {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-`;
-
-const StyledInput = styled.input`
-  margin-left: 10px;
-`;
-
-const StyledParagraph = styled.p`
-  padding: 20px;
-`;
-
 const Landing = () => {
   return (
-    <div className="text-center cover-container d-flex p-3 mx-auto flex-column">
+    <div className="text-left cover-container d-flex p-3 mx-auto flex-column">
       <Helmet>
         <title>Twelve : Welcome</title>
         <link rel="canonical" href="http://www.twelve.community" />
@@ -50,48 +56,40 @@ const Landing = () => {
           content="spiritual,based,social,platform,Anonymity,designing principle,recovery,purpose,connection,modern technology"
         />
       </Helmet>
-      <main role="main" className="inner cover">
-        <h1 className="cover-heading">Story Driven Recovery</h1>
-        <StyledParagraph>
-          Twelve Community is a spiritually-based, donation-welcomed safe
-          space with a mission to deliver high-quality audio recordings that
-          focus on recovery in various programs such as Alcoholics Anonymous,
-          Codependents Anonymous and Adult Children of Alcoholic and
-          Dysfunctional homes.
-        </StyledParagraph>
-        <StyledParagraph className="text-left">
-          <h1>Recorded Episodes</h1>
-          <h3>Shameless LA We Win Wednesdays</h3>
-          <p>These brief shares were recorded with permission from the Shameless LA We Win Wednesdays ACA meeting.</p>
-          <figure>
-            <figcaption>Episode One - Cookie, Ris, Padawan Marc, Diyan, Veronica, January 2024</figcaption>
-            <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-          </figure>
-          <figure>
-            <figcaption>Episode Two - Ivanne, Marc C and Bridget Y, February 2024</figcaption>
-            <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeTwo_ShamelessLA_ACA.mp3.mp3"></audio>
-          </figure>
-          <figure>
-            <figcaption>Episode Three - Isaak, Colin & Katherine, March 2024</figcaption>
-            <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeThree-IsaakColinKatherineMarch2024.mp3"></audio>
-          </figure>
-        </StyledParagraph>
-        <StyledParagraph className="text-left">
-          <h1 className="text-left">Recorded Literature</h1>
-          <Book title={"A New Hope"} image={anewhope} subtitle={"ACA Beginner's Handbook"}></Book>
-          <Book title={"Strengthening My Recovery"} image={strengtheningmyrecovery} subtitle={"Our Daily Reader"}></Book>
-          <Book title={"Loving Parent GuideBook"} image={lovingparentguidebook} subtitle={"The solution is to become your own loving parent"}></Book>
-          <Book title={"ACA Fellowship Text"} image={bigredbook} subtitle={"The Big Red Book"}></Book>
-        </StyledParagraph>
-        <StyledParagraph>
-          If you would like to hear more literature, please consider support through charitable donations, through
-          paypal or venmo.
-        </StyledParagraph>
-        <ImageContainer>
-          <ImageIcons image={paypal} height="200px" />
-          <ImageIcons image={venmo} height="200px" />
-        </ImageContainer>
-      </main>
+      <Wrapper>
+        <Container>
+          <main role="main" className="inner cover">
+            <ImageContainer>
+              <ImageIcons image={kojie} height="300px" />
+            </ImageContainer>
+            <StyledParagraph>
+              <h3 className="cover-heading">Voice Over</h3>
+              Meet Kojie, a talented independent voice-over actor based in Los Angeles, California. Renowned for a deep, smooth, and soothing voice, Kojie specializes in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, Kojie delivers captivating performances that engage and relax audiences. With a commitment to excellence and a versatile vocal style, Kojie is the ideal choice for projects that demand a memorable and calming voice.
+            </StyledParagraph>
+            <StyledParagraph>
+              <h3 className="cover-heading"> Recovery</h3>
+              Hi, I'm Kojie, a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I’m proud to be part of projects like the "We Win Wednesdays Shameless LA" Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.
+            </StyledParagraph>
+            <StyledParagraph>
+              <h3 className="cover-heading"> Socials </h3>
+              <p>Follow me on social media to stay updated on my latest projects and collaborations:</p>
+              <p>
+                <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
+                  <li>Instagram</li>
+                  <li>Twitter</li>
+                  <li>Tik Tok</li>
+                  <li>Youtube</li>
+                  <li>Twitch</li>
+                  <li>LinkedIn</li>
+                  <li>Facebook</li>
+                </ul>
+              </p>
+            </StyledParagraph>
+            
+          </main>
+        </Container>
+      </Wrapper>
+
     </div>
   );
 };

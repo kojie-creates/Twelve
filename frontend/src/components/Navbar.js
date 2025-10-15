@@ -21,21 +21,14 @@ export const Navbar = () => {
     <Theme>
       <StyledHeader>
         <div className="inner text-center">
-          <h3 className="masthead-brand">
-            <a className="nav-link" href="/">
-              Twelve.Community
-            </a>
-          </h3>
+          <h4 className="masthead-brand">
+            <a className="nav-link" href="/"> Twelve.Community </a>
+          </h4>
           <nav className="nav nav-masthead justify-content-center">
-            {/* <a className="nav-link" href="/register">
-              Register
-            </a>
-            <a className="nav-link" href="/login">
-              Login
-            </a>
-            <a className="nav-link" href="/stories">
-              Stories
-            </a>*/}
+            <a className="nav-link" href="/voiceover"> Voice Over </a>
+            <a className="nav-link" href="/recovery"> Recovery </a>
+            <a className="nav-link" href="/donate"> Donate </a>
+            <a className="nav-link" href="/socials"> Socials </a>
           </nav>
         </div>
       </StyledHeader>

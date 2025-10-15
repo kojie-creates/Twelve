@@ -17,22 +17,28 @@ const Footer = () => {
   return (
     <footer className="mastfoot text-center">
       <NavContainer>
-        <p>&copy; 2020 Twelve.Community {"  "}&middot;</p>
+        <p>&copy; 2025 Twelve.Community {"  "}&middot;</p>
         <p>
-          <NavLink href="" alt="linkedin">
-            LinkedIn
+          <NavLink href="/voiceover" alt="Voice Over">
+            Voice-Over
           </NavLink>
           &middot;
         </p>
         <p>
-          <NavLink href="" alt="github">
-            Github
+          <NavLink href="/recovery" alt="recovery">
+            Recovery
           </NavLink>
           &middot;
         </p>
         <p>
-          <NavLink href="" alt="donate">
-            Support
+          <NavLink href="/socials" alt="socials">
+            Socials
+          </NavLink>
+          &middot;
+        </p>
+        <p>
+          <NavLink href="/donate" alt="donate">
+            Donate
           </NavLink>
         </p>
       </NavContainer>

@@ -5,13 +5,10 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Landing from "./hooks/landing";
-import Home from "./hooks/home";
-import Stories from "./hooks/stories";
-import Register from "./hooks/register";
-import Login from "./hooks/login";
-import AddStory from "./hooks/add-story";
-// import Personas from "./hooks/personas";
-// import Test from "./hooks/test";
+import Recovery from "./hooks/recovery";
+import VoiceOver from "./hooks/voiceover";
+import Donate from "./hooks/donate";
+import Socials from "./hooks/socials";
 
 import { AuthContainer } from "./contexts/auth";
 
@@ -34,11 +31,12 @@ const App = () => {
         <Navbar />
         <Router>
           <Landing path="/" />
-          <Login path="login" />
-          <Register path="register" />
-          <Stories path="stories" />
-          <AddStory path="addstory" />
+          <Recovery path="/recovery" />
+          <VoiceOver path="/voiceover" />
+          <Donate path="/donate" />
+          <Socials path="/socials" />
         </Router>
+        <Footer />
       </HelmetProvider>
     </AuthContainer>
   );
