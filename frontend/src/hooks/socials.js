@@ -42,13 +42,27 @@ const Contact = () => {
               <p>Follow me on social media to stay updated on my latest projects and collaborations:</p>
               <p>
                 <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                  <li>Instagram</li>
-                  <li>Twitter</li>
-                  <li>Tik Tok</li>
-                  <li>Youtube</li>
-                  <li>Twitch</li>
-                  <li>LinkedIn</li>
-                  <li>Facebook</li>
+                  <li>
+                    <a href="https://www.facebook.com/profile.php?id=100088510260448" target="_blank" rel="noopener noreferrer">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/@thevoiceofkojie" target="_blank" rel="noopener noreferrer">YouTube : The Voice Of Kojie</a>
+                  </li>
+                  <li>
+                    <a href="https://t.co/TK8wXby4uA" target="_blank" rel="noopener noreferrer">Instagram : @kojiemontanez</a>
+                  </li>
+                  <li>
+                    <a href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" target="_blank" rel="noopener noreferrer">TikTok : TheVoiceOfKojie</a> 
+                  </li>
+                  <li>
+                    <a href="https://x.com/kojiemontanez" target="_blank" rel="noopener noreferrer">Twitter : @kojiemontanez</a>
+                  </li>
+                  <li> 
+                    <a href="https://www.linkedin.com/in/felixmontanez/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                  </li>
+                  <li>
+                    <a href="https://www.twitch.tv/thevoiceofkojie" target="_blank" rel="noopener noreferrer">Twitch : The Voice Of Kojie</a>
+                  </li>
                 </ul>
               </p>
             </StyledParagraph>
