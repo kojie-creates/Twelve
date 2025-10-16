@@ -38,10 +38,10 @@ const Recovery = () => {
             <Helmet>
                 <title>Twelve : Recovery</title>
                 <link rel="canonical" href="http://www.twelve.community/recovery" />
-                <meta
-                    name="keywords"
-                    content="Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology"
-                />
+                
+                <meta name="description" content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances." />
+                <meta name="keywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
+
             </Helmet>
             <Wrapper>
                 <Container>

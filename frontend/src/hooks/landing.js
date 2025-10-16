@@ -50,10 +50,10 @@ const Landing = () => {
       <Helmet>
         <title>Twelve : Welcome</title>
         <link rel="canonical" href="http://www.twelve.community" />
-        <meta
-          name="keywords"
-          content="spiritual,based,social,platform,Anonymity,designing principle,recovery,purpose,connection,modern technology"
-        />
+
+        <meta name="description" content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances." />
+        <meta name="keywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
+
       </Helmet>
       <Wrapper>
         <Container>
@@ -61,7 +61,7 @@ const Landing = () => {
             <ImageContainer>
               <ImageIcons image={kojie} height="300px" />
             </ImageContainer>
-            
+
             <StyledParagraph>
               <h3 className="cover-heading">Welcome to My Voice Over Portfolio</h3>
               Hello! My name is Kojie, a talented independent voice-over actor based in Los Angeles, California. Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences. With a commitment to excellence and a versatile vocal style, I am the ideal choice for projects that demand a memorable and calming voice.
