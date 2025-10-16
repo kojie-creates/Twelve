@@ -36,33 +36,36 @@ const Contact = () => {
       <Wrapper>
         <Container>
           <StyledParagraph>
+            <h3 className="cover-heading"> Contact Me </h3>
+            <p>If you would like to get in touch with me for voice-over work, collaborations, or any inquiries, please feel free to reach out via email or through my social media channels. I look forward to hearing from you!</p>
+            <p>Email: <a href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" alt="email">felix.montanez@gmail.com</a></p>
+          </StyledParagraph>
+          <StyledParagraph>
             <h3 className="cover-heading"> Socials </h3>
             <p>Follow me on social media to stay updated on my latest projects and collaborations:</p>
-            <p>
-              <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                <li>
-                  <a href="https://www.facebook.com/profile.php?id=100088510260448" target="_blank" rel="noopener noreferrer" alt="facebook">Facebook</a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/@thevoiceofkojie" target="_blank" rel="noopener noreferrer" alt="youtube">YouTube : The Voice Of Kojie</a>
-                </li>
-                <li>
-                  <a href="https://t.co/TK8wXby4uA" target="_blank" rel="noopener noreferrer" alt="instagram">Instagram : @kojiemontanez</a>
-                </li>
-                <li>
-                  <a href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" target="_blank" rel="noopener noreferrer" alt="tiktok">TikTok : TheVoiceOfKojie</a>
-                </li>
-                <li>
-                  <a href="https://x.com/kojiemontanez" target="_blank" rel="noopener noreferrer" alt="twitter, x">Twitter : @kojiemontanez</a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/felixmontanez/" target="_blank" rel="noopener noreferrer" alt="linkedin">LinkedIn Profile</a>
-                </li>
-                <li>
-                  <a href="https://www.twitch.tv/thevoiceofkojie" target="_blank" rel="noopener noreferrer" alt="twitch">Twitch : The Voice Of Kojie</a>
-                </li>
-              </ul>
-            </p>
+            <ul style={{ listStyleType: "none", paddingLeft: 0, display:"inline-block" }}>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100088510260448" target="_blank" rel="noopener noreferrer" alt="facebook">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@thevoiceofkojie" target="_blank" rel="noopener noreferrer" alt="youtube">YouTube : The Voice Of Kojie</a>
+              </li>
+              <li>
+                <a href="https://t.co/TK8wXby4uA" target="_blank" rel="noopener noreferrer" alt="instagram">Instagram : @kojiemontanez</a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" target="_blank" rel="noopener noreferrer" alt="tiktok">TikTok : TheVoiceOfKojie</a>
+              </li>
+              <li>
+                <a href="https://x.com/kojiemontanez" target="_blank" rel="noopener noreferrer" alt="twitter, x">Twitter : @kojiemontanez</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/felixmontanez/" target="_blank" rel="noopener noreferrer" alt="linkedin">LinkedIn Profile</a>
+              </li>
+              <li>
+                <a href="https://www.twitch.tv/thevoiceofkojie" target="_blank" rel="noopener noreferrer" alt="twitch">Twitch : The Voice Of Kojie</a>
+              </li>
+            </ul>
           </StyledParagraph>
         </Container>
       </Wrapper>
