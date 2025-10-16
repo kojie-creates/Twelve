@@ -8,8 +8,7 @@ import paypal from "../assets/paypal_qrcode.png";
 import venmo from "../assets/venmo_qrcode2.png";
 
 const Wrapper = styled.div`
-  padding: 20px;
-  margin-bottom: 150px;
+  padding: 0px;
 `;
 
 const Container = styled.div`
@@ -21,8 +20,8 @@ const Container = styled.div`
   text-align: left;
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin-left: 20px;
-    margin-right: auto;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 `;
 
@@ -47,7 +46,7 @@ const ImageIcons = styled(Avatar)`
 
 const Landing = () => {
   return (
-    <div className="text-left cover-container d-flex p-3 mx-auto flex-column">
+    <div className="text-left cover-container d-flex p-1 mx-auto flex-column">
       <Helmet>
         <title>Twelve : Welcome</title>
         <link rel="canonical" href="http://www.twelve.community" />
@@ -62,13 +61,10 @@ const Landing = () => {
             <ImageContainer>
               <ImageIcons image={kojie} height="300px" />
             </ImageContainer>
+            
             <StyledParagraph>
-              <h3 className="cover-heading">Voice Over Talent</h3>
-              Meet Kojie, a talented independent voice-over actor based in Los Angeles, California. Renowned for a deep, smooth, and soothing voice, Kojie specializes in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, Kojie delivers captivating performances that engage and relax audiences. With a commitment to excellence and a versatile vocal style, Kojie is the ideal choice for projects that demand a memorable and calming voice.
-            </StyledParagraph>
-            <StyledParagraph>
-              <h3 className="cover-heading">Twelve Step Recovery</h3>
-              Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home, as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I’m proud to be part of projects like the "We Win Wednesdays Shameless LA" Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.
+              <h3 className="cover-heading">Welcome to My Voice Over Portfolio</h3>
+              Hello! My name is Kojie, a talented independent voice-over actor based in Los Angeles, California. Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences. With a commitment to excellence and a versatile vocal style, I am the ideal choice for projects that demand a memorable and calming voice.
             </StyledParagraph>
           </main>
         </Container>

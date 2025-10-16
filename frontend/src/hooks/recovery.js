@@ -11,8 +11,7 @@ import Avatar from "../components/Avatar";
 import Book from "../components/Book";
 
 const Wrapper = styled.div`
-  padding: 20px;
-  margin-bottom: 150px;
+  padding: 0px;
 `;
 
 const Container = styled.div`
@@ -21,19 +20,21 @@ const Container = styled.div`
   flex-direction: row;
   max-width: 1200px;
   margin: 0px auto;
+  text-align: left;
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin-left: 20px;
-    margin-right: auto;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 `;
 
 const StyledParagraph = styled.p`
   padding: 10px;
 `;
+
 const Recovery = () => {
     return (
-        <div className="text-left cover-container d-flex p-3 mx-auto flex-column">
+        <div className="">
             <Helmet>
                 <title>Twelve : Recovery</title>
                 <link rel="canonical" href="http://www.twelve.community/recovery" />
@@ -44,13 +45,12 @@ const Recovery = () => {
             </Helmet>
             <Wrapper>
                 <Container>
-                    <h3 className="cover-heading"> Recovery</h3>
                     <StyledParagraph>
-                        Hi, I'm Kojie, a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I’m proud to be part of projects like the "We Win Wednesdays Shameless LA" Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.
-                    </StyledParagraph>
-                    <StyledParagraph className="text-left">
-                        <h1>Recorded Episodes</h1>
-                        <h3>Shameless LA We Win Wednesdays</h3>
+                        <h3 className="cover-heading">Twelve Step Recovery</h3>
+                        Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home, as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I’m proud to be part of projects like the "We Win Wednesdays Shameless LA" Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.
+                        <p>Here are some of my recorded works:</p>
+                        <h3 className="cover-heading">Recorded Episodes</h3>
+                        <h5>Shameless LA We Win Wednesdays</h5>
                         <p>These brief shares were recorded with permission from the Shameless LA We Win Wednesdays ACA meeting.</p>
                         <figure>
                             <figcaption>Episode One - Cookie, Ris, Padawan Marc, Diyan, Veronica, January 2024</figcaption>
@@ -64,9 +64,7 @@ const Recovery = () => {
                             <figcaption>Episode Three - Isaak, Colin & Katherine, March 2024</figcaption>
                             <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeThree-IsaakColinKatherineMarch2024.mp3"></audio>
                         </figure>
-                    </StyledParagraph>
-                    <StyledParagraph className="text-left">
-                        <h1 className="text-left">Recorded Literature</h1>
+                        <h3 className="text-left">Recorded Literature</h3>
                         <Book title={"A New Hope"} image={anewhope} subtitle={"ACA Beginner's Handbook"}></Book>
                         <Book title={"Strengthening My Recovery"} image={strengtheningmyrecovery} subtitle={"Our Daily Reader"}></Book>
                         <Book title={"Loving Parent GuideBook"} image={lovingparentguidebook} subtitle={"The solution is to become your own loving parent"}></Book>

@@ -26,7 +26,7 @@ const StyledParagraph = styled.p`
 
 const Contact = () => {
   return (
-    <div className="text-left cover-container d-flex p-3 mx-auto flex-column">
+    <div className="text-left cover-container d-flex p-1 mx-auto flex-column">
       <Helmet>
         <title>Twelve : Contact</title>
         <link rel="canonical" href="http://www.twelve.community/contact" />

@@ -45,7 +45,7 @@ const ImageIcons = styled(Avatar)`
 
 const VoiceOver = () => {
     return (
-        <div className="text-left cover-container d-flex p-3 mx-auto flex-column">
+        <div className="text-left cover-container d-flex p-1 mx-auto flex-column">
             <Helmet>
                 <title>Twelve : VoiceOver</title>
                 <link rel="canonical" href="http://www.twelve.community/voiceover" />
@@ -57,25 +57,25 @@ const VoiceOver = () => {
             <Wrapper>
                 <Container>
                     <main role="main" className="inner cover">
-                        
+                        <h3 className="cover-heading">Commercial Demo</h3>
                         <StyledParagraph>
-                            <ImageContainer>
-                                <ImageIcons image={kojie} height="300px" />
-                            </ImageContainer>
-                            <h3 className="cover-heading">Voice Over Demos</h3>
-                            Meet Kojie, a talented independent voice-over actor based in Los Angeles, California. Renowned for a deep, smooth, and soothing voice, Kojie specializes in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, Kojie delivers captivating performances that engage and relax audiences. With a commitment to excellence and a versatile vocal style, Kojie is the ideal choice for projects that demand a memorable and calming voice.
+                            <p>Listen close, I want to sell a product or service.</p>
                         </StyledParagraph>
-                        <h3 className="cover-heading">Commercial</h3>
+                        <h3 className="cover-heading">Corporate Demo</h3>
                         <StyledParagraph>
-                            <p>Commercial Demo placeholder</p>
+                            <p>The business training seminar voice to educate the mass.</p>
                         </StyledParagraph>
-                        <h3 className="cover-heading">Corporate</h3>
+                        <h3 className="cover-heading">Animation Demo</h3>
                         <StyledParagraph>
-                            <p>Corporate Demo placeholder</p>
+                            <p>yuk, yuk..all types of goofy stuff</p>
                         </StyledParagraph>
-                        <h3 className="cover-heading">Animation</h3>
+                        <h3 className="cover-heading">Trailers &amp; Announcers</h3>
                         <StyledParagraph>
-                            <p>Animation Demo placeholder</p>
+                            <p>Magic Radio 98.9, In a theater, coming soon...</p>
+                        </StyledParagraph>
+                        <h3 className="cover-heading">Podcasts</h3>
+                        <StyledParagraph>
+                            <p>'We Win Wednesdays Shameless LA' podcast on Spotify</p>
                         </StyledParagraph>
                     </main>
                 </Container>
