@@ -33,9 +33,9 @@ export const Navbar = () => {
   return (
       <StyledHeader >
         <div className="inner text-center">
-          <h4 className="masthead-brand">
+          <h3 className="masthead-brand">
             <a className="nav-link" href="/"> Twelve.Community </a>
-          </h4>
+          </h3>
           <StyledNav className="nav nav-masthead justify-content-center">
             <a className="nav-link" href="#demo">Demo</a>
             <a className="nav-link" href="#recovery">About</a>
