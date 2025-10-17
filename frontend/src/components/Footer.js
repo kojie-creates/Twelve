@@ -23,18 +23,16 @@ const Footer = () => {
   return (
     <footer className="mastfoot text-center">
       <NavContainer>
-        <p>&copy; 2025 Twelve.Community {"  "}&middot;</p>
+        <p><NavLink className="link" href="/">&copy; 2025 Twelve.Community</NavLink></p>
         <p>
           <NavLink href="#demo" alt="Voice Over">
             Demo
           </NavLink>
-          &middot;
         </p>
         <p>
           <NavLink href="#recovery" alt="recovery">
             About
           </NavLink>
-          &middot;
         </p>
         <p>
           <NavLink href="#donate" alt="donate">

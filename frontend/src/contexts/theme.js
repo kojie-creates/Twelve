@@ -13,23 +13,26 @@ export const lightTheme = {
     quaternary_variant: "#486db1",
     quinary: "#9f83df",
     quinary_variant: "#7a5eb1",
-    surface: "#0a0a0aff", // sheets - cards, backgrounds
-    background: "#ccccccff", // background of app
+    surface: "#000", // sheets - cards, backgrounds
+    background: "#af97e5", // background of app
     error: "#B00020", // for errors and warnings
     on: {
       hover: "#805ad5",
+      nav: "#FFFFFF",
+      header: "#FFFFFF",
       primary: "#FFFFFF", // white text against primary color
       secondary: "#000000", // white text against secondary color
       tertiary: "#FFFFFF",
       quaternary: "#FFFFFF",
       quinary: "#FFFFFF",
-      surface: "#FFFFFF", // black text on white surface
+      surface: "#d2c8e9ff", // black text on white surface
       background: "#000000", // black text on white background
       error: "#ffffffff", // white text on red error background
     },
   },
   fonts: {
-    main: 'Arial, sans-serif',
+    main: '"Playfair Display", serif;',
+    secondary: '"Montserrat", sans-serif'
   },
   mobile: "screen and (max-width: 768px)",
   tablet: "screen and (max-width: 768px)",

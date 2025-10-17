@@ -20,11 +20,11 @@ const Container = styled.div`
   justify-content: space-between;
   flex-direction: row;
   gap: 10px;
-  border-radius: 10px;
-  padding: 0px;
-  margin: 20px auto;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px 10px;
   text-align: left;
-  background : linear-gradient(to right, #805ad5, #be5ad5);
+  background : linear-gradient(to right, #805ad5, #582eb5);
   color: ${(props) => props.theme.color.on.background};
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -34,15 +34,19 @@ const Container = styled.div`
 `;
 
 const StyledHeading = styled.h3`
-  color: white;
+  color: ${(props) => props.theme.color.on.header};
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
   font-family: ${(props) => props.theme.fonts.main};
+  font-size: 48px;
 `;
 
 const StyledParagraph = styled.p`
-  padding: 20px;
+  padding: 10px;
   color: ${(props) => props.theme.color.on.surface};
-  font-family: ${(props) => props.theme.fonts.main};
-  font-size: 16px;
+  font-family: ${(props) => props.theme.fonts.secondary};
+  
 `;
 
 const RoundedImageContainer = styled.div`
@@ -50,9 +54,10 @@ const RoundedImageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   img {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     border-radius: 50%;
   }
 `;
@@ -99,7 +104,7 @@ const Landing = () => {
         <link rel="canonical" href="http://www.twelve.community" />
 
         <meta name="description" content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances." />
-        <meta name="keywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
+        <meta name="dkeywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
         <Container id="intro" class="intro">
@@ -114,7 +119,7 @@ const Landing = () => {
             <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
             Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences.
             <br /><br />
-            <h4 className="cover-heading">Let's work together</h4>
+            <StyledHeading className="cover-heading">Let's work together</StyledHeading>
             <StyledList class="social-icons">
               <li>
                 <a href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" target="_blank" alt="email"><i class="fa-solid fa-envelope fa-2xl"></i></a>
@@ -147,33 +152,40 @@ const Landing = () => {
 
         <Container id="demo" class="demo">
           <section role="section" className="inner cover">
-            <StyledHeading className="cover-heading">Commercial Demos</StyledHeading>
+            <StyledHeading className="cover-heading">Demos</StyledHeading>
             <StyledParagraph>
-              <p>Listen close, I want to sell a product or service.</p>
-            </StyledParagraph>
-            <StyledHeading className="cover-heading">Corporate Demo</StyledHeading>
-            <StyledParagraph>
-              <p>The business training seminar voice to educate the mass.</p>
-            </StyledParagraph>
-            <StyledHeading className="cover-heading">Animation Demo</StyledHeading>
-            <StyledParagraph>
-              <p>yuk, yuk..all types of goofy stuff</p>
-            </StyledParagraph>
-            <StyledHeading className="cover-heading">Trailers &amp; Announcers</StyledHeading>
-            <StyledParagraph>
-              <p>Magic Radio 98.9, In a theater, coming soon...</p>
-            </StyledParagraph>
-            <StyledHeading className="cover-heading">Podcasts</StyledHeading>
-            <StyledParagraph>
-              <p>'We Win Wednesdays Shameless LA' podcast on Spotify</p>
+              <figure>
+                <figcaption>Commercial Demo : Listen close, I want to sell a product or service.</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
+              <figure>
+                <figcaption>Corporate Demo : The business training seminar voice to educate the mass.</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
+              <figure>
+                <figcaption>Animation Demo : yuk, yuk..all types of goofy stuff!</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
+              <figure>
+                <figcaption>Trailers &amp; Announcers: Magic Radio 98.9, In a theater, coming soon...</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
+              <figure>
+                <figcaption>We Win Wednesdays Shameless LA: On Spotify</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
             </StyledParagraph>
           </section>
         </Container>
         <Container id="recovery" class="recovery">
           <StyledParagraph>
-            <h3 className="cover-heading">About Me</h3>
+
+            <StyledHeading className="cover-heading">About Me</StyledHeading>
             <p>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home, as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I’m proud to be part of projects like the "We Win Wednesdays Shameless LA" Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</p>
-            <h4 className="cover-heading">"We Win Wednesdays" Shameless LA on Spotify</h4>
+
+            <br /><br />
+            <StyledHeading className="cover-heading">Shameless LA on Spotify</StyledHeading>
+            <h4>&ldquo; We Win Wednesdays &rdquo;</h4>
             <p>These brief shares were recorded with permission from the Shameless LA We Win Wednesdays ACA meeting.</p>
             <figure>
               <figcaption>Episode One - Cookie, Ris, Padawan Marc, Diyan, Veronica, January 2024</figcaption>
@@ -191,7 +203,7 @@ const Landing = () => {
         </Container>
         <Container id="donate" class="donate">
           <StyledParagraph>
-            <h3 className="cover-heading">Please Donate</h3>
+            <StyledHeading className="cover-heading">Please Donate</StyledHeading>
             <StyledParagraph>
               Support my work and help me create more impactful audio projects by donating via Venmo or PayPal. Your support allows me to continue delivering quality voice-over content and to grow this career. Thank you for your support! You can donate through the following platforms:
             </StyledParagraph>

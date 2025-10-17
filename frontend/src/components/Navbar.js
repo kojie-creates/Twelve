@@ -9,18 +9,28 @@ const StyledHeader = styled.header`
   z-index: 1000;
   min-height: 60px;
   padding: auto 20px;
-  background : linear-gradient(to right, #805ad5, #be5ad5);;
+  background : linear-gradient(to right, #805ad5, #582eb5);
 `;
 
 const StyledNav = styled.nav`
-  padding: 5px;
-  margin-right: 10px;
+  padding: 10px;
+  margin-right: 20px;
+  font-family: ${(props) => props.theme.fonts.secondary};
   .nav-link {
-    color: ${(props) => props.theme.color.on.surface};
+    color: ${(props) => props.theme.color.on.nav};
     &:hover {
       color: ${(props) => props.theme.color.primary_variant};
     }
   }
+`;
+
+const StyledHeading = styled.h3`
+  color: ${(props) => props.theme.color.on.header};
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: ${(props) => props.theme.fonts.main};
+  font-size: 32px;
 `;
 
 export const Navbar = () => {
@@ -33,9 +43,9 @@ export const Navbar = () => {
   return (
       <StyledHeader >
         <div className="inner text-center">
-          <h3 className="masthead-brand">
+          <StyledHeading className="masthead-brand">
             <a className="nav-link" href="/"> Twelve.Community </a>
-          </h3>
+          </StyledHeading>
           <StyledNav className="nav nav-masthead justify-content-center">
             <a className="nav-link" href="#demo">Demo</a>
             <a className="nav-link" href="#recovery">About</a>
