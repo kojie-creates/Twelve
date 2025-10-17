@@ -3,20 +3,29 @@ import React from "react";
 // define store initial state
 export const lightTheme = {
   color: {
-    primary: "#805ad5", // #2a52BE blue represents colors of brand
+    primary: "#805ad5", //   represents colors of brand
     primary_variant: "#6d48b1", // lighter or darker shades of brand
-    secondary: "#ff0000", // tron represent accent colors of brand
-    secondary_variant: "#cc0000", // darker shades of brand
-    surface: "#f0f0f0", // sheets - cards, backgrounds
-    background: "#FFFFFF", // background of app
+    secondary: "#d5be5a", // tron represent accent colors of brand
+    secondary_variant: "#ffe605ff", // darker shades of brand
+    tertiary: "#5ad580",
+    tertiary_variant: "#48b16d",
+    quaternary: "#5a72d5",
+    quaternary_variant: "#486db1",
+    quinary: "#9f83df",
+    quinary_variant: "#7a5eb1",
+    surface: "#0a0a0aff", // sheets - cards, backgrounds
+    background: "#ccccccff", // background of app
     error: "#B00020", // for errors and warnings
     on: {
       hover: "#805ad5",
       primary: "#FFFFFF", // white text against primary color
-      secondary: "#FFFFFF", // white text against secondary color
+      secondary: "#000000", // white text against secondary color
+      tertiary: "#FFFFFF",
+      quaternary: "#FFFFFF",
+      quinary: "#FFFFFF",
       surface: "#FFFFFF", // black text on white surface
       background: "#000000", // black text on white background
-      error: "#FFFFFF", // white text on red error background
+      error: "#ffffffff", // white text on red error background
     },
   },
   fonts: {
