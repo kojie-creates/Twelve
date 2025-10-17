@@ -66,11 +66,12 @@ const Donate = () => {
               Your support allows me to continue delivering quality voice-over content and to grow this career. <p>Thank you for your support!</p>You can donate through the following platforms:</p>
 
             <StyledParagraph>Venmo: @Kojie-Montanez (6416)</StyledParagraph>
+            <StyledParagraph>Last 4: 6416</StyledParagraph>
             <ImageContainer>
               <ImageIcons image={venmo} height="200px" />
             </ImageContainer>
 
-            <StyledParagraph>PayPal: <a href="https://www.paypal.com/paypalme/felixmontanez" alt="paypal link">PayPal Link</a></StyledParagraph>
+            <StyledParagraph><a href="https://www.paypal.com/paypalme/felixmontanez" target="_blank" alt="paypal link">PayPal Link</a></StyledParagraph>
             <ImageContainer>
               <ImageIcons image={paypal} height="200px" />
             </ImageContainer>

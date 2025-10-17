@@ -1,13 +1,26 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import Theme from "../contexts/theme";
 import { useAuthStore } from "../contexts/auth";
 
 const StyledHeader = styled.header`
-  padding: 10px;
+  padding: 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   min-height: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: auto 20px;
+  background : linear-gradient(to right, #805ad5, #be5ad5);;
+`;
+
+const StyledNav = styled.nav`
+  padding: 5px;
+  margin-right: 10px;
+  .nav-link {
+    color: ${(props) => props.theme.color.on.surface};
+    &:hover {
+      color: ${(props) => props.theme.color.primary_variant};
+    }
+  }
 `;
 
 export const Navbar = () => {
@@ -18,21 +31,19 @@ export const Navbar = () => {
   }, [isAuthenticated, actions]);
 
   return (
-    <Theme>
-      <StyledHeader>
+      <StyledHeader >
         <div className="inner text-center">
           <h4 className="masthead-brand">
             <a className="nav-link" href="/"> Twelve.Community </a>
           </h4>
-          <nav className="nav nav-masthead justify-content-center">
-            <a className="nav-link" href="/voiceover"> Voice Over </a>
-            <a className="nav-link" href="/recovery"> Recovery </a>
-            <a className="nav-link" href="/donate"> Donate </a>
-            <a className="nav-link" href="/socials"> Socials </a>
-          </nav>
+          <StyledNav className="nav nav-masthead justify-content-center">
+            <a className="nav-link" href="#demo">Demo</a>
+            <a className="nav-link" href="#recovery">About</a>
+            <a className="nav-link" href="#donate">Donate</a>
+          </StyledNav>
         </div>
       </StyledHeader>
-    </Theme>
+  
   );
 };
 

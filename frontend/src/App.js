@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Router } from "@reach/router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+
+import { ThemeProvider } from "styled-components";
+import { lightTheme  } from "./contexts/theme";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Landing from "./hooks/landing";
-import Recovery from "./hooks/recovery";
-import VoiceOver from "./hooks/voiceover";
-import Donate from "./hooks/donate";
-import Socials from "./hooks/socials";
 
 import { AuthContainer } from "./contexts/auth";
 
 const App = () => {
+
   return (
     <AuthContainer isGlobal>
       <HelmetProvider>
@@ -28,15 +28,13 @@ const App = () => {
             content="Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology"
           />
         </Helmet>
-        <Navbar />
-        <Router>
-          <Landing path="/" />
-          <Recovery path="/recovery" />
-          <VoiceOver path="/voiceover" />
-          <Donate path="/donate" />
-          <Socials path="/socials" />
-        </Router>
-        <Footer />
+        <ThemeProvider theme={lightTheme}>
+          <Navbar />
+          <Router>
+            <Landing path="/" />
+          </Router>
+          <Footer />
+        </ThemeProvider>
       </HelmetProvider>
     </AuthContainer>
   );

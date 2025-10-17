@@ -38,9 +38,7 @@ const Contact = () => {
           <StyledParagraph>
             <h3 className="cover-heading"> Contact Me </h3>
             <p>If you would like to get in touch with me for voice-over work, collaborations, or any inquiries, please feel free to reach out via email or through my social media channels. I look forward to hearing from you!</p>
-            <p>Email: <a href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" alt="email">felix.montanez@gmail.com</a></p>
-          </StyledParagraph>
-          <StyledParagraph>
+            <p>Email: <a href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" target="_blank" alt="email">felix.montanez@gmail.com</a></p>
             <h3 className="cover-heading"> Socials </h3>
             <p>Follow me on social media to stay updated on my latest projects and collaborations:</p>
             <ul style={{ listStyleType: "none", paddingLeft: 0, display:"inline-block" }}>

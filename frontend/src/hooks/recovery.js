@@ -46,11 +46,11 @@ const Recovery = () => {
             <Wrapper>
                 <Container>
                     <StyledParagraph>
-                        <h3 className="cover-heading">Twelve Step Recovery</h3>
+                        <h3 className="cover-heading">Twelve Step ACA Recovery</h3>
                         Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home, as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I’m proud to be part of projects like the "We Win Wednesdays Shameless LA" Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.
                         <p>Here are some of my recorded works:</p>
-                        <h3 className="cover-heading">Recorded Episodes</h3>
-                        <h5>Shameless LA We Win Wednesdays</h5>
+                        <h4 className="cover-heading">Spotify</h4>
+                        <h5>"We Win Wednesdays" Shameless LA</h5>
                         <p>These brief shares were recorded with permission from the Shameless LA We Win Wednesdays ACA meeting.</p>
                         <figure>
                             <figcaption>Episode One - Cookie, Ris, Padawan Marc, Diyan, Veronica, January 2024</figcaption>
@@ -64,11 +64,6 @@ const Recovery = () => {
                             <figcaption>Episode Three - Isaak, Colin & Katherine, March 2024</figcaption>
                             <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeThree-IsaakColinKatherineMarch2024.mp3"></audio>
                         </figure>
-                        <h3 className="text-left">Recorded Literature</h3>
-                        <Book title={"A New Hope"} image={anewhope} subtitle={"ACA Beginner's Handbook"}></Book>
-                        <Book title={"Strengthening My Recovery"} image={strengtheningmyrecovery} subtitle={"Our Daily Reader"}></Book>
-                        <Book title={"Loving Parent GuideBook"} image={lovingparentguidebook} subtitle={"The solution is to become your own loving parent"}></Book>
-                        <Book title={"ACA Fellowship Text"} image={bigredbook} subtitle={"The Big Red Book"}></Book>
                     </StyledParagraph>
                 </Container>
             </Wrapper>

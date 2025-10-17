@@ -5,12 +5,18 @@ const NavContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position:sticky;
+  gap: 30px;
+  color: ${(props) => props.theme.color.on.background};
 `;
 
 const NavLink = styled.a`
   text-decoration: none;
   padding: 5px;
-  color: #fff;
+  color: ${(props) => props.theme.color.on.hover};
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const Footer = () => {
@@ -19,25 +25,19 @@ const Footer = () => {
       <NavContainer>
         <p>&copy; 2025 Twelve.Community {"  "}&middot;</p>
         <p>
-          <NavLink href="/voiceover" alt="Voice Over">
-            Voice-Over
+          <NavLink href="#demo" alt="Voice Over">
+            Demo
           </NavLink>
           &middot;
         </p>
         <p>
-          <NavLink href="/recovery" alt="recovery">
-            Recovery
+          <NavLink href="#recovery" alt="recovery">
+            About
           </NavLink>
           &middot;
         </p>
         <p>
-          <NavLink href="/socials" alt="socials">
-            Socials
-          </NavLink>
-          &middot;
-        </p>
-        <p>
-          <NavLink href="/donate" alt="donate">
+          <NavLink href="#donate" alt="donate">
             Donate
           </NavLink>
         </p>

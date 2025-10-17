@@ -36,7 +36,10 @@ body {
 
 
 .cover-container {
- max-width: 90%;
+ max-width: 95%;
+ padding: 0px;
+ margin: 0px;
+ top: 0px;
 }
 
 
@@ -113,3 +116,6 @@ body {
 /* .inner.cover  {
   min-height: 100vh;
 } */
+ .column {
+  flex: 1;
+ }
