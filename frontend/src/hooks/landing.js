@@ -106,7 +106,7 @@ const Landing = () => {
 
           <StyledParagraph className="column">
             <RoundedImageContainer>
-              <ImageIcons image={kojie} height="400px" />
+              <ImageIcons image={kojie} height="300px" />
             </RoundedImageContainer>
           </StyledParagraph>
 
