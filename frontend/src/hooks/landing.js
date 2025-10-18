@@ -109,9 +109,9 @@ const Landing = () => {
       <Wrapper>
         <Container id="intro" class="intro">
           <StyledParagraph className="column">
-            <RoundedImageContainer>
+            <ImageContainer>
               <ImageIcons image={kojie} height="300px" />
-            </RoundedImageContainer>
+            </ImageContainer>
           </StyledParagraph>
           <StyledParagraph className="column">
             <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
