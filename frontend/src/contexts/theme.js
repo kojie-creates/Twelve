@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 // define store initial state
 export const lightTheme = {

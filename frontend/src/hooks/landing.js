@@ -42,7 +42,7 @@ const StyledHeading = styled.h3`
   font-size: 48px;
 `;
 
-const StyledParagraph = styled.p`
+const StyledDiv = styled.div`
   padding: 10px;
   color: ${(props) => props.theme.color.on.surface};
   font-family: ${(props) => props.theme.fonts.secondary};
@@ -108,49 +108,49 @@ const Landing = () => {
         <meta name="dkeywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
-        <Container id="intro" class="intro">
-          <StyledParagraph className="column">
+        <Container id="intro" className="intro">
+          <StyledDiv className="column">
             <RoundedImageContainer>
               <ImageIcons image={kojie} height="420px" />
             </RoundedImageContainer>
-          </StyledParagraph>
-          <StyledParagraph className="column">
+          </StyledDiv>
+          <StyledDiv className="column">
             <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
             Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences.
             <br /><br />
             <StyledHeading className="cover-heading">Let's work together</StyledHeading>
-            <StyledList class="social-icons">
+            <StyledList className="social-icons">
               <li>
-                <a href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" target="_blank" alt="email"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                <a href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" target="_blank" rel="noopener noreferrer" alt="email"><i className="fa-solid fa-envelope fa-2xl"></i></a>
               </li>
               <li>
-                <a href="https://www.facebook.com/profile.php?id=100088510260448" target="_blank" rel="noopener noreferrer" alt="facebook"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100088510260448" target="_blank" rel="noopener noreferrer" alt="facebook"><i className="fa-brands fa-facebook fa-2xl"></i></a>
               </li>
               <li>
-                <a href="https://www.youtube.com/@thevoiceofkojie" target="_blank" rel="noopener noreferrer" alt="youtube"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                <a href="https://www.youtube.com/@thevoiceofkojie" target="_blank" rel="noopener noreferrer" alt="youtube"><i className="fa-brands fa-youtube fa-2xl"></i></a>
               </li>
               <li>
-                <a href="https://t.co/TK8wXby4uA" target="_blank" rel="noopener noreferrer" alt="instagram"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="https://t.co/TK8wXby4uA" target="_blank" rel="noopener noreferrer" alt="instagram"><i className="fa-brands fa-instagram fa-2xl"></i></a>
               </li>
               <li>
-                <a href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" target="_blank" rel="noopener noreferrer" alt="tiktok"><i class="fa-brands fa-tiktok fa-2xl"></i></a>
+                <a href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" target="_blank" rel="noopener noreferrer" alt="tiktok"><i className="fa-brands fa-tiktok fa-2xl"></i></a>
               </li>
               <li>
-                <a href="https://x.com/kojiemontanez" target="_blank" rel="noopener noreferrer" alt="twitter, x"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                <a href="https://x.com/kojiemontanez" target="_blank" rel="noopener noreferrer" alt="twitter, x"><i className="fa-brands fa-twitter fa-2xl"></i></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/felixmontanez/" target="_blank" rel="noopener noreferrer" alt="linkedin"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="https://www.linkedin.com/in/felixmontanez/" target="_blank" rel="noopener noreferrer" alt="linkedin"><i className="fa-brands fa-linkedin fa-2xl"></i></a>
               </li>
               <li>
-                <a href="https://www.twitch.tv/thevoiceofkojie" target="_blank" rel="noopener noreferrer" alt="twitch"><i class="fa-brands fa-twitch fa-2xl"></i></a>
+                <a href="https://www.twitch.tv/thevoiceofkojie" target="_blank" rel="noopener noreferrer" alt="twitch"><i className="fa-brands fa-twitch fa-2xl"></i></a>
               </li>
             </StyledList>
-          </StyledParagraph>
+          </StyledDiv>
         </Container>
-        <p id="demo"></p>z
-        <Container class="demo">
-          <section role="section" className="inner cover">
-            <StyledParagraph>
+        <p id="demo"></p>
+        <Container className="demo">
+          <section className="inner cover">
+            <StyledDiv>
               <StyledHeading className="cover-heading">Demos (In Progress)</StyledHeading>
                 <figure>
                   <figcaption>Commercial Demo : Sell a product or service.</figcaption>
@@ -172,8 +172,8 @@ const Landing = () => {
                   <figcaption>Calm, Casual "Jim voice" Demo : conversations with friends</figcaption>
                   <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
                 </figure>
-            </StyledParagraph>
-            <StyledParagraph className="column">
+            </StyledDiv>
+            <StyledDiv className="column">
               <StyledHeading className="cover-heading">Voice Over Projects</StyledHeading>
               <figure>
                   <figcaption>&ldquo;We Win Wednesdays&rdquo; podcast On Spotify</figcaption>
@@ -182,12 +182,12 @@ const Landing = () => {
                 </figure>
               <p>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</p>
               <p> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</p>
-            </StyledParagraph>
+            </StyledDiv>
           </section>
         </Container>
         <p id="recovery" ></p>
-        <Container class="recovery">
-          <StyledParagraph>
+        <Container className="recovery">
+          <StyledDiv>
             <StyledHeading className="cover-heading">Service</StyledHeading>
             <p>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</p>
             <br /><br />
@@ -205,17 +205,17 @@ const Landing = () => {
               <figcaption>Episode Three - Isaak, Colin & Katherine, March 2024</figcaption>
               <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeThree-IsaakColinKatherineMarch2024.mp3"></audio>
             </figure>
-          </StyledParagraph>
+          </StyledDiv>
         </Container>
         <p id="donate"></p>
-        <Container class="donate">
-          <StyledParagraph className="column">
+        <Container className="donate">
+          <StyledDiv className="column">
             <StyledHeading className="cover-heading">Please Donate</StyledHeading>
-            <StyledParagraph>
+            <StyledDiv>
               Support my work and help me create more impactful audio projects by donating via Venmo or PayPal. Your support allows me to continue delivering quality voice-over content and to grow this career. Thank you for your support! You can donate through the following platforms:
-            </StyledParagraph>
-            <StyledParagraph className="column">
-              <StyledList class="donation-icons">
+            </StyledDiv>
+            <StyledDiv className="column">
+              <StyledList className="donation-icons">
                 <li>
                   <p>Venmo: @Kojie-Montanez<br />Last 4 : 6416</p>
                   <ImageContainer>
@@ -223,14 +223,14 @@ const Landing = () => {
                   </ImageContainer>
                 </li>
                 <li>
-                  <p><a href="https://www.paypal.com/paypalme/felixmontanez" target="_blank" rel="noopener noreferrer" alt="paypal link"><i class="fa-brands fa-paypal fa-2xl"></i></a></p>
+                  <p><a href="https://www.paypal.com/paypalme/felixmontanez" target="_blank" rel="noopener noreferrer" alt="paypal link"><i className="fa-brands fa-paypal fa-2xl"></i></a></p>
                   <ImageContainer>
                     <ImageIcons image={paypal} height="200px" />
                   </ImageContainer>
                 </li>
               </StyledList>
-            </StyledParagraph>
-          </StyledParagraph>
+            </StyledDiv>
+          </StyledDiv>
         </Container>
       </Wrapper>
 
