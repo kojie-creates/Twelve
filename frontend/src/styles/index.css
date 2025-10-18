@@ -9,7 +9,6 @@ body {
   margin: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #af97e5;
 }
 
 .isDisabled {
@@ -25,7 +24,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+}                            
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
@@ -50,24 +49,16 @@ p.lead {
   background: red;
 }
 
-#demo.demo {
-  background-color: #ff5c8d;
-  background: #ff5c8d;
-}
-.recovery {
-  background-color: #32db64;
+p#demo  {
+   margin-bottom: 20px;
 }
 
-.socials {
-  background-color: #1692ff;
+p#recovery {
+ margin-bottom: 20px;
 }
 
-.donate {
-  background-color: #5e6a77;
-}
-
-.footer {
-  background-color: #c9870d;
+p#donate {
+ margin-bottom: 20px;
 }
 
 .footer p {

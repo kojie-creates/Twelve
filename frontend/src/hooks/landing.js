@@ -12,7 +12,7 @@ import venmo from "../assets/venmo_qrcode2.png";
 const Wrapper = styled.div`
   padding: 0px;
   margin: 0px;
-  background-color: ${(props) => props.theme.color.background};
+  
 `;
 
 const Container = styled.div`
@@ -108,13 +108,11 @@ const Landing = () => {
       </Helmet>
       <Wrapper>
         <Container id="intro" class="intro">
-
           <StyledParagraph className="column">
             <RoundedImageContainer>
               <ImageIcons image={kojie} height="300px" />
             </RoundedImageContainer>
           </StyledParagraph>
-
           <StyledParagraph className="column">
             <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
             Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences.
@@ -147,42 +145,45 @@ const Landing = () => {
               </li>
             </StyledList>
           </StyledParagraph>
-
         </Container>
-
-        <Container id="demo" class="demo">
+        <p id="demo"></p>
+        <Container class="demo">
           <section role="section" className="inner cover">
-            <StyledHeading className="cover-heading">Demos</StyledHeading>
             <StyledParagraph>
-              <figure>
-                <figcaption>Commercial Demo : Listen close, I want to sell a product or service.</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-              </figure>
-              <figure>
-                <figcaption>Corporate Demo : The business training seminar voice to educate the mass.</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-              </figure>
-              <figure>
-                <figcaption>Animation Demo : yuk, yuk..all types of goofy stuff!</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-              </figure>
-              <figure>
-                <figcaption>Trailers &amp; Announcers: Magic Radio 98.9, In a theater, coming soon...</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-              </figure>
-              <figure>
-                <figcaption>We Win Wednesdays Shameless LA: On Spotify</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-              </figure>
+              <StyledHeading className="cover-heading">Demos (In Progress)</StyledHeading>
+                <figure>
+                  <figcaption>Commercial Demo : Listen close, I want to sell a product or service.</figcaption>
+                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                </figure>
+                <figure>
+                  <figcaption>Corporate Demo : The business training seminar voice to educate the mass.</figcaption>
+                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                </figure>
+                <figure>
+                  <figcaption>Animation Demo : yuk, yuk..all types of goofy stuff!</figcaption>
+                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                </figure>
+                <figure>
+                  <figcaption>Trailers &amp; Announcers: Magic Radio 98.9, In a theater, coming soon...</figcaption>
+                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                </figure>
+                <figure>
+                  <figcaption>We Win Wednesdays Shameless LA: On Spotify</figcaption>
+                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                </figure>
+            </StyledParagraph>
+            <StyledParagraph className="column">
+              <StyledHeading className="cover-heading">VO Projects</StyledHeading>
+              <p>Aristocrat - created videos with voice over for application submittals and publishing</p>
+              <p>Sound Test for Meta - provided voice talent to test audio equipment for the highest quality.</p>
             </StyledParagraph>
           </section>
         </Container>
-        <Container id="recovery" class="recovery">
+        <p id="recovery" ></p>
+        <Container class="recovery">
           <StyledParagraph>
-
             <StyledHeading className="cover-heading">About Me</StyledHeading>
             <p>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home, as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I’m proud to be part of projects like the "We Win Wednesdays Shameless LA" Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</p>
-
             <br /><br />
             <StyledHeading className="cover-heading">Shameless LA on Spotify</StyledHeading>
             <h4>&ldquo; We Win Wednesdays &rdquo;</h4>
@@ -201,26 +202,29 @@ const Landing = () => {
             </figure>
           </StyledParagraph>
         </Container>
-        <Container id="donate" class="donate">
-          <StyledParagraph>
+        <p id="donate"></p>
+        <Container class="donate">
+          <StyledParagraph className="column">
             <StyledHeading className="cover-heading">Please Donate</StyledHeading>
             <StyledParagraph>
               Support my work and help me create more impactful audio projects by donating via Venmo or PayPal. Your support allows me to continue delivering quality voice-over content and to grow this career. Thank you for your support! You can donate through the following platforms:
             </StyledParagraph>
-            <StyledList class="donation-icons">
-              <li>
-                <p>Venmo: @Kojie-Montanez<br />Last 4 : 6416</p>
-                <ImageContainer>
-                  <ImageIcons image={venmo} height="200px" />
-                </ImageContainer>
-              </li>
-              <li>
-                <p><a href="https://www.paypal.com/paypalme/felixmontanez" target="_blank" rel="noopener noreferrer" alt="paypal link"><i class="fa-brands fa-paypal fa-2xl"></i></a></p>
-                <ImageContainer>
-                  <ImageIcons image={paypal} height="200px" />
-                </ImageContainer>
-              </li>
-            </StyledList>
+            <StyledParagraph className="column">
+              <StyledList class="donation-icons">
+                <li>
+                  <p>Venmo: @Kojie-Montanez<br />Last 4 : 6416</p>
+                  <ImageContainer>
+                    <ImageIcons image={venmo} height="200px" />
+                  </ImageContainer>
+                </li>
+                <li>
+                  <p><a href="https://www.paypal.com/paypalme/felixmontanez" target="_blank" rel="noopener noreferrer" alt="paypal link"><i class="fa-brands fa-paypal fa-2xl"></i></a></p>
+                  <ImageContainer>
+                    <ImageIcons image={paypal} height="200px" />
+                  </ImageContainer>
+                </li>
+              </StyledList>
+            </StyledParagraph>
           </StyledParagraph>
         </Container>
       </Wrapper>

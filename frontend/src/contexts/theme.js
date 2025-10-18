@@ -31,8 +31,8 @@ export const lightTheme = {
     },
   },
   fonts: {
-    main: '"Playfair Display", serif;',
-    secondary: '"Montserrat", sans-serif'
+    main: '"Alfa Slab One", serif;',
+    secondary: '"Open Sans", sans-serif'
   },
   mobile: "screen and (max-width: 768px)",
   tablet: "screen and (max-width: 768px)",
