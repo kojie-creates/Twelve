@@ -24,7 +24,7 @@ const Container = styled.div`
   padding: 10px;
   margin: 20px 10px;
   text-align: left;
-  background : linear-gradient(to right, #805ad5, #582eb5);
+  background : linear-gradient(to right, #582eb5, #805ad5);
   color: ${(props) => props.theme.color.on.background};
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -55,10 +55,11 @@ const RoundedImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 10px;
   img {
     margin-left: 0px;
     margin-right: 0px;
-    border-radius: 50%;
+    border-radius: 25px;
   }
 `;
 
@@ -100,7 +101,7 @@ const Landing = () => {
   return (
     <div className="text-left cover-container d-flex p-1 mx-auto flex-column">
       <Helmet>
-        <title>Twelve : Welcome</title>
+        <title>Kojie : Voice Over Actor</title>
         <link rel="canonical" href="http://www.twelve.community" />
 
         <meta name="description" content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances." />
@@ -175,12 +176,12 @@ const Landing = () => {
             <StyledParagraph className="column">
               <StyledHeading className="cover-heading">Voice Over Projects</StyledHeading>
               <figure>
-                  <figcaption>&ldquo;We Win Wednesdays&rquo; podcast On Spotify</figcaption>
+                  <figcaption>&ldquo;We Win Wednesdays&rdquo; podcast On Spotify</figcaption>
                   <p><a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a></p>
                   <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
                 </figure>
-              <p>Aristocrat Gaming - created videos with voice over narration for various casino clients, explainer videos for app store submittals.</p>
-              <p>Voice Sound Test for Meta (Facebook) - provided base voice talent to test audio equipment throughout the top recording studios in Los Angeles and Burbank.</p>
+              <p>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</p>
+              <p> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</p>
             </StyledParagraph>
           </section>
         </Container>

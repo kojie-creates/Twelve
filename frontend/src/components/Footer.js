@@ -6,7 +6,7 @@ const NavContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   position:sticky;
-  gap: 30px;
+  gap: 20px;
   color: ${(props) => props.theme.color.on.background};
 `;
 
@@ -26,12 +26,12 @@ const Footer = () => {
         <p><NavLink className="link" href="/">&copy; 2025 Twelve.Community</NavLink></p>
         <p>
           <NavLink href="#demo" alt="Voice Over">
-            Demo
+            Demos
           </NavLink>
         </p>
         <p>
           <NavLink href="#recovery" alt="recovery">
-            About
+            Service
           </NavLink>
         </p>
         <p>

@@ -19,7 +19,7 @@ const StyledNav = styled.nav`
   .nav-link {
     color: ${(props) => props.theme.color.on.nav};
     &:hover {
-      color: ${(props) => props.theme.color.primary_variant};
+      color: ${(props) => props.theme.color.on.navHover};
     }
   }
 `;
@@ -47,8 +47,8 @@ export const Navbar = () => {
             <a className="nav-link" href="/"> Kojie Montanez </a>
           </StyledHeading>
           <StyledNav className="nav nav-masthead justify-content-center">
-            <a className="nav-link" href="#demo">Demo</a>
-            <a className="nav-link" href="#recovery">About</a>
+            <a className="nav-link" href="#demo">Demos</a>
+            <a className="nav-link" href="#recovery">Service</a>
             <a className="nav-link" href="#donate">Donate</a>
           </StyledNav>
         </div>

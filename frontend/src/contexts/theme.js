@@ -19,6 +19,7 @@ export const lightTheme = {
     on: {
       hover: "#805ad5",
       nav: "#FFFFFF",
+      navHover: "#dcd0ff",
       header: "#FFFFFF",
       primary: "#FFFFFF", // white text against primary color
       secondary: "#000000", // white text against secondary color
