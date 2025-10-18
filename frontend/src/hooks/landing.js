@@ -109,9 +109,9 @@ const Landing = () => {
       <Wrapper>
         <Container id="intro" class="intro">
           <StyledParagraph className="column">
-            <ImageContainer>
-              <ImageIcons image={kojie} height="300px" />
-            </ImageContainer>
+            <RoundedImageContainer>
+              <ImageIcons image={kojie} height="420px" />
+            </RoundedImageContainer>
           </StyledParagraph>
           <StyledParagraph className="column">
             <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
@@ -146,7 +146,7 @@ const Landing = () => {
             </StyledList>
           </StyledParagraph>
         </Container>
-        <p id="demo"></p>
+        <p id="demo"></p>z
         <Container class="demo">
           <section role="section" className="inner cover">
             <StyledParagraph>
