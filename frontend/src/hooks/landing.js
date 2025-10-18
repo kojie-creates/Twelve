@@ -152,15 +152,15 @@ const Landing = () => {
             <StyledParagraph>
               <StyledHeading className="cover-heading">Demos (In Progress)</StyledHeading>
                 <figure>
-                  <figcaption>Commercial Demo : Listen close, I want to sell a product or service.</figcaption>
+                  <figcaption>Commercial Demo : Sell a product or service.</figcaption>
                   <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
                 </figure>
                 <figure>
-                  <figcaption>Corporate Demo : The business training seminar voice to educate the mass.</figcaption>
+                  <figcaption>Corporate Demo : Training, education and technology</figcaption>
                   <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
                 </figure>
                 <figure>
-                  <figcaption>Animation Demo : yuk, yuk..all types of goofy stuff!</figcaption>
+                  <figcaption>Animation Demo : character voices and playful dialogue</figcaption>
                   <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
                 </figure>
                 <figure>
@@ -168,22 +168,27 @@ const Landing = () => {
                   <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
                 </figure>
                 <figure>
-                  <figcaption>We Win Wednesdays Shameless LA: On Spotify</figcaption>
+                  <figcaption>Calm, Casual "Jim voice" Demo : conversations with friends</figcaption>
                   <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
                 </figure>
             </StyledParagraph>
             <StyledParagraph className="column">
-              <StyledHeading className="cover-heading">VO Projects</StyledHeading>
-              <p>Aristocrat - created videos with voice over for application submittals and publishing</p>
-              <p>Sound Test for Meta - provided voice talent to test audio equipment for the highest quality.</p>
+              <StyledHeading className="cover-heading">Voice Over Projects</StyledHeading>
+              <figure>
+                  <figcaption>&ldquo;We Win Wednesdays&rquo; podcast On Spotify</figcaption>
+                  <p><a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a></p>
+                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                </figure>
+              <p>Aristocrat Gaming - created videos with voice over narration for various casino clients, explainer videos for app store submittals.</p>
+              <p>Voice Sound Test for Meta (Facebook) - provided base voice talent to test audio equipment throughout the top recording studios in Los Angeles and Burbank.</p>
             </StyledParagraph>
           </section>
         </Container>
         <p id="recovery" ></p>
         <Container class="recovery">
           <StyledParagraph>
-            <StyledHeading className="cover-heading">About Me</StyledHeading>
-            <p>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home, as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I’m proud to be part of projects like the "We Win Wednesdays Shameless LA" Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</p>
+            <StyledHeading className="cover-heading">Service</StyledHeading>
+            <p>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</p>
             <br /><br />
             <StyledHeading className="cover-heading">Shameless LA on Spotify</StyledHeading>
             <p>These brief shares were recorded with permission from the Shameless LA We Win Wednesdays ACA meeting.</p>
