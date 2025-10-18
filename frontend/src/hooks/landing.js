@@ -97,6 +97,11 @@ const StyledList = styled.ul`
 
 `;
 
+const IconLinks = (props) => {
+  const { href, className, alt } = props;
+  return (<a href={href} target="_blank" rel="noopener noreferrer" alt={alt}><i className={className}></i></a>);
+};
+
 const Landing = () => {
   return (
     <div className="text-left cover-container d-flex p-1 mx-auto flex-column">
@@ -120,73 +125,55 @@ const Landing = () => {
             <br /><br />
             <StyledHeading className="cover-heading">Let's work together</StyledHeading>
             <StyledList className="social-icons">
-              <li>
-                <a href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" target="_blank" rel="noopener noreferrer" alt="email"><i className="fa-solid fa-envelope fa-2xl"></i></a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/profile.php?id=100088510260448" target="_blank" rel="noopener noreferrer" alt="facebook"><i className="fa-brands fa-facebook fa-2xl"></i></a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@thevoiceofkojie" target="_blank" rel="noopener noreferrer" alt="youtube"><i className="fa-brands fa-youtube fa-2xl"></i></a>
-              </li>
-              <li>
-                <a href="https://t.co/TK8wXby4uA" target="_blank" rel="noopener noreferrer" alt="instagram"><i className="fa-brands fa-instagram fa-2xl"></i></a>
-              </li>
-              <li>
-                <a href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" target="_blank" rel="noopener noreferrer" alt="tiktok"><i className="fa-brands fa-tiktok fa-2xl"></i></a>
-              </li>
-              <li>
-                <a href="https://x.com/kojiemontanez" target="_blank" rel="noopener noreferrer" alt="twitter, x"><i className="fa-brands fa-twitter fa-2xl"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/felixmontanez/" target="_blank" rel="noopener noreferrer" alt="linkedin"><i className="fa-brands fa-linkedin fa-2xl"></i></a>
-              </li>
-              <li>
-                <a href="https://www.twitch.tv/thevoiceofkojie" target="_blank" rel="noopener noreferrer" alt="twitch"><i className="fa-brands fa-twitch fa-2xl"></i></a>
-              </li>
+              <li><IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
+              <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
+              <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
+              <li><IconLinks href="https://t.co/TK8wXby4uA" alt="instagram" className="fa-brands fa-instagram fa-2xl" /></li>
+              <li><IconLinks href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" alt="tiktok" className="fa-brands fa-tiktok fa-2xl" /></li>
+              <li><IconLinks href="https://x.com/kojiemontanez" alt="twitter, x" className="fa-brands fa-twitter fa-2xl" /></li>
+              <li><IconLinks href="https://www.linkedin.com/in/felixmontanez/" alt="linkedin" className="fa-brands fa-linkedin fa-2xl" /></li>
+              <li><IconLinks href="https://www.twitch.tv/thevoiceofkojie" className="fa-brands fa-twitch fa-2xl" alt="twitch" /></li>
             </StyledList>
           </StyledDiv>
         </Container>
-        <p id="demo"></p>
-        <Container className="demo">
+        <Container id="demo" className="demo">
           <section className="inner cover">
             <StyledDiv>
               <StyledHeading className="cover-heading">Demos (In Progress)</StyledHeading>
-                <figure>
-                  <figcaption>Commercial Demo : Sell a product or service.</figcaption>
-                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-                </figure>
-                <figure>
-                  <figcaption>Corporate Demo : Training, education and technology</figcaption>
-                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-                </figure>
-                <figure>
-                  <figcaption>Animation Demo : character voices and playful dialogue</figcaption>
-                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-                </figure>
-                <figure>
-                  <figcaption>Trailers &amp; Announcers: Magic Radio 98.9, In a theater, coming soon...</figcaption>
-                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-                </figure>
-                <figure>
-                  <figcaption>Calm, Casual "Jim voice" Demo : conversations with friends</figcaption>
-                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-                </figure>
+              <figure>
+                <figcaption>Commercial Demo : Sell a product or service.</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
+              <figure>
+                <figcaption>Corporate Demo : Training, education and technology</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
+              <figure>
+                <figcaption>Animation Demo : character voices and playful dialogue</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
+              <figure>
+                <figcaption>Trailers &amp; Announcers: Magic Radio 98.9, In a theater, coming soon...</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
+              <figure>
+                <figcaption>Calm, Casual "Jim voice" Demo : conversations with friends</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
             </StyledDiv>
             <StyledDiv className="column">
               <StyledHeading className="cover-heading">Voice Over Projects</StyledHeading>
               <figure>
-                  <figcaption>&ldquo;We Win Wednesdays&rdquo; podcast On Spotify</figcaption>
-                  <p><a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a></p>
-                  <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-                </figure>
+                <figcaption>&ldquo;We Win Wednesdays&rdquo; podcast On Spotify</figcaption>
+                <p><a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a></p>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
               <p>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</p>
               <p> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</p>
             </StyledDiv>
           </section>
         </Container>
-        <p id="recovery" ></p>
-        <Container className="recovery">
+        <Container id="recovery" className="recovery">
           <StyledDiv>
             <StyledHeading className="cover-heading">Service</StyledHeading>
             <p>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</p>
@@ -207,8 +194,7 @@ const Landing = () => {
             </figure>
           </StyledDiv>
         </Container>
-        <p id="donate"></p>
-        <Container className="donate">
+        <Container id="donate" className="donate">
           <StyledDiv className="column">
             <StyledHeading className="cover-heading">Please Donate</StyledHeading>
             <StyledDiv>
@@ -223,7 +209,7 @@ const Landing = () => {
                   </ImageContainer>
                 </li>
                 <li>
-                  <p><a href="https://www.paypal.com/paypalme/felixmontanez" target="_blank" rel="noopener noreferrer" alt="paypal link"><i className="fa-brands fa-paypal fa-2xl"></i></a></p>
+                  <p><IconLinks href="https://www.paypal.com/paypalme/felixmontanez"  alt="paypal link" className="fa-brands fa-paypal fa-2xl" /></p>
                   <ImageContainer>
                     <ImageIcons image={paypal} height="200px" />
                   </ImageContainer>
@@ -233,7 +219,6 @@ const Landing = () => {
           </StyledDiv>
         </Container>
       </Wrapper>
-
     </div>
   );
 };

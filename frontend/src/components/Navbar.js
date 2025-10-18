@@ -44,7 +44,7 @@ export const Navbar = () => {
       <StyledHeader >
         <div className="inner text-center">
           <StyledHeading className="masthead-brand">
-            <a className="nav-link" href="/"> Kojie Montanez </a>
+            <a className="nav-link" href="/"> Kojie : Voice Over Talent </a>
           </StyledHeading>
           <StyledNav className="nav nav-masthead justify-content-center">
             <a className="nav-link" href="#demo">Demos</a>
