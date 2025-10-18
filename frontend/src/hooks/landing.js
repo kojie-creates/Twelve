@@ -186,7 +186,6 @@ const Landing = () => {
             <p>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home, as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I’m proud to be part of projects like the "We Win Wednesdays Shameless LA" Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</p>
             <br /><br />
             <StyledHeading className="cover-heading">Shameless LA on Spotify</StyledHeading>
-            <h4>&ldquo; We Win Wednesdays &rdquo;</h4>
             <p>These brief shares were recorded with permission from the Shameless LA We Win Wednesdays ACA meeting.</p>
             <figure>
               <figcaption>Episode One - Cookie, Ris, Padawan Marc, Diyan, Veronica, January 2024</figcaption>
