@@ -18,7 +18,7 @@ const Container = styled.div`
   top: 0;
   padding: 10px auto;
   width: 100%;
-  color: ${(props) => props.theme.color.on.background};
+  color: ${(props) => props.theme.color.on.header};
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -30,7 +30,7 @@ const StyledHeader = styled.header`
   top: 0;
   z-index: 1000;
   min-height: 40px;
-  background : linear-gradient(to right,  ${(props) => props.theme.color.primary},  ${(props) => props.theme.color.secondary} );
+  background :  ${(props) => props.theme.color.header};
 `;
 
 const StyledNav = styled.nav`
@@ -89,6 +89,11 @@ const BrandTitle = styled.span`
   margin-left: 10px;
 `;
 
+const IconLinks = (props) => {
+  const { href, className, alt } = props;
+  return (<a href={href} className="nav-link" target="_blank" rel="noopener noreferrer" alt={alt}><i className={className}></i></a>);
+};
+
 export const Navbar = () => {
   const [{ isAuthenticated }, actions] = useAuthStore();
 
@@ -111,6 +116,8 @@ export const Navbar = () => {
              
             </StyledHeading>
             <StyledNav className="nav nav-masthead justify-content-center">
+              <IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" />
+              <IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" />
               <NavLink className="nav-link" href="#demo">Demos</NavLink>
               <NavLink className="nav-link" href="#recovery">Service</NavLink>
               <NavLink className="nav-link" href="#donate">Donate</NavLink>

@@ -9,6 +9,7 @@ import paypal from "../assets/paypal_qrcode.png";
 import pixarMe from "../assets/me/PixarMe.jpg";
 import venmo from "../assets/venmo_qrcode2.png";
 import ghibliMe from "../assets/me/GhibliMe.jpg";
+import cozybed from '../assets/me/CozyNookBed.jpg';
 import cartoonMe from "../assets/me/cartoonMe.jpg";
 import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
 import singingMe from "../assets/me/GhibliSingingMe.jpg";
@@ -26,21 +27,24 @@ const Container = styled.div`
   gap: 10px;
   border-radius: 15px;
   padding: 10px;
-  margin: 20px 10px;
+  margin: 10px 10px;
   text-align: left;
   background : ${(props) => props.theme.color.surface};
   color: ${(props) => props.theme.color.on.background};
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin-left: 5px;
-    margin-right: auto;
+  
   }
 `;
 
 const StyledDiv = styled.div`
-  padding: 20px;
+  padding: 10px;
   color: ${(props) => props.theme.color.on.surface};
-  font-family: ${(props) => props.theme.fonts.secondary};  
+  font-family: ${(props) => props.theme.fonts.secondary}; 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  } 
 `;
 
 const RoundedImageContainer = styled.div`
@@ -51,8 +55,7 @@ const RoundedImageContainer = styled.div`
   height: 100%;
   padding: 10px;
   img {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: auto 10px;
     border-radius: 50%;
   }
 `;
@@ -122,7 +125,6 @@ const Landing = () => {
         <meta name="dkeywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
-
         <Container id="intro" className="intro">
           <StyledDiv className="column">
             <RoundedImageContainer>
@@ -134,6 +136,7 @@ const Landing = () => {
             <StyledParagraph>Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences.</StyledParagraph>
             <StyledHeading className="cover-heading">Let's work together</StyledHeading>
             <StyledList className="social-icons">
+              <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" /></li>
               <li><IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
               <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
               <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
@@ -226,7 +229,7 @@ const Landing = () => {
         <Container id="donate" className="donate">
           <StyledDiv className="column">
             <ImageContainer>
-              <ImageIcons image={pixarMe} width="333px" />
+              <ImageIcons image={cozybed} height="420px" />
             </ImageContainer>
           </StyledDiv>
           <StyledDiv className="column">
