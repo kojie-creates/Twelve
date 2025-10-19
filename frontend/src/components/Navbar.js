@@ -18,7 +18,7 @@ const Container = styled.div`
   top: 0;
   padding: 10px auto;
   width: 100%;
-  color: ${(props) => props.theme.color.on.header};
+  
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -31,6 +31,7 @@ const StyledHeader = styled.header`
   z-index: 1000;
   min-height: 40px;
   background :  ${(props) => props.theme.color.header};
+  color: ${(props) => props.theme.color.on.header};
 `;
 
 const StyledNav = styled.nav`

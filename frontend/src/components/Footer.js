@@ -7,14 +7,15 @@ const NavContainer = styled.div`
   justify-content: center;
   position:sticky;
   gap: 20px;
-  color: ${(props) => props.theme.color.on.background};
+  color: ${(props) => props.theme.color.link};
 `;
 
 const NavLink = styled.a`
   text-decoration: none;
   padding: 5px;
-  color: ${(props) => props.theme.color.on.hover};
+  color: ${(props) => props.theme.color.link};
   &:hover {
+   color: ${(props) => props.theme.color.on.hover};
     text-decoration: underline;
   }
 `;

@@ -239,6 +239,7 @@ const Landing = () => {
             </StyledParagraph>
 
             <StyledList className="donation-icons">
+               
               <li>
                 <p>Venmo: @Kojie-Montanez<br />Last 4 : 6416</p>
                 <ImageContainer>

@@ -3,7 +3,7 @@ import { Router } from "@reach/router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import { ThemeProvider } from "styled-components";
-import { lightTheme } from "./contexts/theme";
+import { lightTheme, darkTheme } from "./contexts/theme";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";

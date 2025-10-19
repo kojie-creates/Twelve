@@ -6,21 +6,21 @@ export const lightTheme = {
     primary: "#805ad5", //   represents colors of brand
     secondary: "#302053ff", // tron represent accent colors of brand
     tertiary: "#5ad580",
+    header: "#424242ff",
     surface: "#8b8b8bff", // sheets - cards, backgrounds
-     header: "#424242ff",
     background: "#dddbdbff", // background of app
     error: "#B00020", // for errors and warnings
-    link: "#FFFFFF",
+    link: "#805ad5",
     on: {
-      hover: "#ffffffff",
-      header: "#FFFFFF",
       primary: "#FFFFFF", // white text against primary color
       secondary: "#ffffffff", // white text against secondary color
       tertiary: "#FFFFFF",
-      link: "#FFFFFF",
+      header: "#FFFFFF",
+      hover: "#302053ff",
       surface: "#dfdfdfff", // black text on white surface
       background: "#000000", // black text on white background
       error: "#ffffffff", // white text on red error background
+      link: "#805ad5",
     },
   },
   fonts: {
@@ -35,23 +35,23 @@ export const lightTheme = {
 export const darkTheme = {
   color: {
     primary: "#805ad5", //   represents colors of brand
-    secondary: "#d5be5a", // tron represent accent colors of brand
+    secondary: "#302053ff", // tron represent accent colors of brand
     tertiary: "#5ad580",
-    surface: "#858585ff", // sheets - cards, backgrounds
     header: "#424242ff",
-    background: "#ffffffff", // background of app
+    surface: "#ffffffff", // sheets - cards, backgrounds
+    background: "#000000ff", // background of app
     error: "#B00020", // for errors and warnings
-    link: "#FFFFFF",
+    link: "#805ad5",
     on: {
-      hover: "#805ad5",
-      header: "#FFFFFF",
       primary: "#FFFFFF", // white text against primary color
-      secondary: "#000000", // white text against secondary color
+      secondary: "#ffffffff", // white text against secondary color
       tertiary: "#FFFFFF",
-      link: "#FFFFFF",
-      surface: "#d2c8e9ff", // black text on white surface
+      header: "#FFFFFF",
+      hover: "#302053ff",
+      surface: "#dfdfdfff", // black text on white surface
       background: "#000000", // black text on white background
       error: "#ffffffff", // white text on red error background
+      link: "#805ad5"
     },
   },
   fonts: {
