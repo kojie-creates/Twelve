@@ -31,7 +31,7 @@ const StyledHeader = styled.header`
   z-index: 1000;
   min-height: 60px;
   padding: auto 20px;
-  background : linear-gradient(to right, #805ad5, #582eb5);
+  background : linear-gradient(to right,  ${(props) => props.theme.color.primary},  ${(props) => props.theme.color.secondary} );
 `;
 
 const StyledNav = styled.nav`

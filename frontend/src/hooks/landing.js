@@ -6,10 +6,7 @@ import "../styles/index.css";
 
 import Avatar from "../components/Avatar";
 import paypal from "../assets/paypal_qrcode.png";
-import vader from "../assets/me/vaderbong.jpg";
-import oranges from "../assets/me/starwarsorange.jpg";
 import pixarMe from "../assets/me/PixarMe.jpg";
-import cozy from "../assets/me/CozyNookBed.jpg";
 import venmo from "../assets/venmo_qrcode2.png";
 import ghibliMe from "../assets/me/GhibliMe.jpg";
 import cartoonMe from "../assets/me/cartoonMe.jpg";
@@ -18,7 +15,8 @@ import singingMe from "../assets/me/GhibliSingingMe.jpg";
 
 const Wrapper = styled.div`
   padding: 0px;
-  margin: 0px;  
+  margin: 0px;
+  background : ${(props) => props.theme.color.background};
 `;
 
 const Container = styled.div`
@@ -30,7 +28,7 @@ const Container = styled.div`
   padding: 10px;
   margin: 20px 10px;
   text-align: left;
-  background : linear-gradient(to right, #582eb5, #805ad5);
+  background : ${(props) => props.theme.color.surface};
   color: ${(props) => props.theme.color.on.background};
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -38,7 +36,6 @@ const Container = styled.div`
     margin-right: auto;
   }
 `;
-
 
 const StyledDiv = styled.div`
   padding: 20px;
@@ -157,7 +154,7 @@ const Landing = () => {
           </StyledDiv>
           <StyledDiv className="column">
             <StyledHeading>Demos</StyledHeading>
-            <StyledParagraph>
+            <StyledDiv>
               <figure>
                 <figcaption>Commercial</figcaption>
                 <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
@@ -178,17 +175,17 @@ const Landing = () => {
                 <figcaption>Calm, Casual and Conversational</figcaption>
                 <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
               </figure>
-            </StyledParagraph>
+            </StyledDiv>
           </StyledDiv>
           <StyledDiv className="column">
             <StyledHeading className="cover-heading">VO Projects</StyledHeading>
-            <StyledParagraph>
+            <StyledDiv>
               <figure>
                 <figcaption>&ldquo;We Win Wednesdays&rdquo; podcast On Spotify</figcaption>
                 <p><a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a></p>
                 <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
               </figure>
-            </StyledParagraph>
+            </StyledDiv>
             <StyledParagraph>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</StyledParagraph>
             <StyledParagraph> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</StyledParagraph>
           </StyledDiv>
