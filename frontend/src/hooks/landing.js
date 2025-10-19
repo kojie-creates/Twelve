@@ -6,6 +6,10 @@ import "../styles/index.css";
 
 import Avatar from "../components/Avatar";
 import paypal from "../assets/paypal_qrcode.png";
+import vader from "../assets/me/vaderbong.jpg";
+import oranges from "../assets/me/starwarsorange.jpg";
+import pixarMe from "../assets/me/PixarMe.jpg";
+import cozy from "../assets/me/CozyNookBed.jpg";
 import venmo from "../assets/venmo_qrcode2.png";
 import ghibliMe from "../assets/me/GhibliMe.jpg";
 import cartoonMe from "../assets/me/cartoonMe.jpg";
@@ -35,17 +39,9 @@ const Container = styled.div`
   }
 `;
 
-const StyledHeading = styled.h3`
-  color: ${(props) => props.theme.color.on.header};
-  font-family: "Alfa Slab One", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-family: ${(props) => props.theme.fonts.main};
-  font-size: 48px;
-`;
 
 const StyledDiv = styled.div`
-  padding: 10px;
+  padding: 20px;
   color: ${(props) => props.theme.color.on.surface};
   font-family: ${(props) => props.theme.fonts.secondary};  
 `;
@@ -60,7 +56,7 @@ const RoundedImageContainer = styled.div`
   img {
     margin-left: 0px;
     margin-right: 0px;
-    border-radius: 25px;
+    border-radius: 50%;
   }
 `;
 
@@ -70,14 +66,30 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   img {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: auto 10px;
+    border-radius: 15px;
   }
 `;
 
 const ImageIcons = styled(Avatar)`
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+`;
+
+const StyledHeading = styled.h3`
+  color: ${(props) => props.theme.color.on.header};
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: ${(props) => props.theme.fonts.main};
+  font-size: 48px;
+  padding-top: 10px;
+`;
+
+const StyledParagraph = styled.p`
+  font-family: ${(props) => props.theme.fonts.secondary};
+  font-size: 18px;
+  line-height: 1.6;
 `;
 
 const IconLinks = (props) => {
@@ -105,7 +117,7 @@ const StyledList = styled.ul`
 
 const Landing = () => {
   return (
-    <div className="text-left cover-container d-flex p-1 mx-auto flex-column">
+    <div className="text-left ">
       <Helmet>
         <title>Kojie : Voice Over Actor</title>
         <link rel="canonical" href="http://www.twelve.community" />
@@ -113,16 +125,16 @@ const Landing = () => {
         <meta name="dkeywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
+
         <Container id="intro" className="intro">
           <StyledDiv className="column">
             <RoundedImageContainer>
-              <ImageIcons image={cartoonMe} height="420px" />
+              <ImageIcons image={cartoonMe} width="350px" />
             </RoundedImageContainer>
           </StyledDiv>
           <StyledDiv className="column">
             <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
-            Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences.
-            <br /><br />
+            <StyledParagraph>Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences.</StyledParagraph>
             <StyledHeading className="cover-heading">Let's work together</StyledHeading>
             <StyledList className="social-icons">
               <li><IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
@@ -136,96 +148,112 @@ const Landing = () => {
             </StyledList>
           </StyledDiv>
         </Container>
-        <Container id="demo" className="demo ">
-          <RoundedImageContainer>
-              <ImageIcons image={ghibliMe} height="420px" />
-            </RoundedImageContainer>
-          <section className="inner cover">
-            <StyledDiv>
-              <StyledHeading className="cover-heading">Demos (In Progress)</StyledHeading>
+
+        <Container className="demo ">
+          <StyledDiv className="column">
+            <ImageContainer>
+              <ImageIcons image={ghibliMe} width="333px" />
+            </ImageContainer>
+          </StyledDiv>
+          <StyledDiv className="column">
+            <StyledHeading>Demos</StyledHeading>
+            <StyledParagraph>
               <figure>
-                <figcaption>Commercial Demo : Sell a product or service.</figcaption>
+                <figcaption>Commercial</figcaption>
                 <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
               </figure>
               <figure>
-                <figcaption>Corporate Demo : Training, education and technology</figcaption>
+                <figcaption>Corporate</figcaption>
                 <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
               </figure>
               <figure>
-                <figcaption>Animation Demo : character voices and playful dialogue</figcaption>
+                <figcaption>Character Animation</figcaption>
                 <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
               </figure>
               <figure>
-                <figcaption>Trailers &amp; Announcers: Magic Radio 98.9, In a theater, coming soon...</figcaption>
+                <figcaption>Magic Trailers &amp; Announcers</figcaption>
                 <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
               </figure>
               <figure>
-                <figcaption>Calm, Casual "Jim voice" Demo : conversations with friends</figcaption>
+                <figcaption>Calm, Casual and Conversational</figcaption>
                 <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
               </figure>
-            </StyledDiv>
-            <StyledDiv className="column">
-              <StyledHeading className="cover-heading">Voice Over Projects</StyledHeading>
+            </StyledParagraph>
+          </StyledDiv>
+          <StyledDiv className="column">
+            <StyledHeading className="cover-heading">VO Projects</StyledHeading>
+            <StyledParagraph>
               <figure>
                 <figcaption>&ldquo;We Win Wednesdays&rdquo; podcast On Spotify</figcaption>
                 <p><a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a></p>
                 <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
               </figure>
-              <p>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</p>
-              <p> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</p>
-            </StyledDiv>
-          </section>
-        </Container>
-        <Container id="recovery" className="recovery">
-          <RoundedImageContainer>
-              <ImageIcons image={singingMe} height="420px" />
-            </RoundedImageContainer>
-          <StyledDiv>
-            <StyledHeading className="cover-heading">Service</StyledHeading>
-            <p>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</p>
-            <br /><br />
-            <StyledHeading className="cover-heading">Shameless LA on Spotify</StyledHeading>
-            <p>These brief shares were recorded with permission from the Shameless LA We Win Wednesdays ACA meeting.</p>
-            <figure>
-              <figcaption>Episode One - Cookie, Ris, Padawan Marc, Diyan, Veronica, January 2024</figcaption>
-              <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
-            </figure>
-            <figure>
-              <figcaption>Episode Two - Ivanne, Marc C and Bridget Y, February 2024</figcaption>
-              <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeTwo_ShamelessLA_ACA.mp3.mp3"></audio>
-            </figure>
-            <figure>
-              <figcaption>Episode Three - Isaak, Colin & Katherine, March 2024</figcaption>
-              <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeThree-IsaakColinKatherineMarch2024.mp3"></audio>
-            </figure>
+            </StyledParagraph>
+            <StyledParagraph>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</StyledParagraph>
+            <StyledParagraph> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</StyledParagraph>
           </StyledDiv>
         </Container>
+
+        <Container id="recovery" className="recovery">
+          <StyledDiv className="column">
+            <ImageContainer>
+              <ImageIcons image={singingMe} width="333px" />
+            </ImageContainer>
+            <StyledHeading className="cover-heading">My Service</StyledHeading>
+            <StyledParagraph>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</StyledParagraph>
+          </StyledDiv>
+          <StyledDiv className="column">
+            <ImageContainer>
+              <ImageIcons image={drummerMe} width="333px" />
+            </ImageContainer>
+            <StyledHeading className="cover-heading">Shameless LA</StyledHeading>
+            <StyledParagraph>These brief shares were recorded with permission from the <a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a> We Win Wednesdays ACA meeting. </StyledParagraph>
+
+            <StyledDiv>
+              <figure>
+                <figcaption>Episode One - Cookie, Ris, Padawan Marc, Diyan, Veronica, January 2024</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+              </figure>
+              <figure>
+                <figcaption>Episode Two - Ivanne, Marc C and Bridget Y, February 2024</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeTwo_ShamelessLA_ACA.mp3.mp3"></audio>
+              </figure>
+              <figure>
+                <figcaption>Episode Three - Isaak, Colin & Katherine, March 2024</figcaption>
+                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeThree-IsaakColinKatherineMarch2024.mp3"></audio>
+              </figure>
+            </StyledDiv>
+          </StyledDiv>
+        </Container>
+
         <Container id="donate" className="donate">
-          <RoundedImageContainer>
-              <ImageIcons image={drummerMe} height="420px" />
-            </RoundedImageContainer>
+          <StyledDiv className="column">
+            <ImageContainer>
+              <ImageIcons image={pixarMe} width="333px" />
+            </ImageContainer>
+          </StyledDiv>
           <StyledDiv className="column">
             <StyledHeading className="cover-heading">Please Donate</StyledHeading>
-            <StyledDiv>
+            <StyledParagraph>
               Support my work and help me create more impactful audio projects by donating via Venmo or PayPal. Your support allows me to continue delivering quality voice-over content and to grow this career. Thank you for your support! You can donate through the following platforms:
-            </StyledDiv>
-            <StyledDiv className="column">
-              <StyledList className="donation-icons">
-                <li>
-                  <p>Venmo: @Kojie-Montanez<br />Last 4 : 6416</p>
-                  <ImageContainer>
-                    <ImageIcons image={venmo} height="200px" />
-                  </ImageContainer>
-                </li>
-                <li>
-                  <p><IconLinks href="https://www.paypal.com/paypalme/felixmontanez"  alt="paypal link" className="fa-brands fa-paypal fa-2xl" /></p>
-                  <ImageContainer>
-                    <ImageIcons image={paypal} height="200px" />
-                  </ImageContainer>
-                </li>
-              </StyledList>
-            </StyledDiv>
+            </StyledParagraph>
+
+            <StyledList className="donation-icons">
+              <li>
+                <p>Venmo: @Kojie-Montanez<br />Last 4 : 6416</p>
+                <ImageContainer>
+                  <ImageIcons image={venmo} height="200px" />
+                </ImageContainer>
+              </li>
+              <li>
+                <p><IconLinks href="https://www.paypal.com/paypalme/felixmontanez" alt="paypal link" className="fa-brands fa-paypal fa-2xl" /></p>
+                <ImageContainer>
+                  <ImageIcons image={paypal} height="200px" />
+                </ImageContainer>
+              </li>
+            </StyledList>
           </StyledDiv>
+
         </Container>
       </Wrapper>
     </div>

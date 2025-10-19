@@ -45,9 +45,10 @@ p.lead {
   color: black;
 }
 
-p#demo  {
-   margin-bottom: 20px;
+.intro {
+  max-width: fit-content;
 }
+
 
 p#recovery {
  margin-bottom: 20px;
