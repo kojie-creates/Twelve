@@ -5,14 +5,16 @@ import styled from "styled-components";
 import "../styles/index.css";
 
 import Avatar from "../components/Avatar";
-import kojie from "../assets/Kojie.jpg";
 import paypal from "../assets/paypal_qrcode.png";
 import venmo from "../assets/venmo_qrcode2.png";
+import ghibliMe from "../assets/me/GhibliMe.jpg";
+import cartoonMe from "../assets/me/cartoonMe.jpg";
+import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
+import singingMe from "../assets/me/GhibliSingingMe.jpg";
 
 const Wrapper = styled.div`
   padding: 0px;
-  margin: 0px;
-  
+  margin: 0px;  
 `;
 
 const Container = styled.div`
@@ -45,8 +47,7 @@ const StyledHeading = styled.h3`
 const StyledDiv = styled.div`
   padding: 10px;
   color: ${(props) => props.theme.color.on.surface};
-  font-family: ${(props) => props.theme.fonts.secondary};
-  
+  font-family: ${(props) => props.theme.fonts.secondary};  
 `;
 
 const RoundedImageContainer = styled.div`
@@ -79,6 +80,11 @@ const ImageIcons = styled(Avatar)`
   margin-right: 10px;
 `;
 
+const IconLinks = (props) => {
+  const { href, className, alt } = props;
+  return (<a href={href} target="_blank" rel="noopener noreferrer" alt={alt}><i className={className}></i></a>);
+};
+
 const StyledList = styled.ul`
   list-style-type: none;
   padding: 10px;
@@ -97,18 +103,12 @@ const StyledList = styled.ul`
 
 `;
 
-const IconLinks = (props) => {
-  const { href, className, alt } = props;
-  return (<a href={href} target="_blank" rel="noopener noreferrer" alt={alt}><i className={className}></i></a>);
-};
-
 const Landing = () => {
   return (
     <div className="text-left cover-container d-flex p-1 mx-auto flex-column">
       <Helmet>
         <title>Kojie : Voice Over Actor</title>
         <link rel="canonical" href="http://www.twelve.community" />
-
         <meta name="description" content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances." />
         <meta name="dkeywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
@@ -116,7 +116,7 @@ const Landing = () => {
         <Container id="intro" className="intro">
           <StyledDiv className="column">
             <RoundedImageContainer>
-              <ImageIcons image={kojie} height="420px" />
+              <ImageIcons image={cartoonMe} height="420px" />
             </RoundedImageContainer>
           </StyledDiv>
           <StyledDiv className="column">
@@ -136,7 +136,10 @@ const Landing = () => {
             </StyledList>
           </StyledDiv>
         </Container>
-        <Container id="demo" className="demo">
+        <Container id="demo" className="demo ">
+          <RoundedImageContainer>
+              <ImageIcons image={ghibliMe} height="420px" />
+            </RoundedImageContainer>
           <section className="inner cover">
             <StyledDiv>
               <StyledHeading className="cover-heading">Demos (In Progress)</StyledHeading>
@@ -174,6 +177,9 @@ const Landing = () => {
           </section>
         </Container>
         <Container id="recovery" className="recovery">
+          <RoundedImageContainer>
+              <ImageIcons image={singingMe} height="420px" />
+            </RoundedImageContainer>
           <StyledDiv>
             <StyledHeading className="cover-heading">Service</StyledHeading>
             <p>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</p>
@@ -195,6 +201,9 @@ const Landing = () => {
           </StyledDiv>
         </Container>
         <Container id="donate" className="donate">
+          <RoundedImageContainer>
+              <ImageIcons image={drummerMe} height="420px" />
+            </RoundedImageContainer>
           <StyledDiv className="column">
             <StyledHeading className="cover-heading">Please Donate</StyledHeading>
             <StyledDiv>
