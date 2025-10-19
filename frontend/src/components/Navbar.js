@@ -14,13 +14,13 @@ const Container = styled.div`
   justify-content: space-between;
   flex-direction: column;
   text-align: left;
-  background : transparent;
+  position: sticky;
+  top: 0;
+  padding: 10px auto;
   width: 100%;
   color: ${(props) => props.theme.color.on.background};
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin-left: 5px;
-    margin-right: auto;
   }
 `;
 
@@ -29,8 +29,7 @@ const StyledHeader = styled.header`
   position: sticky;
   top: 0;
   z-index: 1000;
-  min-height: 60px;
-  padding: auto 20px;
+  min-height: 40px;
   background : linear-gradient(to right,  ${(props) => props.theme.color.primary},  ${(props) => props.theme.color.secondary} );
 `;
 
