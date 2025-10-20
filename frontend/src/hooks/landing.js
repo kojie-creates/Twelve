@@ -125,7 +125,7 @@ const Landing = () => {
         <title>Kojie : Voice Over Actor</title>
         <link rel="canonical" href="http://www.twelve.community" />
         <meta name="description" content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances." />
-        <meta name="dkeywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
+        <meta name="keywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
 
@@ -204,27 +204,28 @@ const Landing = () => {
         <Container id="recovery" className="recovery">
           <StyledDiv className="column">
             <ImageContainer>
-              <ImageIcons image={singingMe} width="333px" />
+              <ImageIcons image={singingMe} width="420px" />
             </ImageContainer>
             <StyledHeading className="cover-heading">My Service</StyledHeading>
             <StyledParagraph>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</StyledParagraph>
           </StyledDiv>
           <StyledDiv className="column">
             <ImageContainer>
-              <ImageIcons image={drummerMe} width="333px" />
+              <ImageIcons image={drummerMe} width="420px" />
             </ImageContainer>
             <StyledHeading className="cover-heading">Shameless LA</StyledHeading>
             <StyledParagraph>These brief shares were recorded with permission from the <a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a> We Win Wednesdays ACA meeting. </StyledParagraph>
 
             <StyledDiv>
               <figure>
-                <figcaption>ACA Veronica - Sept 2025</figcaption>
-                <audio controls src={veronica}></audio>
-              </figure>
-              <figure>
                 <figcaption>ACA TD - August 2025</figcaption>
                 <audio controls src={TD}></audio>
               </figure>
+              <figure>
+                <figcaption>ACA Veronica - Sept 2025</figcaption>
+                <audio controls src={veronica}></audio>
+              </figure>
+              
               <figure>
                 <figcaption>ACA Hernan - October 2025</figcaption>
                 <audio controls src={hernan}></audio>

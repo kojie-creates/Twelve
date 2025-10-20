@@ -112,7 +112,7 @@ export const Navbar = () => {
                 <NavLink className="brand" href="/">
                   <ImageIcons image={kojie} height="50px" />
                 </NavLink>
-                 <BrandTitle>Kojie : Welcome</BrandTitle>
+                 <BrandTitle>Kojie : Voice Over</BrandTitle>
               </RoundedImageContainer>
              
             </StyledHeading>
