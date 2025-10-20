@@ -19,14 +19,9 @@ const App = () => {
         <Helmet>
           <title>Twelve : Welcome</title>
           <link rel="canonical" href="http://www.twelve.community" />
-          <meta
-            name="description"
-            content="To create a safe and secure platform for all to share personal stories of recovery, become involved with our communities through service, guiding others through sponsorship, and supporting our local and global communities through charitable donation."
-          />
-          <meta
-            name="keywords"
-            content="Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology"
-          />
+          <meta name="description" content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances." />
+          <meta name="keywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
+
         </Helmet>
         <ThemeProvider theme={lightTheme}>
           <Navbar />
