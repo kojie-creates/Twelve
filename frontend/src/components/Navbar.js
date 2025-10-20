@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useAuthStore } from "../contexts/auth";
-import kojie from "../assets/me/Kojie.jpg";
+import cartoonMe from "../assets/me/cartoonMe.jpg";
 import Avatar from "../components/Avatar";
 
 const Wrapper = styled.div`
@@ -110,15 +110,15 @@ export const Navbar = () => {
             <StyledHeading className="masthead-brand align-items-inline">
               <RoundedImageContainer>
                 <NavLink className="brand" href="/">
-                  <ImageIcons image={kojie} height="50px" />
+                  <ImageIcons image={cartoonMe} height="50px" />
                 </NavLink>
                  <BrandTitle>Kojie : Voice Over</BrandTitle>
               </RoundedImageContainer>
              
             </StyledHeading>
             <StyledNav className="nav nav-masthead justify-content-center">
-              <IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" />
-              <IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" />
+              <IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-lg" alt="mobile" />
+              <IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-lg" alt="email" />
               <NavLink className="nav-link" href="#demo">Demos</NavLink>
               <NavLink className="nav-link" href="#recovery">Service</NavLink>
               <NavLink className="nav-link" href="#donate">Donate</NavLink>

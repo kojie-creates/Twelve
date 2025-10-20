@@ -41,7 +41,7 @@ export const darkTheme = {
     surface: "#ffffffff", // sheets - cards, backgrounds
     background: "#000000ff", // background of app
     error: "#B00020", // for errors and warnings
-    link: "#805ad5",
+    link: "#000000ff",
     on: {
       primary: "#FFFFFF", // white text against primary color
       secondary: "#ffffffff", // white text against secondary color

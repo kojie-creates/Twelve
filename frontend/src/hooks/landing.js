@@ -5,14 +5,14 @@ import styled from "styled-components";
 import "../styles/index.css";
 
 import Avatar from "../components/Avatar";
+
 import paypal from "../assets/paypal_qrcode.png";
 import venmo from "../assets/venmo_qrcode2.png";
+import shamelessLogo from "../assets/shamelesslogo.jpg";
 import ghibliMe from "../assets/me/GhibliMe.jpg";
-import cozybed from '../assets/me/CozyNookBed.jpg';
-import cartoonMe from "../assets/me/cartoonMe.jpg";
+import kojie from "../assets/me/Kojie.jpg";
 import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
 import singingMe from "../assets/me/GhibliSingingMe.jpg";
-
 import hernan from "../assets/audio/hernan.mp3";
 import TD from "../assets/audio/TD.mp3";
 import veronica from "../assets/audio/veronica.mp3";
@@ -42,6 +42,7 @@ const Container = styled.div`
 
 const StyledDiv = styled.div`
   padding: 10px;
+  width: 100%;
   color: ${(props) => props.theme.color.on.surface};
   font-family: ${(props) => props.theme.fonts.secondary}; 
   @media screen and (max-width: 768px) {
@@ -68,6 +69,7 @@ const ImageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
   img {
     margin: auto 10px;
     border-radius: 15px;
@@ -128,143 +130,143 @@ const Landing = () => {
         <meta name="keywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
-
-        <Container id="intro" className="intro">
-          <StyledDiv className="column">
-            <RoundedImageContainer>
-              <ImageIcons image={cartoonMe} width="350px" />
-            </RoundedImageContainer>
-          </StyledDiv>
-          <StyledDiv className="column">
-            <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
-            <StyledParagraph>Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences.</StyledParagraph>
-            <StyledHeading className="cover-heading">Let's work together</StyledHeading>
-            <StyledList className="social-icons">
-              <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" /></li>
-              <li><IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
-              <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
-              <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
-              <li><IconLinks href="https://t.co/TK8wXby4uA" alt="instagram" className="fa-brands fa-instagram fa-2xl" /></li>
-              <li><IconLinks href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" alt="tiktok" className="fa-brands fa-tiktok fa-2xl" /></li>
-              <li><IconLinks href="https://x.com/kojiemontanez" alt="twitter, x" className="fa-brands fa-twitter fa-2xl" /></li>
-              <li><IconLinks href="https://www.linkedin.com/in/felixmontanez/" alt="linkedin" className="fa-brands fa-linkedin fa-2xl" /></li>
-              <li><IconLinks href="https://www.twitch.tv/thevoiceofkojie" className="fa-brands fa-twitch fa-2xl" alt="twitch" /></li>
-            </StyledList>
-          </StyledDiv>
-        </Container>
-
-        <Container className="demo ">
-          <StyledDiv className="column">
-            <ImageContainer>
-              <ImageIcons image={ghibliMe} width="333px" />
-            </ImageContainer>
-          </StyledDiv>
-          <StyledDiv className="column">
-            <StyledHeading>Demos</StyledHeading>
-            <StyledParagraph>
-              Commercial, Corporate, Character Animation, Magic Trailers &amp; Announcers, Calm Casual and Conversational.
-            </StyledParagraph>
-            <StyledDiv>
-              <figure>
-                <figcaption>Commercial</figcaption>
-                <audio controls src=""></audio>
-              </figure>
-              <figure>
-                <figcaption>Corporate</figcaption>
-                <audio controls src=""></audio>
-              </figure>
-              <figure>
-                <figcaption>Character Animation</figcaption>
-                <audio controls src=""></audio>
-              </figure>
-              <figure>
-                <figcaption>Magic Trailers &amp; Announcers</figcaption>
-                <audio controls src=""></audio>
-              </figure>
-              <figure>
-                <figcaption>Calm, Casual and Conversational</figcaption>
-                <audio controls src=""></audio>
-              </figure>
+        <StyledDiv className="column">
+          <Container id="intro" className="intro">
+            <StyledDiv className="column">
+              <RoundedImageContainer>
+                <ImageIcons image={kojie} width="333px" />
+              </ RoundedImageContainer>
             </StyledDiv>
-          </StyledDiv>
-          <StyledDiv className="column">
-            <StyledHeading className="cover-heading">VO Projects</StyledHeading>
-            <StyledDiv>
-              <figure>
-                <figcaption>&ldquo;We Win Wednesdays&rdquo; podcast On Spotify</figcaption>
-                <p><a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a></p>
-                <audio controls src=""></audio>
-              </figure>
+            <StyledDiv className="column">
+              <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
+              <StyledParagraph>Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences.</StyledParagraph>
+              <StyledHeading className="cover-heading">Let's work together</StyledHeading>
+              <StyledList className="social-icons">
+                <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" /></li>
+                <li><IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
+                <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
+                <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
+                <li><IconLinks href="https://t.co/TK8wXby4uA" alt="instagram" className="fa-brands fa-instagram fa-2xl" /></li>
+                <li><IconLinks href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" alt="tiktok" className="fa-brands fa-tiktok fa-2xl" /></li>
+                <li><IconLinks href="https://x.com/kojiemontanez" alt="twitter, x" className="fa-brands fa-twitter fa-2xl" /></li>
+                <li><IconLinks href="https://www.linkedin.com/in/felixmontanez/" alt="linkedin" className="fa-brands fa-linkedin fa-2xl" /></li>
+                <li><IconLinks href="https://www.twitch.tv/thevoiceofkojie" className="fa-brands fa-twitch fa-2xl" alt="twitch" /></li>
+              </StyledList>
             </StyledDiv>
-            <StyledParagraph>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</StyledParagraph>
-            <StyledParagraph> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</StyledParagraph>
-          </StyledDiv>
-        </Container>
+          </Container>
 
-        <Container id="recovery" className="recovery">
-          <StyledDiv className="column">
-            <ImageContainer>
-              <ImageIcons image={singingMe} width="420px" />
-            </ImageContainer>
-            <StyledHeading className="cover-heading">My Service</StyledHeading>
-            <StyledParagraph>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</StyledParagraph>
-          </StyledDiv>
-          <StyledDiv className="column">
-            <ImageContainer>
-              <ImageIcons image={drummerMe} width="420px" />
-            </ImageContainer>
-            <StyledHeading className="cover-heading">Shameless LA</StyledHeading>
-            <StyledParagraph>These brief shares were recorded with permission from the <a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a> We Win Wednesdays ACA meeting. </StyledParagraph>
-
-            <StyledDiv>
-              <figure>
-                <figcaption>ACA TD - August 2025</figcaption>
-                <audio controls src={TD}></audio>
-              </figure>
-              <figure>
-                <figcaption>ACA Veronica - Sept 2025</figcaption>
-                <audio controls src={veronica}></audio>
-              </figure>
-              
-              <figure>
-                <figcaption>ACA Hernan - October 2025</figcaption>
-                <audio controls src={hernan}></audio>
-              </figure>
+          <Container className="demo ">
+            <StyledDiv className="column">
+              <ImageContainer>
+                <ImageIcons image={ghibliMe} width="420px" />
+              </ImageContainer>
             </StyledDiv>
-          </StyledDiv>
-        </Container>
+            <StyledDiv className="column">
+              <StyledHeading>Voice Over Demos</StyledHeading>
+              <StyledParagraph>
+                Commercial, Corporate, Character Animation, Magic Trailers &amp; Announcers, Calm Casual and Conversational.
+              </StyledParagraph>
+              <StyledDiv>
+                <figure>
+                  <figcaption>Commercial</figcaption>
+                  <audio controls src=""></audio>
+                </figure>
+                <figure>
+                  <figcaption>Corporate</figcaption>
+                  <audio controls src=""></audio>
+                </figure>
+                <figure>
+                  <figcaption>Character Animation</figcaption>
+                  <audio controls src=""></audio>
+                </figure>
+                <figure>
+                  <figcaption>Magic Trailers &amp; Announcers</figcaption>
+                  <audio controls src=""></audio>
+                </figure>
+                <figure>
+                  <figcaption>Calm, Casual and Conversational</figcaption>
+                  <audio controls src=""></audio>
+                </figure>
+              </StyledDiv>
+            </StyledDiv>
+            <StyledDiv className="column">
+              <StyledHeading className="cover-heading">Voice Over Projects</StyledHeading>
+              <StyledDiv>
+                <figure>
+                  <figcaption>&ldquo;We Win Wednesdays&rdquo; podcast On Spotify</figcaption>
+                  <p><a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a></p>
+                  <audio controls src=""></audio>
+                </figure>
+              </StyledDiv>
+              <StyledParagraph>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</StyledParagraph>
+              <StyledParagraph> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</StyledParagraph>
+            </StyledDiv>
+          </Container>
 
-        <Container id="donate" className="donate">
-          <StyledDiv className="column">
-            <ImageContainer>
-              <ImageIcons image={cozybed} height="420px" />
-            </ImageContainer>
-          </StyledDiv>
-          <StyledDiv className="column">
-            <StyledHeading className="cover-heading">Please Donate</StyledHeading>
-            <StyledParagraph>
-              Support my work and help me create more impactful audio projects by donating via Venmo or PayPal. Your support allows me to continue delivering quality voice-over content and to grow this career. Thank you for your support! You can donate through the following platforms:
-            </StyledParagraph>
+          <Container id="recovery" className="recovery">
+            <StyledDiv className="column">
+              <ImageContainer>
+                <ImageIcons image={singingMe} width="420px" />
+              </ImageContainer>
+              <StyledHeading className="cover-heading">My Service</StyledHeading>
+              <StyledParagraph>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</StyledParagraph>
+            </StyledDiv>
+            <StyledDiv className="column">
+              <ImageContainer>
+                <ImageIcons image={shamelessLogo} width="420px" />
+              </ImageContainer>
+              <StyledHeading className="cover-heading">Shameless LA</StyledHeading>
+              <StyledParagraph>The following vignettes offer a variety of ACA experiences in recovery. These brief stories were voluntarily recorded during the <a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Los Angeles Shameless Adult Children of Alcoholics</a> meetings.</StyledParagraph>
+              <StyledParagraph>Join us Wednesdays at 7pm PST via Zoom. ID: 991-2976-1110 Passcode: 412232</StyledParagraph>
+              <StyledDiv>
+                <figure>
+                  <figcaption>ACA TD - August 2025</figcaption>
+                  <audio controls src={TD}></audio>
+                </figure>
+                <figure>
+                  <figcaption>ACA Veronica - Sept 2025</figcaption>
+                  <audio controls src={veronica}></audio>
+                </figure>
 
-            <StyledList className="donation-icons">
-               
-              <li>
-                <p>Venmo: @Kojie-Montanez<br />Last 4 : 6416</p>
-                <ImageContainer>
-                  <ImageIcons image={venmo} height="200px" />
-                </ImageContainer>
-              </li>
-              <li>
-                <p><IconLinks href="https://www.paypal.com/paypalme/felixmontanez" alt="paypal link" className="fa-brands fa-paypal fa-2xl" /></p>
-                <ImageContainer>
-                  <ImageIcons image={paypal} height="200px" />
-                </ImageContainer>
-              </li>
-            </StyledList>
-          </StyledDiv>
+                <figure>
+                  <figcaption>ACA Hernan - October 2025</figcaption>
+                  <audio controls src={hernan}></audio>
+                </figure>
+              </StyledDiv>
+            </StyledDiv>
+          </Container>
 
-        </Container>
+          <Container id="donate" className="donate">
+            <StyledDiv className="column">
+              <ImageContainer>
+                <ImageIcons image={drummerMe} width="420px" />
+              </ImageContainer>
+            </StyledDiv>
+            <StyledDiv className="column">
+              <StyledHeading className="cover-heading">Please Donate</StyledHeading>
+              <StyledParagraph>
+                Support my work and help me create more impactful audio projects by donating via Venmo or PayPal. Your support allows me to continue delivering quality voice-over content and to grow this career. Thank you for your support! You can donate through the following platforms:
+              </StyledParagraph>
 
+              <StyledList className="donation-icons">
+
+                <li>
+                  <p>Venmo: @Kojie-Montanez<br />Last 4 : 6416</p>
+                  <ImageContainer>
+                    <ImageIcons image={venmo} height="200px" />
+                  </ImageContainer>
+                </li>
+                <li>
+                  <p><IconLinks href="https://www.paypal.com/paypalme/felixmontanez" alt="paypal link" className="fa-brands fa-paypal fa-2xl" /></p>
+                  <ImageContainer>
+                    <ImageIcons image={paypal} height="200px" />
+                  </ImageContainer>
+                </li>
+              </StyledList>
+            </StyledDiv>
+
+          </Container>
+        </StyledDiv>
       </Wrapper>
     </div>
   );
