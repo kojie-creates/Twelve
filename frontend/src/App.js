@@ -3,13 +3,15 @@ import { Router } from "@reach/router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme } from "./contexts/theme";
+import { lightTheme } from "./contexts/theme";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Landing from "./hooks/landing";
 
 import { AuthContainer } from "./contexts/auth";
+
+import "./styles/index.css";
 
 const App = () => {
 

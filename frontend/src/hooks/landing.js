@@ -245,9 +245,9 @@ const Landing = () => {
               </ImageContainer>
             </StyledDiv>
             <StyledDiv className="column">
-              <StyledHeading className="cover-heading">Please Donate</StyledHeading>
+              <StyledHeading className="cover-heading">Donations welcome</StyledHeading>
               <StyledParagraph>
-                Support my work and help me create more impactful audio projects by donating via Venmo or PayPal. Your support allows me to continue delivering quality voice-over content and to grow this career. Thank you for your support! You can donate through the following platforms:
+                Donate today to support my work which will help me create more impactful audio projects by donating via Venmo or PayPal. Your support allows me to continue delivering quality voice-over content and to grow this career. Thank you for your support! You can donate through the following platforms:
               </StyledParagraph>
 
               <StyledList className="donation-icons">
@@ -264,6 +264,17 @@ const Landing = () => {
                     <ImageIcons image={paypal} height="200px" />
                   </ImageContainer>
                 </li>
+              </StyledList>
+              <StyledList className="social-icons">
+                <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" /></li>
+                <li><IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
+                <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
+                <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
+                <li><IconLinks href="https://t.co/TK8wXby4uA" alt="instagram" className="fa-brands fa-instagram fa-2xl" /></li>
+                <li><IconLinks href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" alt="tiktok" className="fa-brands fa-tiktok fa-2xl" /></li>
+                <li><IconLinks href="https://x.com/kojiemontanez" alt="twitter, x" className="fa-brands fa-twitter fa-2xl" /></li>
+                <li><IconLinks href="https://www.linkedin.com/in/felixmontanez/" alt="linkedin" className="fa-brands fa-linkedin fa-2xl" /></li>
+                <li><IconLinks href="https://www.twitch.tv/thevoiceofkojie" className="fa-brands fa-twitch fa-2xl" alt="twitch" /></li>
               </StyledList>
             </StyledDiv>
 
