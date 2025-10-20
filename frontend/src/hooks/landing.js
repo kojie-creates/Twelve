@@ -6,13 +6,16 @@ import "../styles/index.css";
 
 import Avatar from "../components/Avatar";
 import paypal from "../assets/paypal_qrcode.png";
-import pixarMe from "../assets/me/PixarMe.jpg";
 import venmo from "../assets/venmo_qrcode2.png";
 import ghibliMe from "../assets/me/GhibliMe.jpg";
 import cozybed from '../assets/me/CozyNookBed.jpg';
 import cartoonMe from "../assets/me/cartoonMe.jpg";
 import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
 import singingMe from "../assets/me/GhibliSingingMe.jpg";
+
+import hernan from "../assets/audio/hernan.mp3";
+import TD from "../assets/audio/TD.mp3";
+import veronica from "../assets/audio/veronica.mp3";
 
 const Wrapper = styled.div`
   padding: 0px;
@@ -125,6 +128,7 @@ const Landing = () => {
         <meta name="dkeywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
+
         <Container id="intro" className="intro">
           <StyledDiv className="column">
             <RoundedImageContainer>
@@ -157,26 +161,29 @@ const Landing = () => {
           </StyledDiv>
           <StyledDiv className="column">
             <StyledHeading>Demos</StyledHeading>
+            <StyledParagraph>
+              Commercial, Corporate, Character Animation, Magic Trailers &amp; Announcers, Calm Casual and Conversational.
+            </StyledParagraph>
             <StyledDiv>
               <figure>
                 <figcaption>Commercial</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                <audio controls src=""></audio>
               </figure>
               <figure>
                 <figcaption>Corporate</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                <audio controls src=""></audio>
               </figure>
               <figure>
                 <figcaption>Character Animation</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                <audio controls src=""></audio>
               </figure>
               <figure>
                 <figcaption>Magic Trailers &amp; Announcers</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                <audio controls src=""></audio>
               </figure>
               <figure>
                 <figcaption>Calm, Casual and Conversational</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                <audio controls src=""></audio>
               </figure>
             </StyledDiv>
           </StyledDiv>
@@ -186,7 +193,7 @@ const Landing = () => {
               <figure>
                 <figcaption>&ldquo;We Win Wednesdays&rdquo; podcast On Spotify</figcaption>
                 <p><a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a></p>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                <audio controls src=""></audio>
               </figure>
             </StyledDiv>
             <StyledParagraph>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</StyledParagraph>
@@ -211,16 +218,16 @@ const Landing = () => {
 
             <StyledDiv>
               <figure>
-                <figcaption>Episode One - Cookie, Ris, Padawan Marc, Diyan, Veronica, January 2024</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeOne_ShamelessLA_January2024.mp3"></audio>
+                <figcaption>ACA Veronica - Sept 2025</figcaption>
+                <audio controls src={veronica}></audio>
               </figure>
               <figure>
-                <figcaption>Episode Two - Ivanne, Marc C and Bridget Y, February 2024</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeTwo_ShamelessLA_ACA.mp3.mp3"></audio>
+                <figcaption>ACA TD - August 2025</figcaption>
+                <audio controls src={TD}></audio>
               </figure>
               <figure>
-                <figcaption>Episode Three - Isaak, Colin & Katherine, March 2024</figcaption>
-                <audio controls src="https://twelve-app.s3.us-west-1.amazonaws.com/EpisodeThree-IsaakColinKatherineMarch2024.mp3"></audio>
+                <figcaption>ACA Hernan - October 2025</figcaption>
+                <audio controls src={hernan}></audio>
               </figure>
             </StyledDiv>
           </StyledDiv>
@@ -256,6 +263,7 @@ const Landing = () => {
           </StyledDiv>
 
         </Container>
+
       </Wrapper>
     </div>
   );
