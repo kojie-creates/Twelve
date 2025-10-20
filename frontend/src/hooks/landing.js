@@ -24,6 +24,7 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
+max-width: fit-content;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -41,6 +42,7 @@ const Container = styled.div`
 `;
 
 const StyledDiv = styled.div`
+ max-width: fit-content;
   padding: 10px;
   width: 100%;
   color: ${(props) => props.theme.color.on.surface};
