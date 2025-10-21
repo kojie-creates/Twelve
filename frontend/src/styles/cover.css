@@ -2,56 +2,29 @@
  * Globals
  */
 
- .alfa-slab-one-regular {
+.alfa-slab-one-regular {
   font-family: "Alfa Slab One", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none;
-  /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
-/*
- * Base structure
- */
-
 html,
 body {
-
   display: -ms-flexbox;
   display: flex;
 }
 
 .cover-container {
- padding: 0px;
- margin: 0px;
- top: 0px;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
 }
 
+.cover-heading {
+  font-weight: bold;
 
-/*
- * Header
- */
+}
 
- .cover-heading {
-   font-weight: bold;
-   color: white;
- }
 .masthead {
   margin-bottom: 2rem;
 }
@@ -63,7 +36,6 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
- 
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
@@ -78,7 +50,6 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
   border-bottom-color: #fff;
 }
 
@@ -92,10 +63,6 @@ body {
   }
 }
 
-
-/*
- * Cover
- */
 .cover {
   padding: 1rem 1.5rem;
 }
@@ -105,18 +72,17 @@ body {
   font-weight: 700;
 }
 
-
 /*
  * Footer
  */
 .mastfoot {
-  color: rgba(255, 255, 255, .5);
   width: 100vw;
 }
 
-/* .inner.cover  {
+.inner.cover {
   min-height: 100vh;
-} */
- .column {
+}
+
+.column {
   flex: 1;
- }
+}

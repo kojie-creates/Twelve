@@ -34,10 +34,9 @@ max-width: fit-content;
   margin: 10px 10px;
   text-align: left;
   background : ${(props) => props.theme.color.surface};
-  color: ${(props) => props.theme.color.on.background};
+  color: ${(props) => props.theme.color.on.surface};
   @media screen and (max-width: 768px) {
     flex-direction: column;
-  
   }
 `;
 
@@ -45,7 +44,6 @@ const StyledDiv = styled.div`
  max-width: fit-content;
   padding: 10px;
   width: 100%;
-  color: ${(props) => props.theme.color.on.surface};
   font-family: ${(props) => props.theme.fonts.secondary}; 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -60,9 +58,11 @@ const RoundedImageContainer = styled.div`
   align-items: center;
   height: 100%;
   padding: 10px;
+ 
   img {
     margin: auto 10px;
     border-radius: 50%;
+     border: 10px solid ${(props) => props.theme.color.primary}; 
   }
 `;
 
@@ -84,11 +84,10 @@ const ImageIcons = styled(Avatar)`
 `;
 
 const StyledHeading = styled.h3`
-  color: ${(props) => props.theme.color.on.header};
-  font-family: "Alfa Slab One", serif;
+  color: ${(props) => props.theme.color.header};
+  font-family: ${(props) => props.theme.fonts.main};
   font-weight: 400;
   font-style: normal;
-  font-family: ${(props) => props.theme.fonts.main};
   font-size: 48px;
   padding-top: 10px;
 `;
@@ -109,9 +108,12 @@ const StyledList = styled.ul`
   padding: 10px;
   margin: 0px;
   li {
-  padding: 10px; 
+    padding: 10px; 
     display: inline-block;
     margin-right: 10px;
+    a {
+      color: ${(props) => props.theme.color.link};
+    }
   }
     li.donation-icons {
     min-height: 300px;
@@ -195,8 +197,9 @@ const Landing = () => {
               <StyledHeading className="cover-heading">Voice Over Projects</StyledHeading>
               <StyledDiv>
                 <figure>
-                  <figcaption>&ldquo;We Win Wednesdays&rdquo; podcast On Spotify</figcaption>
-                  <p><a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a></p>
+                  <figcaption>
+                    <p>&ldquo;We Win Wednesdays&rdquo; <a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a> podcast On Spotify</p></figcaption>
+
                   <audio controls src=""></audio>
                 </figure>
               </StyledDiv>
@@ -264,17 +267,6 @@ const Landing = () => {
                     <ImageIcons image={paypal} height="200px" />
                   </ImageContainer>
                 </li>
-              </StyledList>
-              <StyledList className="social-icons">
-                <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" /></li>
-                <li><IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
-                <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
-                <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
-                <li><IconLinks href="https://t.co/TK8wXby4uA" alt="instagram" className="fa-brands fa-instagram fa-2xl" /></li>
-                <li><IconLinks href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" alt="tiktok" className="fa-brands fa-tiktok fa-2xl" /></li>
-                <li><IconLinks href="https://x.com/kojiemontanez" alt="twitter, x" className="fa-brands fa-twitter fa-2xl" /></li>
-                <li><IconLinks href="https://www.linkedin.com/in/felixmontanez/" alt="linkedin" className="fa-brands fa-linkedin fa-2xl" /></li>
-                <li><IconLinks href="https://www.twitch.tv/thevoiceofkojie" className="fa-brands fa-twitch fa-2xl" alt="twitch" /></li>
               </StyledList>
             </StyledDiv>
 

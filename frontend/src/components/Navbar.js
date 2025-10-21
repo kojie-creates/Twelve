@@ -30,8 +30,8 @@ const StyledHeader = styled.header`
   top: 0;
   z-index: 1000;
   min-height: 40px;
-  background :  ${(props) => props.theme.color.header};
-  color: ${(props) => props.theme.color.on.header};
+  background :  ${(props) => props.theme.color.nav};
+  color: ${(props) => props.theme.color.on.nav};
 `;
 
 const StyledNav = styled.nav`
@@ -59,7 +59,7 @@ const NavLink = styled.a`
   text-decoration: none;
   padding: 5px;
   font-family: ${(props) => props.theme.fonts.secondary};
-  color: ${(props) => props.theme.color.on.nav};
+  color: ${(props) => props.theme.color.surface};
   &:hover {
     color: ${(props) => props.theme.color.on.hover};
   }
