@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-max-width: fit-content;
+  max-width: fit-content;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -131,7 +131,7 @@ const Landing = () => {
         <title>Kojie : Voice Over Actor</title>
         <link rel="canonical" href="http://www.twelve.community" />
         <meta name="description" content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances." />
-        <meta name="keywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over, narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
+        <meta name="keywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over,  narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
         <StyledDiv className="column">
@@ -167,7 +167,7 @@ const Landing = () => {
             <StyledDiv className="column">
               <StyledHeading> Demos</StyledHeading>
               <StyledParagraph>
-                Commercial, Corporate, Character Animation, Magic Trailers &amp; Announcers, Calm Casual and Conversational.
+                tv promo, commercial, animation, magic trailers &amp; more.
               </StyledParagraph>
               <StyledDiv>
                 <figure>
