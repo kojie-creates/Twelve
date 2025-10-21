@@ -11,6 +11,7 @@ import venmo from "../assets/venmo_qrcode2.png";
 import shamelessLogo from "../assets/shamelesslogo.jpg";
 import ghibliMe from "../assets/me/GhibliMe.jpg";
 import kojie from "../assets/me/Kojie.jpg";
+import pixarMe from "../assets/me/PixarMe.jpg";
 import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
 import singingMe from "../assets/me/GhibliSingingMe.jpg";
 import hernan from "../assets/audio/hernan.mp3";
@@ -58,7 +59,6 @@ const RoundedImageContainer = styled.div`
   align-items: center;
   height: 100%;
   padding: 10px;
- 
   img {
     margin: auto 10px;
     border-radius: 50%;
@@ -158,15 +158,14 @@ const Landing = () => {
               </StyledList>
             </StyledDiv>
           </Container>
-
           <Container className="demo ">
             <StyledDiv className="column">
               <ImageContainer>
-                <ImageIcons image={ghibliMe} width="420px" />
+                <ImageIcons image={drummerMe} width="420px" />
               </ImageContainer>
             </StyledDiv>
             <StyledDiv className="column">
-              <StyledHeading>Voice Over Demos</StyledHeading>
+              <StyledHeading> Demos</StyledHeading>
               <StyledParagraph>
                 Commercial, Corporate, Character Animation, Magic Trailers &amp; Announcers, Calm Casual and Conversational.
               </StyledParagraph>
@@ -194,26 +193,20 @@ const Landing = () => {
               </StyledDiv>
             </StyledDiv>
             <StyledDiv className="column">
-              <StyledHeading className="cover-heading">Voice Over Projects</StyledHeading>
-              <StyledDiv>
-                <figure>
-                  <figcaption>
-                    <p>&ldquo;We Win Wednesdays&rdquo; <a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a> podcast On Spotify</p></figcaption>
-
-                  <audio controls src=""></audio>
-                </figure>
+              <StyledHeading className="cover-heading">VO Projects</StyledHeading>
+              <StyledDiv className="column"> 
+                <p>&ldquo;We Win Wednesdays&rdquo; <a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a> podcast On Spotify</p>
               </StyledDiv>
               <StyledParagraph>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</StyledParagraph>
               <StyledParagraph> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</StyledParagraph>
             </StyledDiv>
           </Container>
-
           <Container id="recovery" className="recovery">
             <StyledDiv className="column">
               <ImageContainer>
-                <ImageIcons image={singingMe} width="420px" />
+                <ImageIcons image={singingMe} height="420px" />
               </ImageContainer>
-              <StyledHeading className="cover-heading">My Service</StyledHeading>
+              <StyledHeading className="cover-heading"> Service</StyledHeading>
               <StyledParagraph>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</StyledParagraph>
             </StyledDiv>
             <StyledDiv className="column">
@@ -232,7 +225,6 @@ const Landing = () => {
                   <figcaption>ACA Veronica - Sept 2025</figcaption>
                   <audio controls src={veronica}></audio>
                 </figure>
-
                 <figure>
                   <figcaption>ACA Hernan - October 2025</figcaption>
                   <audio controls src={hernan}></audio>
@@ -240,21 +232,19 @@ const Landing = () => {
               </StyledDiv>
             </StyledDiv>
           </Container>
-
           <Container id="donate" className="donate">
             <StyledDiv className="column">
               <ImageContainer>
-                <ImageIcons image={drummerMe} width="420px" />
+                <ImageIcons image={pixarMe} height="420px" />
               </ImageContainer>
             </StyledDiv>
             <StyledDiv className="column">
               <StyledHeading className="cover-heading">Donations welcome</StyledHeading>
               <StyledParagraph>
-                Donate today to support my work which will help me create more impactful audio projects by donating via Venmo or PayPal. Your support allows me to continue delivering quality voice-over content and to grow this career. Thank you for your support! You can donate through the following platforms:
+                Please consider investing in me to support my voice over work to create more impactful audio projects such as reading for the blind, voice cloning for accessibility and more.
+                Your generous contributions allow me to have the freedom to continue delivering quality voice-over content with humor, love and respect. You can donate through the following platforms:
               </StyledParagraph>
-
               <StyledList className="donation-icons">
-
                 <li>
                   <p>Venmo: @Kojie-Montanez<br />Last 4 : 6416</p>
                   <ImageContainer>
@@ -269,7 +259,6 @@ const Landing = () => {
                 </li>
               </StyledList>
             </StyledDiv>
-
           </Container>
         </StyledDiv>
       </Wrapper>
