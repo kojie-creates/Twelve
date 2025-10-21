@@ -6,10 +6,10 @@ import "../styles/index.css";
 
 import Avatar from "../components/Avatar";
 
-import paypal from "../assets/paypal_qrcode.png";
-import venmo from "../assets/venmo_qrcode2.png";
-import shamelessLogo from "../assets/shamelesslogo.jpg";
-import ghibliMe from "../assets/me/GhibliMe.jpg";
+import paypal from "../assets/donation/paypal_qrcode.png";
+import venmo from "../assets/donation/venmo_qrcode2.png";
+import shamelessLogo from "../assets/logos/shamelesslogo.jpg";
+ 
 import kojie from "../assets/me/Kojie.jpg";
 import pixarMe from "../assets/me/PixarMe.jpg";
 import drummerMe from "../assets/me/GhibliDrummerMe.jpg";

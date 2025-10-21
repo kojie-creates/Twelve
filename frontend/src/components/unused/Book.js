@@ -25,8 +25,8 @@ const Book = (props) => {
             <img src={props.image} height="200px" />
         </LeftContainer>
         <RightContainer>
-            <h2 className="text-left">{props.title}</h2>
-            <h4 className="text-left">{props.subtitle}</h4>
+            <h4 className="text-left">{props.title}</h4>
+            <h5 className="text-left">{props.subtitle}</h5>
         </RightContainer>
       </MainContainer>
     </Fragment>

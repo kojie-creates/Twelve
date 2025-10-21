@@ -38,6 +38,7 @@ const IconLinks = (props) => {
   const { href, className, alt } = props;
   return (<a href={href} target="_blank" rel="noopener noreferrer" alt={alt}><i className={className}></i></a>);
 };
+
 const StyledList = styled.ul`
   list-style-type: none;
   padding: 10px;
@@ -56,14 +57,12 @@ const StyledList = styled.ul`
     display: inline-block;
     margin-bottom: 20px;
   }
-
 `;
 
 const Footer = () => {
   return (
     <footer className="mastfoot text-center">
       <NavContainer>
-
         <StyledList className="social-icons">
           <li><NavLink className="link" href="/">&copy; 2025 Twelve.Community</NavLink></li>
           <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-lg" alt="mobile" /></li>
@@ -77,7 +76,6 @@ const Footer = () => {
           <li><IconLinks href="https://www.twitch.tv/thevoiceofkojie" className="fa-brands fa-twitch fa-lg" alt="twitch" /></li>
         </StyledList>
       </NavContainer>
-
     </footer>
   );
 };
