@@ -188,10 +188,6 @@ const Landing = () => {
                     <figcaption>Television Promo: Demos that build excitement, suspense, or intrigue for TV shows and events</figcaption>
                     <audio controls src=""></audio>
                   </figure>
-                  <figure>
-                    <figcaption>Video Game/Character Voice: Character voices, accents, and narration demos for video games and animations</figcaption>
-                    <audio controls src=""></audio>
-                  </figure>
                 </StyledDiv>
               </StyledParagraph>
 
