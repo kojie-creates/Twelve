@@ -143,7 +143,7 @@ const Landing = () => {
             </StyledDiv>
             <StyledDiv className="column">
               <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
-              <StyledParagraph>Renowned for a deep, smooth, and soothing voice, I specialize in bringing warmth, clarity, and professionalism to every project. Whether it's commercial, narration, or animation voice-over work, I deliver captivating performances that engage and relax audiences.</StyledParagraph>
+              <StyledParagraph>With my deep, smooth, and soothing voice, I aim to bring warmth, clarity, and professionalism to your projects—helping your message connect authentically with your audience. Whether for commercials, narration, or animation, I am dedicated to delivering performances that captivate and leave a lasting impression. I would love to bring your vision to life!  </StyledParagraph>
               <StyledHeading className="cover-heading">Let's work together</StyledHeading>
               <StyledList className="social-icons">
                 <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" /></li>
@@ -242,8 +242,7 @@ const Landing = () => {
             <StyledDiv className="column">
               <StyledHeading className="cover-heading">Donations welcome</StyledHeading>
               <StyledParagraph>
-                Please consider investing in me to support my voice over work to create more impactful audio projects such as reading for the blind, voice cloning for accessibility and more.
-                Your generous contributions allow me to have the freedom to continue delivering quality voice-over content with humor, love and respect. You can donate through the following platforms:
+                Hey, if you are moved to support my voice-over journey, it really means the world. Your kindness helps me keep making impactful stuff like readings for the blind, voice cloning for accessibility, and more. Every little bit allows me to keep doing what I love — with humor, love, and respect. Thanks so much for being part of this with me — it truly makes a difference!  You can donate through the following platforms:
               </StyledParagraph>
               <StyledList className="donation-icons">
                 <li>
