@@ -199,6 +199,7 @@ const Landing = () => {
               </StyledDiv>
               <StyledParagraph>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</StyledParagraph>
               <StyledParagraph> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</StyledParagraph>
+              <StyledParagraph>Eleven Labs : Voice Clone used by 755 users with over 1.4 millions of characters used within the last 3 months.</StyledParagraph>
             </StyledDiv>
           </Container>
           <Container id="recovery" className="recovery">
@@ -206,8 +207,8 @@ const Landing = () => {
               <ImageContainer>
                 <ImageIcons image={singingMe} height="420px" />
               </ImageContainer>
-              <StyledHeading className="cover-heading"> Service</StyledHeading>
-              <StyledParagraph>Hi, I'm Kojie, an adult child of an alcoholic from a dysfunctional home currently in ACA recovery as well as a dedicated voice-over actor based in Los Angeles, California. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</StyledParagraph>
+              <StyledHeading className="cover-heading">Service</StyledHeading>
+              <StyledParagraph>Hi, I'm Kojie, a dedicated voice-over actor based in Los Angeles, California. I'm also a recovering adult child of an alcoholic from a dysfunctional home currently in ACA recovery. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for twelve step recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</StyledParagraph>
             </StyledDiv>
             <StyledDiv className="column">
               <ImageContainer>
