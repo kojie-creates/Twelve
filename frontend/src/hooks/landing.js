@@ -9,7 +9,7 @@ import Avatar from "../components/Avatar";
 import paypal from "../assets/donation/paypal_qrcode.png";
 import venmo from "../assets/donation/venmo_qrcode2.png";
 import shamelessLogo from "../assets/logos/shamelesslogo.jpg";
- 
+
 import kojie from "../assets/me/Kojie.jpg";
 import pixarMe from "../assets/me/PixarMe.jpg";
 import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
@@ -131,7 +131,7 @@ const Landing = () => {
         <title>Kojie : Voice Over Actor</title>
         <link rel="canonical" href="http://www.twelve.community" />
         <meta name="description" content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances." />
-        <meta name="keywords" content="Kojie, voice-over actor, Los Angeles, voice talent, commercial voice-over,  narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
+        <meta name="keywords" content="Kojie, voice over, voice over actor, voice-over actor, Los Angeles, voice talent, commercial voice-over,  narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
         <StyledDiv className="column">
@@ -167,34 +167,38 @@ const Landing = () => {
             <StyledDiv className="column">
               <StyledHeading> Demos</StyledHeading>
               <StyledParagraph>
-                tv promo, commercial, animation, magic trailers &amp; more.
+                <StyledDiv>
+                  <figure>
+                    <figcaption>Commercial Reel: A versatile collection of voiceovers for print, TV, and online ads across lifestyle, automotive, and more</figcaption>
+                    <audio controls src=""></audio>
+                  </figure>
+                  <figure>
+                    <figcaption>Industrial/Corporate Demos: Corporate and instructional voice samples showing professionalism and clarity.</figcaption>
+                    <audio controls src=""></audio>
+                  </figure>
+                  <figure>
+                    <figcaption>Narration Demos: Voice demos for documentaries, e-learning, and audiobooks highlighting storytelling and clarity</figcaption>
+                    <audio controls src=""></audio>
+                  </figure>
+                  <figure>
+                    <figcaption>Radio Imaging: Short, energetic clips for radio branding—station IDs, promos, and signature sounds</figcaption>
+                    <audio controls src=""></audio>
+                  </figure>
+                  <figure>
+                    <figcaption>Television Promo: Demos that build excitement, suspense, or intrigue for TV shows and events</figcaption>
+                    <audio controls src=""></audio>
+                  </figure>
+                  <figure>
+                    <figcaption>Video Game/Character Voice: Character voices, accents, and narration demos for video games and animations</figcaption>
+                    <audio controls src=""></audio>
+                  </figure>
+                </StyledDiv>
               </StyledParagraph>
-              <StyledDiv>
-                <figure>
-                  <figcaption>Commercial</figcaption>
-                  <audio controls src=""></audio>
-                </figure>
-                <figure>
-                  <figcaption>Corporate</figcaption>
-                  <audio controls src=""></audio>
-                </figure>
-                <figure>
-                  <figcaption>Character Animation</figcaption>
-                  <audio controls src=""></audio>
-                </figure>
-                <figure>
-                  <figcaption>Magic Trailers &amp; Announcers</figcaption>
-                  <audio controls src=""></audio>
-                </figure>
-                <figure>
-                  <figcaption>Calm, Casual and Conversational</figcaption>
-                  <audio controls src=""></audio>
-                </figure>
-              </StyledDiv>
+
             </StyledDiv>
             <StyledDiv className="column">
               <StyledHeading className="cover-heading">VO Projects</StyledHeading>
-              <StyledDiv className="column"> 
+              <StyledDiv className="column">
                 <p>&ldquo;We Win Wednesdays&rdquo; <a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a> podcast On Spotify</p>
               </StyledDiv>
               <StyledParagraph>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</StyledParagraph>
