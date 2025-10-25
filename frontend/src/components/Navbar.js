@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useAuthStore } from "../contexts/auth";
-import cartoonMe from "../assets/me/cartoonMe.jpg";
+import animeMe from "../assets/me/animeMe.jpg";
 import Avatar from "../components/Avatar";
 
 const Wrapper = styled.div`
@@ -110,7 +110,7 @@ export const Navbar = () => {
             <StyledHeading className="masthead-brand align-items-inline">
               <RoundedImageContainer>
                 <NavLink className="brand" href="/">
-                  <ImageIcons image={cartoonMe} height="50px" />
+                  <ImageIcons image={animeMe} height="50px" />
                 </NavLink>
                  <BrandTitle>Kojie : Voice Over</BrandTitle>
               </RoundedImageContainer>

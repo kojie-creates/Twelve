@@ -10,6 +10,8 @@ import paypal from "../assets/donation/paypal_qrcode.png";
 import venmo from "../assets/donation/venmo_qrcode2.png";
 import shamelessLogo from "../assets/logos/shamelesslogo.jpg";
 
+import animeMe from '../assets/me/animeMe.jpg';
+import kurtz from '../assets/me/result.jpeg';
 import kojie from "../assets/me/Kojie.jpg";
 import pixarMe from "../assets/me/PixarMe.jpg";
 import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
@@ -53,16 +55,13 @@ const StyledDiv = styled.div`
 `;
 
 const RoundedImageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+   
   align-items: center;
-  height: 100%;
-  padding: 10px;
+   
   img {
     margin: auto 10px;
-    border-radius: 50%;
-     border: 10px solid ${(props) => props.theme.color.primary}; 
+    border-radius: 50%; 
+    border: 10px solid ${(props) => props.theme.color.primary}; 
   }
 `;
 
@@ -75,6 +74,7 @@ const ImageContainer = styled.div`
   img {
     margin: auto 10px;
     border-radius: 15px;
+    border: 10px solid ${(props) => props.theme.color.primary}; 
   }
 `;
 
@@ -135,10 +135,11 @@ const Landing = () => {
       </Helmet>
       <Wrapper>
         <StyledDiv className="column">
+
           <Container id="intro" className="intro">
             <StyledDiv className="column">
               <RoundedImageContainer>
-                <ImageIcons image={kojie} width="333px" />
+                <ImageIcons image={animeMe} width="333px" />
               </ RoundedImageContainer>
             </StyledDiv>
             <StyledDiv className="column">
@@ -158,14 +159,14 @@ const Landing = () => {
               </StyledList>
             </StyledDiv>
           </Container>
-          <Container className="demo ">
+          <Container className="demo">
             <StyledDiv className="column">
               <ImageContainer>
-                <ImageIcons image={drummerMe} width="420px" />
+                <ImageIcons image={singingMe} height="420px" />
               </ImageContainer>
             </StyledDiv>
             <StyledDiv className="column">
-              <StyledHeading> Demos</StyledHeading>
+              <StyledHeading>Demos</StyledHeading>
               <StyledParagraph>
                 <StyledDiv>
                   <figure>
@@ -193,8 +194,14 @@ const Landing = () => {
 
             </StyledDiv>
             <StyledDiv className="column">
-              <StyledHeading className="cover-heading">VO Projects</StyledHeading>
               <StyledDiv className="column">
+                <ImageContainer>
+                  <ImageIcons image={drummerMe} width="420px" />
+                </ImageContainer>
+              </StyledDiv>
+
+              <StyledDiv className="column">
+                <StyledHeading className="cover-heading">VO Projects</StyledHeading>
                 <p>&ldquo;We Win Wednesdays&rdquo; <a href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a> podcast On Spotify</p>
               </StyledDiv>
               <StyledParagraph>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</StyledParagraph>
@@ -204,10 +211,10 @@ const Landing = () => {
           </Container>
           <Container id="recovery" className="recovery">
             <StyledDiv className="column">
-              <ImageContainer>
-                <ImageIcons image={singingMe} height="420px" />
-              </ImageContainer>
-              <StyledHeading className="cover-heading">Service</StyledHeading>
+              <RoundedImageContainer>
+                <ImageIcons image={kojie} height="420px" />
+              </RoundedImageContainer>
+              <StyledHeading className="cover-heading">About Me</StyledHeading>
               <StyledParagraph>Hi, I'm Kojie, a dedicated voice-over actor based in Los Angeles, California. I'm also a recovering adult child of an alcoholic from a dysfunctional home currently in ACA recovery. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for twelve step recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</StyledParagraph>
             </StyledDiv>
             <StyledDiv className="column">

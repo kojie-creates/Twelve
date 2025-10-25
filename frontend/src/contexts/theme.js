@@ -5,13 +5,13 @@ export const lightTheme = {
   color: {
     primary: "#805ad5", //   represents colors of brand
     secondary: "#302053ff", // tron represent accent colors of brand
-    tertiary: "#5ad580",
-    header: "#505050ff",
-    nav: "#505050ff",
-    surface: "#FFFFFF", // sheets - cards, backgrounds
-    background: " #b9b9b9ff", // background of app
+    tertiary: "#6133c9",
+    header: "#805ad5",
+    nav: "#582eb5",
+    surface: "#af97e5", // sheets - cards, backgrounds
+    background: " #7046d0", // background of app
     error: "#B00020", // for errors and warnings
-    link: "#805ad5",
+    link: "#FFF",
     on: {
       primary: "#FFFFFF", // white text against primary color
       secondary: "#ffffffff", // white text against secondary color
@@ -19,10 +19,10 @@ export const lightTheme = {
       nav: "#FFFFFF",
       header: "#FFFFFF",
       hover: "#805ad5",
-      surface: "#505050ff", // black text on white surface
+      surface: "#FFFFFF", // black text on white surface
       background: "#000000", // black text on white background
       error: "#ffffffff", // white text on red error background
-      link: "#805ad5",
+      link: "#FFF",
     },
   },
   fonts: {
