@@ -137,7 +137,7 @@ const Landing = () => {
         <meta name="keywords" content="Kojie, voice over, voice over actor, voice-over actor, Los Angeles, voice talent, commercial voice-over,  narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
-        <StyledDiv className="column">
+        <StyledDiv className="container-fluid column">
 
           <Container id="intro" className="intro">
             <StyledDiv className="column">
