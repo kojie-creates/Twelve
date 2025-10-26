@@ -17,6 +17,9 @@ import pixarMe from "../assets/me/PixarMe.jpg";
 import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
 import singingMe from "../assets/me/GhibliSingingMe.jpg";
 import hernan from "../assets/audio/hernan.mp3";
+
+import s25test from '../assets/audio/S25TestAI.mp3';
+
 import TD from "../assets/audio/TD.mp3";
 import veronica from "../assets/audio/veronica.mp3";
 
@@ -171,7 +174,7 @@ const Landing = () => {
                 <StyledDiv>
                   <figure>
                     <figcaption>Commercial Reel: A versatile collection of voiceovers for print, TV, and online ads across lifestyle, automotive, and more</figcaption>
-                    <audio controls src=""></audio>
+                    <audio controls src={s25test}></audio>
                   </figure>
                   <figure>
                     <figcaption>Industrial/Corporate Demos: Corporate and instructional voice samples showing professionalism and clarity.</figcaption>
