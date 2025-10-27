@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useAuthStore } from "../contexts/auth";
-import animeMe from "../assets/me/animeMe.jpg";
 import Avatar from "../components/Avatar";
-
+import animeMe from "../assets/me/animeMe.jpg";
+ 
 const Wrapper = styled.div`
   padding: 0px;
   margin: 0px;  
@@ -94,7 +94,7 @@ const IconLinks = (props) => {
   const { href, className, alt } = props;
   return (<a href={href} className="nav-link" target="_blank" rel="noopener noreferrer" alt={alt}><i className={className}></i></a>);
 };
-
+ 
 export const Navbar = () => {
   const [{ isAuthenticated }, actions] = useAuthStore();
 
@@ -114,7 +114,6 @@ export const Navbar = () => {
                 </NavLink>
                  <BrandTitle>Kojie : Voice Over</BrandTitle>
               </RoundedImageContainer>
-             
             </StyledHeading>
             <StyledNav className="nav nav-masthead justify-content-center">
               <IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-lg" alt="mobile" />

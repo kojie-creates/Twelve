@@ -1,5 +1,7 @@
 @import './queries.css';
 @import './gradients.css';
+@import './bootstrap.css';
+
 
 body {
   position: relative;

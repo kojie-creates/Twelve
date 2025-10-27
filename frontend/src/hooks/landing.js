@@ -1,131 +1,34 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import styled from "styled-components";
 
 import "../styles/index.css";
-
-import Avatar from "../components/Avatar";
+import {
+  Wrapper,
+  Container,
+  StyledDiv,
+  StyledHeading,
+  IconLinks,
+  RoundedImageContainer,
+  ImageIcons,
+  StyledList,
+  StyledParagraph,
+  ImageContainer
+} from "../styles/styled.js";
 
 import paypal from "../assets/donation/paypal_qrcode.png";
 import venmo from "../assets/donation/venmo_qrcode2.png";
 import shamelessLogo from "../assets/logos/shamelesslogo.jpg";
 
 import animeMe from '../assets/me/animeMe.jpg';
-import kurtz from '../assets/me/result.jpeg';
 import kojie from "../assets/me/Kojie.jpg";
 import pixarMe from "../assets/me/PixarMe.jpg";
 import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
 import singingMe from "../assets/me/GhibliSingingMe.jpg";
+
 import hernan from "../assets/audio/hernan.mp3";
-
-import s25test from '../assets/audio/S25TestAI.mp3';
-
+import s25test from '../assets/audio/galaxyS25.mp3';
 import TD from "../assets/audio/TD.mp3";
 import veronica from "../assets/audio/veronica.mp3";
-
-const Wrapper = styled.div`
-  padding: 0px;
-  margin: 0px;
-  background : ${(props) => props.theme.color.background};
-`;
-
-const Container = styled.div`
-  max-width: fit-content;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  gap: 10px;
-  border-radius: 15px;
-  padding: 10px;
-  margin: 10px 10px;
-  text-align: left;
-  background : ${(props) => props.theme.color.surface};
-  color: ${(props) => props.theme.color.on.surface};
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
-
-const StyledDiv = styled.div`
- max-width: fit-content;
-  padding: 10px;
-  width: 100%;
-  font-family: ${(props) => props.theme.fonts.secondary}; 
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-  } 
-`;
-
-const RoundedImageContainer = styled.div`
-   
-  align-items: center;
-   
-  img {
-    margin: auto 10px;
-    border-radius: 50%; 
-    border: 10px solid ${(props) => props.theme.color.primary}; 
-  }
-`;
-
-const ImageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-  img {
-    margin: auto 10px;
-    border-radius: 15px;
-    border: 10px solid ${(props) => props.theme.color.primary}; 
-  }
-`;
-
-const ImageIcons = styled(Avatar)`
-  margin-left: 5px;
-  margin-right: 5px;
-`;
-
-const StyledHeading = styled.h3`
-  color: ${(props) => props.theme.color.header};
-  font-family: ${(props) => props.theme.fonts.main};
-  font-weight: 400;
-  font-style: normal;
-  font-size: 48px;
-  padding-top: 10px;
-`;
-
-const StyledParagraph = styled.p`
-  font-family: ${(props) => props.theme.fonts.secondary};
-  font-size: 18px;
-  line-height: 1.6;
-`;
-
-const IconLinks = (props) => {
-  const { href, className, alt } = props;
-  return (<a href={href} target="_blank" rel="noopener noreferrer" alt={alt}><i className={className}></i></a>);
-};
-
-const StyledList = styled.ul`
-  list-style-type: none;
-  padding: 10px;
-  margin: 0px;
-  li {
-    padding: 10px; 
-    display: inline-block;
-    margin-right: 10px;
-    a {
-      color: ${(props) => props.theme.color.link};
-    }
-  }
-    li.donation-icons {
-    min-height: 300px;
-    padding: 10px;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-
-`;
 
 const Landing = () => {
   return (
@@ -137,32 +40,37 @@ const Landing = () => {
         <meta name="keywords" content="Kojie, voice over, voice over actor, voice-over actor, Los Angeles, voice talent, commercial voice-over,  narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
       </Helmet>
       <Wrapper>
-        <StyledDiv className="container-fluid column">
+        <StyledDiv className="container ">
 
-          <Container id="intro" className="intro">
+          <Container id="intro" className=" column">
             <StyledDiv className="column">
               <RoundedImageContainer>
                 <ImageIcons image={animeMe} width="333px" />
               </ RoundedImageContainer>
             </StyledDiv>
-            <StyledDiv className="column">
-              <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
-              <StyledParagraph>With my deep, smooth, and soothing voice, I aim to bring warmth, clarity, and professionalism to your projects—helping your message connect authentically with your audience. Whether for commercials, narration, or animation, I am dedicated to delivering performances that captivate and leave a lasting impression. I would love to bring your vision to life!  </StyledParagraph>
-              <StyledHeading className="cover-heading">Let's work together</StyledHeading>
-              <StyledList className="social-icons">
-                <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" /></li>
-                <li><IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
-                <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
-                <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
-                <li><IconLinks href="https://t.co/TK8wXby4uA" alt="instagram" className="fa-brands fa-instagram fa-2xl" /></li>
-                <li><IconLinks href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" alt="tiktok" className="fa-brands fa-tiktok fa-2xl" /></li>
-                <li><IconLinks href="https://x.com/kojiemontanez" alt="twitter, x" className="fa-brands fa-twitter fa-2xl" /></li>
-                <li><IconLinks href="https://www.linkedin.com/in/felixmontanez/" alt="linkedin" className="fa-brands fa-linkedin fa-2xl" /></li>
-                <li><IconLinks href="https://www.twitch.tv/thevoiceofkojie" className="fa-brands fa-twitch fa-2xl" alt="twitch" /></li>
-              </StyledList>
+            <StyledDiv className=" column">
+              <StyledDiv className="row">
+                <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
+                <StyledParagraph>With my deep, smooth, and soothing voice, I aim to bring warmth, clarity, and professionalism to your projects—helping your message connect authentically with your audience. Whether for commercials, narration, or animation, I am dedicated to delivering performances that captivate and leave a lasting impression. I would love to bring your vision to life!  </StyledParagraph>
+              </StyledDiv>
+              <StyledDiv className="row">
+                <StyledHeading className="cover-heading">Let's work together</StyledHeading>
+                <StyledList className="social-icons">
+                  <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" /></li>
+                  <li><IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
+                  <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
+                  <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
+                  <li><IconLinks href="https://t.co/TK8wXby4uA" alt="instagram" className="fa-brands fa-instagram fa-2xl" /></li>
+                  <li><IconLinks href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" alt="tiktok" className="fa-brands fa-tiktok fa-2xl" /></li>
+                  <li><IconLinks href="https://x.com/kojiemontanez" alt="twitter, x" className="fa-brands fa-twitter fa-2xl" /></li>
+                  <li><IconLinks href="https://www.linkedin.com/in/felixmontanez/" alt="linkedin" className="fa-brands fa-linkedin fa-2xl" /></li>
+                  <li><IconLinks href="https://www.twitch.tv/thevoiceofkojie" className="fa-brands fa-twitch fa-2xl" alt="twitch" /></li>
+                </StyledList>
+              </StyledDiv>
             </StyledDiv>
           </Container>
-          <Container className="demo">
+
+          <Container id="demo" className=" column">
             <StyledDiv className="column">
               <ImageContainer>
                 <ImageIcons image={singingMe} height="420px" />
@@ -194,8 +102,8 @@ const Landing = () => {
                   </figure>
                 </StyledDiv>
               </StyledParagraph>
-
             </StyledDiv>
+
             <StyledDiv className="column">
               <StyledDiv className="column">
                 <ImageContainer>
@@ -211,8 +119,10 @@ const Landing = () => {
               <StyledParagraph> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</StyledParagraph>
               <StyledParagraph>Eleven Labs : Voice Clone used by 755 users with over 1.4 millions of characters used within the last 3 months.</StyledParagraph>
             </StyledDiv>
+
           </Container>
-          <Container id="recovery" className="recovery">
+
+          <Container id="recovery" className="column">
             <StyledDiv className="column">
               <RoundedImageContainer>
                 <ImageIcons image={kojie} height="420px" />
@@ -243,7 +153,8 @@ const Landing = () => {
               </StyledDiv>
             </StyledDiv>
           </Container>
-          <Container id="donate" className="donate">
+
+          <Container id="donate" className="column">
             <StyledDiv className="column">
               <ImageContainer>
                 <ImageIcons image={pixarMe} height="420px" />
@@ -270,6 +181,7 @@ const Landing = () => {
               </StyledList>
             </StyledDiv>
           </Container>
+
         </StyledDiv>
       </Wrapper>
     </div>
