@@ -26,7 +26,7 @@ import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
 import singingMe from "../assets/me/GhibliSingingMe.jpg";
 
 import hernan from "../assets/audio/hernan.mp3";
-import s25test from '../assets/audio/galaxyS25.mp3';
+import s25test from '../assets/audio/S25demo.mp3';
 import TD from "../assets/audio/TD.mp3";
 import veronica from "../assets/audio/veronica.mp3";
 
