@@ -57,7 +57,7 @@ const Landing = () => {
                 <StyledHeading className="cover-heading">Let's work together</StyledHeading>
                 <StyledList className="social-icons">
                   <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" /></li>
-                  <li><IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
+                  <li><IconLinks href="mailto:felix.montanez@hotmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
                   <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
                   <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
                   <li><IconLinks href="https://t.co/TK8wXby4uA" alt="instagram" className="fa-brands fa-instagram fa-2xl" /></li>
