@@ -54,17 +54,14 @@ const Landing = () => {
                 <StyledParagraph>With my deep, smooth, and soothing voice, I aim to bring warmth, clarity, and professionalism to your projects—helping your message connect authentically with your audience. Whether for commercials, narration, or animation, I am dedicated to delivering performances that captivate and leave a lasting impression. I would love to bring your vision to life!  </StyledParagraph>
               </StyledDiv>
               <StyledDiv className="row">
-                <StyledHeading className="cover-heading">Let's work together</StyledHeading>
+                <StyledHeading className="cover-heading">My Socials</StyledHeading>
                 <StyledList className="social-icons">
-                  <li><IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-2xl" alt="mobile" /></li>
-                  <li><IconLinks href="mailto:felix.montanez@hotmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-2xl" alt="email" /></li>
-                  <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
                   <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
+                  <li><IconLinks href="https://www.twitch.tv/thevoiceofkojie" className="fa-brands fa-twitch fa-2xl" alt="twitch" /></li>
+                   <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
                   <li><IconLinks href="https://t.co/TK8wXby4uA" alt="instagram" className="fa-brands fa-instagram fa-2xl" /></li>
                   <li><IconLinks href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" alt="tiktok" className="fa-brands fa-tiktok fa-2xl" /></li>
                   <li><IconLinks href="https://x.com/kojiemontanez" alt="twitter, x" className="fa-brands fa-twitter fa-2xl" /></li>
-                  <li><IconLinks href="https://www.linkedin.com/in/felixmontanez/" alt="linkedin" className="fa-brands fa-linkedin fa-2xl" /></li>
-                  <li><IconLinks href="https://www.twitch.tv/thevoiceofkojie" className="fa-brands fa-twitch fa-2xl" alt="twitch" /></li>
                 </StyledList>
               </StyledDiv>
             </StyledDiv>
@@ -77,29 +74,13 @@ const Landing = () => {
               </ImageContainer>
             </StyledDiv>
             <StyledDiv className="column">
-              <StyledHeading>Demos</StyledHeading>
+              <StyledHeading>Voice Over Demos</StyledHeading>
               <StyledParagraph>
                 <StyledDiv>
                   <figure>
-                    <figcaption>Commercial Reel: A versatile collection of voiceovers for print, TV, and online ads across lifestyle, automotive, and more</figcaption>
+                    <figcaption>Commercial </figcaption>
                     <audio controls src={s25test}></audio>
-                  </figure>
-                  <figure>
-                    <figcaption>Industrial/Corporate Demos: Corporate and instructional voice samples showing professionalism and clarity.</figcaption>
-                    <audio controls src=""></audio>
-                  </figure>
-                  <figure>
-                    <figcaption>Narration Demos: Voice demos for documentaries, e-learning, and audiobooks highlighting storytelling and clarity</figcaption>
-                    <audio controls src=""></audio>
-                  </figure>
-                  <figure>
-                    <figcaption>Radio Imaging: Short, energetic clips for radio branding—station IDs, promos, and signature sounds</figcaption>
-                    <audio controls src=""></audio>
-                  </figure>
-                  <figure>
-                    <figcaption>Television Promo: Demos that build excitement, suspense, or intrigue for TV shows and events</figcaption>
-                    <audio controls src=""></audio>
-                  </figure>
+                  </figure> 
                 </StyledDiv>
               </StyledParagraph>
             </StyledDiv>
@@ -107,7 +88,7 @@ const Landing = () => {
             <StyledDiv className="column">
               <StyledDiv className="column">
                 <ImageContainer>
-                  <ImageIcons image={drummerMe} width="420px" />
+                  <ImageIcons image={drummerMe}  height="420px" />
                 </ImageContainer>
               </StyledDiv>
 

@@ -117,7 +117,7 @@ export const Navbar = () => {
             </StyledHeading>
             <StyledNav className="nav nav-masthead justify-content-center">
               <IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-lg" alt="mobile" />
-              <IconLinks href="mailto:felix.montanez@gmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-lg" alt="email" />
+              <IconLinks href="mailto:felix.montanez@hotmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-lg" alt="email" />
               <NavLink className="nav-link" href="#demo">Demos</NavLink>
               <NavLink className="nav-link" href="#recovery">Service</NavLink>
               <NavLink className="nav-link" href="#donate">Donate</NavLink>
