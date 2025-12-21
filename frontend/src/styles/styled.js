@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  max-width: fit-content;
+   
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -26,8 +26,7 @@ export const Container = styled.div`
 `;
 
 export const StyledDiv = styled.div`
- max-width: fit-content;
-  padding: 10px;
+  max-width: fit-content;
   width: 100%;
   font-family: ${(props) => props.theme.fonts.secondary}; 
   @media screen and (max-width: 768px) {
@@ -73,9 +72,12 @@ export const StyledHeading = styled.h3`
 `;
 
 export const StyledParagraph = styled.p`
+padding: 20px;
   font-family: ${(props) => props.theme.fonts.secondary};
   font-size: 18px;
   line-height: 1.6;
+   background : ${(props) => props.theme.color.header};
+   border-radius: 16px;
 `;
 
 export const IconLinks = (props) => {
@@ -85,22 +87,17 @@ export const IconLinks = (props) => {
 
 export const StyledList = styled.ul`
   list-style-type: none;
-  padding: 10px;
-  margin: 0px;
-  li {
-    padding: 10px; 
-    display: inline-block;
-    margin-right: 10px;
+  padding: 0px;
+  margin: 0px; 
+  li { 
+    padding: 5px; 
+    display: inline-block; 
+    vertical-align: top;
     a {
       color: ${(props) => props.theme.color.link};
     }
   }
-    li.donation-icons {
-    min-height: 300px;
-    padding: 10px;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
+   
 `;
 
 export const StyledHeader = styled.header`

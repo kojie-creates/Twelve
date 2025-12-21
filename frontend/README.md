@@ -94,3 +94,11 @@ export NODE_OPTIONS=--openssl-legacy-provider && npm run dev
         </StyledHeader>
       </Container>
     </Wrapper>
+
+<Container id="intro" className="row">
+    <StyledDiv className="column col-md-6"></StyledDiv>
+    <StyledDiv className="column col-md-6">
+        <StyledHeading className="cover-heading"> </StyledHeading>
+        <StyledParagraph> </StyledParagraph> 
+    </StyledDiv>
+</Container>

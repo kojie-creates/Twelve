@@ -14,6 +14,9 @@
   max-width: fit-content;
 } */
 
+a.brand-link {
+  color: #af97e5;
+}
 body{
   background-color: #7046d0;
 }
