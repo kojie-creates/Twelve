@@ -34,3 +34,15 @@
 background: radial-gradient(ellipse at center,  #3f4c6b 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
+
+.bg-brand {
+   background-image: linear-gradient(to right, #805ad5, #be5ad5);
+}
+
+.brand-gradient {
+  background-image: linear-gradient(to right, #805ad5, #be5ad5);
+  /* You can adjust the direction, e.g., to bottom, to top right, etc. */
+  /* background-image: linear-gradient(to bottom, #805ad5, #db2777); */
+}
+
+ 

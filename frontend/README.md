@@ -70,3 +70,27 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### `Error: error:0308010C:digital envelope routines::unsupported`
 
 export NODE_OPTIONS=--openssl-legacy-provider && npm run dev
+
+ <Wrapper>
+      <Container>
+        <StyledHeader >
+          <div className="inner text-center">
+            <StyledHeading className="masthead-brand align-items-inline">
+              <RoundedImageContainer>
+                <NavLink className="brand" href="/">
+                  <ImageIcons image={animeMe} height="50px" />
+                </NavLink>
+                 <BrandTitle>Kojie : Voice Over</BrandTitle>
+              </RoundedImageContainer>
+            </StyledHeading>
+            <StyledNav className="nav nav-masthead justify-content-center">
+              <IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-lg" alt="mobile" />
+              <IconLinks href="mailto:felix.montanez@hotmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-lg" alt="email" />
+              <NavLink className="nav-link" href="#demo">Demos</NavLink>
+              <NavLink className="nav-link" href="#recovery">Service</NavLink>
+              <NavLink className="nav-link" href="#donate">Donate</NavLink>
+            </StyledNav>
+          </div>
+        </StyledHeader>
+      </Container>
+    </Wrapper>

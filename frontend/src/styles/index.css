@@ -3,7 +3,7 @@
 @import './bootstrap.css';
 
 
-body {
+/* body {
   position: relative;
   left: 0px;
   right: 0px;
@@ -12,6 +12,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: fit-content;
+} */
+
+body{
+  background-color: #7046d0;
+}
+
+.ml-20 {
+  margin-left: 20px;
 }
 
 .isDisabled {
@@ -64,11 +72,6 @@ p#donate {
   margin: 10px 0;
 }
 
-.brand-gradient {
-  background-image: linear-gradient(to right, #805ad5, #be5ad5);
-  /* You can adjust the direction, e.g., to bottom, to top right, etc. */
-  /* background-image: linear-gradient(to bottom, #805ad5, #db2777); */
-}
 
 /*
  * Globals

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useAuthStore } from "../contexts/auth";
 import Avatar from "../components/Avatar";
 import animeMe from "../assets/me/animeMe.jpg";
- 
+
 const Wrapper = styled.div`
   padding: 0px;
   margin: 0px;  
@@ -94,7 +94,7 @@ const IconLinks = (props) => {
   const { href, className, alt } = props;
   return (<a href={href} className="nav-link" target="_blank" rel="noopener noreferrer" alt={alt}><i className={className}></i></a>);
 };
- 
+
 export const Navbar = () => {
   const [{ isAuthenticated }, actions] = useAuthStore();
 
@@ -103,29 +103,20 @@ export const Navbar = () => {
   }, [isAuthenticated, actions]);
 
   return (
-    <Wrapper>
-      <Container>
-        <StyledHeader >
-          <div className="inner text-center">
-            <StyledHeading className="masthead-brand align-items-inline">
-              <RoundedImageContainer>
-                <NavLink className="brand" href="/">
-                  <ImageIcons image={animeMe} height="50px" />
-                </NavLink>
-                 <BrandTitle>Kojie : Voice Over</BrandTitle>
-              </RoundedImageContainer>
-            </StyledHeading>
-            <StyledNav className="nav nav-masthead justify-content-center">
-              <IconLinks href="tel:+13104226416" className="fa-solid fa-phone fa-lg" alt="mobile" />
-              <IconLinks href="mailto:felix.montanez@hotmail.com?subject=Voice%20Over%20Inquiry" className="fa-solid fa-envelope fa-lg" alt="email" />
-              <NavLink className="nav-link" href="#demo">Demos</NavLink>
-              <NavLink className="nav-link" href="#recovery">Service</NavLink>
-              <NavLink className="nav-link" href="#donate">Donate</NavLink>
-            </StyledNav>
-          </div>
-        </StyledHeader>
-      </Container>
-    </Wrapper>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brand">
+      <a class="navbar-brand ml-20" href="#">Kojie : Voice Over</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#demo">Demos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Socials</a></li>
+        </ul>
+      </div>
+    </nav>
+
   );
 };
 
