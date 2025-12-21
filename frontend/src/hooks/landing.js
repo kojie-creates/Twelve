@@ -53,7 +53,7 @@ const Landing = () => {
           </StyledDiv>
         </Container>
 
-        <Container id="socials" className="row">
+        <Container id="demos" className="row">
           <StyledDiv className="column col-md-6">
             <ImageContainer>
               <ImageIcons image={singingMe} width="233px" />
@@ -91,7 +91,7 @@ const Landing = () => {
 
         </Container>
 
-        <Container id="demo" className="row">
+        <Container id="projects" className="row">
           <StyledDiv className="column col-md-6">
             <ImageContainer>
               <ImageIcons image={drummerMe} width="333px" />

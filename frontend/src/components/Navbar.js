@@ -103,16 +103,18 @@ export const Navbar = () => {
   }, [isAuthenticated, actions]);
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-brand">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brand sticky-top">
       <a class="navbar-brand ml-20" href="#">Kojie : Voice Over</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#demo">Demos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Socials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#intro">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#demos">Demos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recovery">Recovery</a></li>
+           <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
         </ul>
       </div>
     </nav>
