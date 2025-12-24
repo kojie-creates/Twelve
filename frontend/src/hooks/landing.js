@@ -32,7 +32,7 @@ import veronica from "../assets/audio/veronica.mp3";
 
 const Landing = () => {
   return (
-    <div class="container-fluid" >
+    <div class="container" >
       <Helmet>
         <title>Kojie : Voice Over Actor</title>
         <link rel="canonical" href="http://www.twelve.community" />
@@ -119,22 +119,25 @@ const Landing = () => {
               <ImageIcons image={shamelessLogo} width="233px" />
             </ImageContainer>
             <StyledHeading className="cover-heading  text-center">Shameless LA</StyledHeading>
-            <StyledParagraph>The following vignettes offer a variety of ACA experiences in recovery. These brief stories were voluntarily recorded during the <a className="brand-link" href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Los Angeles Shameless Adult Children of Alcoholics</a> meetings.</StyledParagraph>
-            <StyledParagraph>Join us Wednesdays at 7pm PST via Zoom. ID: 991-2976-1110 Passcode: 412232</StyledParagraph>
-            <StyledDiv>
-              <figure>
-                <figcaption>ACA TD - August 2025</figcaption>
-                <audio controls src={TD}></audio>
-              </figure>
-              <figure>
-                <figcaption>ACA Veronica - Sept 2025</figcaption>
-                <audio controls src={veronica}></audio>
-              </figure>
-              <figure>
-                <figcaption>ACA Hernan - October 2025</figcaption>
-                <audio controls src={hernan}></audio>
-              </figure>
-            </StyledDiv>
+            <StyledParagraph>The following vignettes offer a variety of ACA experiences in recovery. These brief stories were voluntarily recorded during the <a className="brand-link" href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Los Angeles Shameless Adult Children of Alcoholics</a> meetings.<br />
+              <StyledParagraph>Join us Wednesdays at 7pm PST via Zoom. ID: 991-2976-1110 Passcode: 412232</StyledParagraph>
+              <StyledParagraph>
+                <StyledDiv>
+                  <figure>
+                    <figcaption>ACA TD - August 2025</figcaption>
+                    <audio controls src={TD}></audio>
+                  </figure>
+                  <figure>
+                    <figcaption>ACA Veronica - Sept 2025</figcaption>
+                    <audio controls src={veronica}></audio>
+                  </figure>
+                  <figure>
+                    <figcaption>ACA Hernan - October 2025</figcaption>
+                    <audio controls src={hernan}></audio>
+                  </figure>
+                </StyledDiv>
+              </StyledParagraph>
+            </StyledParagraph>
           </StyledDiv>
         </Container>
 
@@ -157,16 +160,22 @@ const Landing = () => {
                 <StyledDiv className="column">
                   <StyledList className="donation-icons ">
                     <li >
-                      <p>Venmo: @Kojie-Montanez<br />Last 4 : 6416</p>
-                      <ImageContainer>
-                        <ImageIcons image={venmo} width="133px" />
-                      </ImageContainer>
+                      <StyledParagraph>
+                        Venmo: @Kojie-Montanez<br />Last 4 : 6416
+                        <ImageContainer>
+
+                          <ImageIcons image={venmo} width="133px" />
+                        </ImageContainer>
+                      </StyledParagraph>
                     </li>
-                    <li ><p> Paypal: felix.montanez@gmail.com</p>
-                      <IconLinks href="https://www.paypal.com/paypalme/felixmontanez" alt="paypal link" className="fa-brands fa-paypal fa-2xl" />
-                      <ImageContainer>
-                        <ImageIcons image={paypal} width="133px" />
-                      </ImageContainer>
+                    <li>
+                      <StyledParagraph>
+                        Paypal: felix.montanez@gmail.com
+                        <ImageContainer>
+                          <IconLinks href="https://www.paypal.com/paypalme/felixmontanez" alt="paypal link" className="fa-brands fa-paypal fa-2xl" />
+                          <ImageIcons image={paypal} width="133px" />
+                        </ImageContainer>
+                      </StyledParagraph>
                     </li>
                   </StyledList>
                 </StyledDiv>
