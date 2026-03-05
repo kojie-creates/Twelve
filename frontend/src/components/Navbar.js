@@ -103,18 +103,18 @@ export const Navbar = () => {
   }, [isAuthenticated, actions]);
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-brand sticky-top">
-      <a class="navbar-brand ml-20" href="#">Kojie : Voice Over</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-brand sticky-top">
+      <a className="navbar-brand ml-20" href="#">Kojie : Voice Over</a>
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#intro">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#demos">Demos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#recovery">Recovery</a></li>
-           <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+      <div className="collapse navbar-collapse " id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item"><a className="nav-link" href="#intro">About</a></li>
+          <li className="nav-item"><a className="nav-link" href="#demos">Demos</a></li>
+          <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
+          <li className="nav-item"><a className="nav-link" href="#recovery">Recovery</a></li>
+          
         </ul>
       </div>
     </nav>

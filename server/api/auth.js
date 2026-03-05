@@ -2,15 +2,15 @@ const express = require("express");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcryptjs");
+
 const auth = require("../middleware/auth");
 const User = require("../models/User");
+
 const authRoute = express.Router();
 
 authRoute.get("/", auth, async (req, res) => {
   try {
-    const user = await User.findById(req.user.id)
-      .populate("user", ["firstName", "lastInitial", "email", "role"])
-      .select("-password");
+    const user = await User.findById(req.user.id).select("-password");
     res.json(user);
   } catch (err) {
     console.error(err.message);

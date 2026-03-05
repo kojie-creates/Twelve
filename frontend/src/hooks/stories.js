@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
 import { useStories } from "../contexts/stories";
-import Card from "../components/Card";
+import Card from "../components/unused/Card";
 import { Link, useNavigate } from "@reach/router";
 
 const danielURL = "https://twelve-app.s3-us-west-1.amazonaws.com/daniel.jpg";
@@ -13,7 +13,6 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   display: flex;
-  border: 1px solid red;
   justify-content: space-between;
   flex-direction: row;
   max-width: 1200px;
@@ -33,7 +32,6 @@ const Container = styled.div`
 // `;
 
 export const Story = (props) => {
-  console.log(props);
   return (
     <Card
       title={props.title}
@@ -47,15 +45,13 @@ export const Story = (props) => {
 export const Stories = (props) => {
   const [state, actions] = useStories();
   const navigate = useNavigate();
-  if (props.path === "stories") {
-    // console.log(state.data);
+  if (props.path === "/stories") {
     if (state.data === null) {
       actions.fetch();
     }
   }
 
   const stories = state.data || [];
-  console.log("stories", stories);
   return (
     <Wrapper>
       <Helmet>

@@ -29,6 +29,7 @@ import hernan from "../assets/audio/hernan.mp3";
 import s25test from '../assets/audio/S25demo.mp3';
 import TD from "../assets/audio/TD.mp3";
 import veronica from "../assets/audio/veronica.mp3";
+import PathFinder from "../components/Pathfinder.js";
 
 const Landing = () => {
   return (
@@ -184,6 +185,7 @@ const Landing = () => {
           </StyledDiv>
 
         </Container>
+   
 
       </Wrapper>
     </div>

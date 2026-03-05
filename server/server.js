@@ -1,24 +1,25 @@
 const dotenv = require("dotenv");
-dotenv.config();
-
 const cors = require("cors");
-
-const express = require("express"),
-  path = require("path"),
-  bodyParser = require("body-parser"),
-  connectDB = require("../config/db");
-
+const express = require("express");
+const path = require("path");
+const bodyParser = require("body-parser");
+const connectDB = require("../config/db");
 const app = express();
+
+const stories = require("./api/stories");
+const users = require("./api/users");
+const auth = require("./api/auth");
+
+dotenv.config();
 connectDB();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors());
+const allowedOrigins = process.env.NODE_ENV === "production"
+  ? ["https://www.twelve.community", "https://twelve.community"]
+  : ["http://localhost:3000"];
 
-// api
-const stories = require("./api/stories");
-const users = require("./api/users");
-const auth = require("./api/auth");
+app.use(cors({ origin: allowedOrigins }));
 
 app.use("/api/stories", stories);
 app.use("/api/users", users);

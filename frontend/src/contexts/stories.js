@@ -12,39 +12,56 @@ export const initialState = {
 export const actions = {
   fetch:
     () =>
-    async ({ setState, getState }) => {
-      if (getState().loading) return;
-      setState({ loading: true });
-      try {
-        const stories = await api.get("/stories");
-        setState({ data: stories.data, loading: false });
-      } catch (error) {
-        setState({ error, loading: false });
-      }
-    },
+      async ({ setState, getState }) => {
+        if (getState().loading) return;
+        setState({ loading: true });
+        try {
+          const stories = await api.get("/stories");
+          setState({ data: stories.data, loading: false });
+        } catch (error) {
+          setState({ error, loading: false });
+        }
+      },
   addStory:
     (story) =>
-    async ({ setState, getState }) => {
-      if (getState().loading) return;
-      try {
-        const res = await api.post("/stories", story);
-        setState({ data: res.data, loading: false });
-      } catch (error) {
-        setState({ error, loading: false });
-      }
-    },
+      async ({ setState, getState }) => {
+        if (getState().loading) return;
+        setState({ loading: true });
+        try {
+          const res = await api.post("/stories", story);
+          const currentData = getState().data || [];
+          setState({ data: [...currentData, res.data], loading: false });
+        } catch (error) {
+          setState({ error, loading: false });
+        }
+      },
+  updateStory:
+    (story) =>
+      async ({ setState, getState }) => {
+        if (getState().loading) return;
+        setState({ loading: true });
+        try {
+          await api.put(`/stories/${story._id}`, story);
+          const currentData = getState().data || [];
+          const updated = currentData.map((s) => (s._id === story._id ? { ...s, ...story } : s));
+          setState({ data: updated, loading: false });
+        } catch (error) {
+          setState({ error, loading: false });
+        }
+      },
   removeStory:
     (story) =>
-    async ({ setState, getState }) => {
-      if (getState().loading) return;
-      try {
-        const res = await api.delete(`/stories/${story._id}`);
-        console.log(res);
-        setState({ data: res.data, loading: false });
-      } catch (error) {
-        setState({ error, loading: false });
-      }
-    },
+      async ({ setState, getState }) => {
+        if (getState().loading) return;
+        setState({ loading: true });
+        try {
+          await api.delete(`/stories/${story._id}`);
+          const currentData = getState().data || [];
+          setState({ data: currentData.filter((s) => s._id !== story._id), loading: false });
+        } catch (error) {
+          setState({ error, loading: false });
+        }
+      },
 };
 
 // create Store with initial state,

@@ -28,27 +28,29 @@ export const AddStory = () => {
 
   return (
     <Fragment>
-      <h1>Share Your Story</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="title"
-          id="title-input"
-          placeholder="Story Title"
-          value={title}
-          onChange={(e) => handleChange(e)}
-        />
-        <br />
-        <textarea
-          id="body-textarea"
-          name="body"
-          placeholder="story"
-          value={body}
-          onChange={(e) => handleChange(e)}
-        />
-        <input type="submit" value="Add Story" />
-        <p>{state && state.error}</p>
-      </form>
+      <div className="container">
+        <h1 className="cover-heading">Share Your Story</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="title"
+            id="title-input"
+            placeholder="Story Title"
+            value={title}
+            onChange={(e) => handleChange(e)}
+          />
+
+          <textarea
+            id="body-textarea"
+            name="body"
+            placeholder="story"
+            value={body}
+            onChange={(e) => handleChange(e)}
+          />
+          <input type="submit" value="Add Story" />
+
+        </form>
+      </div>
     </Fragment>
   );
 };

@@ -1,0 +1,5 @@
+{
+  "PRO_MONGO": "PRO_MONGO",
+  "DEV_MONGO": "DEV_MONGO",
+  "jwtSecret": "JWT_SECRET"
+}

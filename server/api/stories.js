@@ -5,8 +5,7 @@ const storyRoute = express.Router();
 
 storyRoute.get("/", async (req, res) => {
   try {
-    const stories = await storyModel
-      .find()
+    const stories = await storyModel.find()
       .populate("user", ["firstName", "lastInitial", "role", "created"]);
     res.json(stories);
   } catch (err) {
@@ -37,7 +36,7 @@ storyRoute.get("/:id", async (req, res) => {
       .findOne({ _id: req.params.id })
       .populate("user", ["firstName", "lastInitial", "role", "created"]);
     if (!story) {
-      res.status(400).json({ msg: "Story not found." });
+      return res.status(400).json({ msg: "Story not found." });
     }
     res.json(story);
   } catch (err) {
@@ -47,47 +46,38 @@ storyRoute.get("/:id", async (req, res) => {
   }
 });
 
-storyRoute.put("/:id", auth, async (req, res, next) => {
-  const id = req.params.id;
-  storyModel
-    .findByIdAndUpdate(id, req.body, { useFindAndModify: false })
-    .then((data) => {
-      if (!data) {
-        res.status(404).send({
-          message: `Cannot find Story with id: ${id}!`,
-        });
-      } else res.send({ message: "Story was updated successfully." });
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).send({
-        message: `Error updating Story with id: ${id}!`,
-      });
-    });
+storyRoute.put("/:id", auth, async (req, res) => {
+  try {
+    const story = await storyModel.findById(req.params.id);
+    if (!story) {
+      return res.status(404).send({ message: `Cannot find Story with id: ${req.params.id}!` });
+    }
+    if (story.user.toString() !== req.user.id) {
+      return res.status(403).json({ msg: "Not authorized to update this story." });
+    }
+    await storyModel.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    res.send({ message: "Story was updated successfully." });
+  } catch (err) {
+    console.log(err);
+    res.status(500).send({ message: `Error updating Story with id: ${req.params.id}!` });
+  }
 });
 
 storyRoute.delete("/:id", auth, async (req, res) => {
-  const id = req.params.id;
-  storyModel
-    .findByIdAndRemove(id)
-    .then((data) => {
-      if (!data) {
-        res.status(404).send({
-          msg: `Cannot delete Story with id: ${id}.`,
-        });
-      } else {
-        res.send({
-          msg: "Story was removed!",
-        });
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-
-      res.status(500).send({
-        msg: `Cannot delete Story with id: ${id}.`,
-      });
-    });
+  try {
+    const story = await storyModel.findById(req.params.id);
+    if (!story) {
+      return res.status(404).send({ msg: `Cannot delete Story with id: ${req.params.id}.` });
+    }
+    if (story.user.toString() !== req.user.id) {
+      return res.status(403).json({ msg: "Not authorized to delete this story." });
+    }
+    await storyModel.findByIdAndDelete(req.params.id);
+    res.send({ msg: "Story was removed!" });
+  } catch (err) {
+    console.log(err);
+    res.status(500).send({ msg: `Cannot delete Story with id: ${req.params.id}.` });
+  }
 });
 
 module.exports = storyRoute;
