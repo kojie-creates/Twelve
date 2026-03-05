@@ -41,7 +41,7 @@ const font = "'Inter', 'Helvetica Neue', Arial, sans-serif";
 
 // ── Replace with your Anthropic API key or proxy endpoint ──
 const API_ENDPOINT = "https://api.anthropic.com/v1/messages";
-const API_KEY = "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";
+const API_KEY = process.env.REACT_APP_ANTHROPIC_API_KEY || "";
 
 export default function PathFinder() {
   const [messages,   setMessages]   = useState([]);
