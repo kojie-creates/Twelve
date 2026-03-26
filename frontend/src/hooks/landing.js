@@ -12,45 +12,59 @@ import {
   ImageIcons,
   StyledList,
   StyledParagraph,
-  ImageContainer
+  ImageContainer,
 } from "../styles/styled.js";
 
 import paypal from "../assets/donation/paypal_qrcode.png";
 import venmo from "../assets/donation/venmo_qrcode2.png";
 import shamelessLogo from "../assets/logos/shamelesslogo.jpg";
 
-import animeMe from '../assets/me/animeMe.jpg';
+import animeMe from "../assets/me/animeMe.jpg";
 import kojie from "../assets/me/Kojie.jpg";
 import pixarMe from "../assets/me/PixarMe.jpg";
 import drummerMe from "../assets/me/GhibliDrummerMe.jpg";
 import singingMe from "../assets/me/GhibliSingingMe.jpg";
 
 import hernan from "../assets/audio/hernan.mp3";
-import s25test from '../assets/audio/S25demo.mp3';
+import s25test from "../assets/audio/S25demo.mp3";
 import TD from "../assets/audio/TD.mp3";
 import veronica from "../assets/audio/veronica.mp3";
 import PathFinder from "../components/Pathfinder.js";
 
 const Landing = () => {
   return (
-    <div class="container" >
+    <div class="container">
       <Helmet>
-        <title>Kojie : Voice Over Actor</title>
+        <title>Kojie : Human-AI Operating Systems Architect</title>
         <link rel="canonical" href="http://www.twelve.community" />
-        <meta name="description" content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances." />
-        <meta name="keywords" content="Kojie, voice over, voice over actor, voice-over actor, Los Angeles, voice talent, commercial voice-over,  narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology" />
+        <meta
+          name="description"
+          content="Meet Kojie, an independent voice-over actor based in Los Angeles. Known for a deep, smooth, and soothing voice, Kojie specializes in commercial, narration, and animation projects, delivering professional and captivating performances."
+        />
+        <meta
+          name="keywords"
+          content="Kojie, voice over, voice over actor, voice-over actor, Los Angeles, voice talent, commercial voice-over,  narration, animation voice-over, calming voice, professional voice actor, Spiritual,based,social,platform,Anonymity, designing principle,Recovery, purpose,Connection , modern technology"
+        />
       </Helmet>
       <Wrapper>
-
         <Container id="intro" className="row">
           <StyledDiv className="column col-md-6">
             <RoundedImageContainer>
               <ImageIcons image={animeMe} width="233px" />
-            </ RoundedImageContainer>
+            </RoundedImageContainer>
           </StyledDiv>
           <StyledDiv className="column col-md-6">
-            <StyledHeading className="cover-heading">Creative Storyteller</StyledHeading>
-            <StyledParagraph>With my deep, smooth, and soothing voice, I aim to bring warmth, clarity, and professionalism to your projects—helping your message connect authentically with your audience. Whether for commercials, narration, or animation, I am dedicated to delivering performances that captivate and leave a lasting impression. I would love to bring your vision to life!  </StyledParagraph>
+            <StyledHeading className="cover-heading">
+              Creative Storyteller
+            </StyledHeading>
+            <StyledParagraph>
+              With my deep, smooth, and soothing voice, I aim to bring warmth,
+              clarity, and professionalism to your projects—helping your message
+              connect authentically with your audience. Whether for commercials,
+              narration, or animation, I am dedicated to delivering performances
+              that captivate and leave a lasting impression. I would love to
+              bring your vision to life!{" "}
+            </StyledParagraph>
           </StyledDiv>
         </Container>
 
@@ -81,15 +95,44 @@ const Landing = () => {
             <StyledHeading className="cover-heading">My Socials</StyledHeading>
             <StyledParagraph>
               <StyledList className="social-icons">
-                <li><IconLinks href="https://t.co/TK8wXby4uA" alt="instagram" className="fa-brands fa-instagram fa-2xl" /></li>
-                <li><IconLinks href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1" alt="tiktok" className="fa-brands fa-tiktok fa-2xl" /></li>
-                <li><IconLinks href="https://www.youtube.com/@thevoiceofkojie" className="fa-brands fa-youtube fa-2xl" alt="youtube" /></li>
-                <li><IconLinks href="https://www.facebook.com/profile.php?id=100088510260448" className="fa-brands fa-facebook fa-2xl" alt="facebook" /></li>
-                <li><IconLinks href="https://x.com/kojiemontanez" alt="twitter, x" className="fa-brands fa-twitter fa-2xl" /></li>
+                <li>
+                  <IconLinks
+                    href="https://t.co/TK8wXby4uA"
+                    alt="instagram"
+                    className="fa-brands fa-instagram fa-2xl"
+                  />
+                </li>
+                <li>
+                  <IconLinks
+                    href="https://www.tiktok.com/@thevoiceofkojie?_t=ZP-90ZSOlSrCVr&_r=1"
+                    alt="tiktok"
+                    className="fa-brands fa-tiktok fa-2xl"
+                  />
+                </li>
+                <li>
+                  <IconLinks
+                    href="https://www.youtube.com/@thevoiceofkojie"
+                    className="fa-brands fa-youtube fa-2xl"
+                    alt="youtube"
+                  />
+                </li>
+                <li>
+                  <IconLinks
+                    href="https://www.facebook.com/profile.php?id=100088510260448"
+                    className="fa-brands fa-facebook fa-2xl"
+                    alt="facebook"
+                  />
+                </li>
+                <li>
+                  <IconLinks
+                    href="https://x.com/kojiemontanez"
+                    alt="twitter, x"
+                    className="fa-brands fa-twitter fa-2xl"
+                  />
+                </li>
               </StyledList>
             </StyledParagraph>
           </StyledDiv>
-
         </Container>
 
         <Container id="projects" className="row">
@@ -100,10 +143,32 @@ const Landing = () => {
           </StyledDiv>
           <StyledDiv className="column col-md-6">
             <StyledHeading className="cover-heading">VO Projects</StyledHeading>
-            <StyledParagraph>&ldquo;We Win Wednesdays&rdquo; <a className="brand-link" href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Shameless LA</a> podcast On Spotify</StyledParagraph>
-            <StyledParagraph>Aristocrat Gaming : created videos with voice over narration for various casino clients, explainer videos for app store submittals.</StyledParagraph>
-            <StyledParagraph> Meta (Facebook) : Voice Sound Test. Provided voice talent to help test audio equipment throughout the top recording studios in Los Angeles and Burbank.</StyledParagraph>
-            <StyledParagraph>Eleven Labs : Voice Clone used by 755 users with over 1.4 millions of characters used within the last 3 months.</StyledParagraph>
+            <StyledParagraph>
+              &ldquo;We Win Wednesdays&rdquo;{" "}
+              <a
+                className="brand-link"
+                href="https://creators.spotify.com/pod/profile/shamelessla/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Shameless LA
+              </a>{" "}
+              podcast On Spotify
+            </StyledParagraph>
+            <StyledParagraph>
+              Aristocrat Gaming : created videos with voice over narration for
+              various casino clients, explainer videos for app store submittals.
+            </StyledParagraph>
+            <StyledParagraph>
+              {" "}
+              Meta (Facebook) : Voice Sound Test. Provided voice talent to help
+              test audio equipment throughout the top recording studios in Los
+              Angeles and Burbank.
+            </StyledParagraph>
+            <StyledParagraph>
+              Eleven Labs : Voice Clone used by 755 users with over 1.4 millions
+              of characters used within the last 3 months.
+            </StyledParagraph>
           </StyledDiv>
         </Container>
 
@@ -112,16 +177,47 @@ const Landing = () => {
             <RoundedImageContainer className="text-center">
               <ImageIcons image={kojie} width="233px" />
             </RoundedImageContainer>
-            <StyledHeading className="cover-heading text-center">About Me</StyledHeading>
-            <StyledParagraph>Hi, I'm Kojie, a dedicated voice-over actor based in Los Angeles, California. I'm also a recovering adult child of an alcoholic from a dysfunctional home currently in ACA recovery. With a deep, smooth, and soothing voice, I specialize in creating comforting and engaging audio for twelve step recovery communities. I&rsquo;m proud to be part of projects like the &ldquo;We Win Wednesdays Shameless LA&rdquo; Spotify podcast, supporting fellowship and connection through empathetic and inspiring narration. My goal is to bring warmth and understanding to every message, helping listeners feel seen, heard, and motivated on their recovery journey.</StyledParagraph>
+            <StyledHeading className="cover-heading text-center">
+              About Me
+            </StyledHeading>
+            <StyledParagraph>
+              Hi, I'm Kojie, a dedicated voice-over actor based in Los Angeles,
+              California. I'm also a recovering adult child of an alcoholic from
+              a dysfunctional home currently in ACA recovery. With a deep,
+              smooth, and soothing voice, I specialize in creating comforting
+              and engaging audio for twelve step recovery communities. I&rsquo;m
+              proud to be part of projects like the &ldquo;We Win Wednesdays
+              Shameless LA&rdquo; Spotify podcast, supporting fellowship and
+              connection through empathetic and inspiring narration. My goal is
+              to bring warmth and understanding to every message, helping
+              listeners feel seen, heard, and motivated on their recovery
+              journey.
+            </StyledParagraph>
           </StyledDiv>
           <StyledDiv className="column col-md-6">
             <ImageContainer>
               <ImageIcons image={shamelessLogo} width="233px" />
             </ImageContainer>
-            <StyledHeading className="cover-heading  text-center">Shameless LA</StyledHeading>
-            <StyledParagraph>The following vignettes offer a variety of ACA experiences in recovery. These brief stories were voluntarily recorded during the <a className="brand-link" href="https://creators.spotify.com/pod/profile/shamelessla/" target="_blank" rel="noopener noreferrer">Los Angeles Shameless Adult Children of Alcoholics</a> meetings.<br />
-              <StyledParagraph>Join us Wednesdays at 7pm PST via Zoom. ID: 991-2976-1110 Passcode: 412232</StyledParagraph>
+            <StyledHeading className="cover-heading  text-center">
+              Shameless LA
+            </StyledHeading>
+            <StyledParagraph>
+              The following vignettes offer a variety of ACA experiences in
+              recovery. These brief stories were voluntarily recorded during the{" "}
+              <a
+                className="brand-link"
+                href="https://creators.spotify.com/pod/profile/shamelessla/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Los Angeles Shameless Adult Children of Alcoholics
+              </a>{" "}
+              meetings.
+              <br />
+              <StyledParagraph>
+                Join us Wednesdays at 7pm PST via Zoom. ID: 991-2976-1110
+                Passcode: 412232
+              </StyledParagraph>
               <StyledParagraph>
                 <StyledDiv>
                   <figure>
@@ -150,21 +246,27 @@ const Landing = () => {
               </ImageContainer>
             </StyledDiv>
             <StyledDiv className="column col-md-6">
-              <StyledHeading className="cover-heading">Donations Appreciated!</StyledHeading>
+              <StyledHeading className="cover-heading">
+                Donations Appreciated!
+              </StyledHeading>
               <StyledParagraph>
-                Hey, if you are moved to support my voice-over journey, it really means the world.
-                Your kindness helps me keep making impactful stuff like readings for the blind, voice cloning for accessibility, and more.
-                Every little bit allows me to keep doing what I love — with humor, love, and respect.
-                Thanks so much for being part of this with me — it truly makes a difference!
+                Hey, if you are moved to support my voice-over journey, it
+                really means the world. Your kindness helps me keep making
+                impactful stuff like readings for the blind, voice cloning for
+                accessibility, and more. Every little bit allows me to keep
+                doing what I love — with humor, love, and respect. Thanks so
+                much for being part of this with me — it truly makes a
+                difference!
               </StyledParagraph>
               <StyledDiv className="row">
                 <StyledDiv className="column">
                   <StyledList className="donation-icons ">
-                    <li >
+                    <li>
                       <StyledParagraph>
-                        Venmo: @Kojie-Montanez<br />Last 4 : 6416
+                        Venmo: @Kojie-Montanez
+                        <br />
+                        Last 4 : 6416
                         <ImageContainer>
-
                           <ImageIcons image={venmo} width="133px" />
                         </ImageContainer>
                       </StyledParagraph>
@@ -173,7 +275,11 @@ const Landing = () => {
                       <StyledParagraph>
                         Paypal: felix.montanez@gmail.com
                         <ImageContainer>
-                          <IconLinks href="https://www.paypal.com/paypalme/felixmontanez" alt="paypal link" className="fa-brands fa-paypal fa-2xl" />
+                          <IconLinks
+                            href="https://www.paypal.com/paypalme/felixmontanez"
+                            alt="paypal link"
+                            className="fa-brands fa-paypal fa-2xl"
+                          />
                           <ImageIcons image={paypal} width="133px" />
                         </ImageContainer>
                       </StyledParagraph>
@@ -183,10 +289,7 @@ const Landing = () => {
               </StyledDiv>
             </StyledDiv>
           </StyledDiv>
-
         </Container>
-   
-
       </Wrapper>
     </div>
   );
