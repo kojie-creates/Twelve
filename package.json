@@ -1,7 +1,7 @@
 {
   "name": "twelve-app",
   "version": "1.0.0",
-  "description": "react, express, node and mongodb full stack app.",
+  "description": "Soon to be integrated with Orin using react, express, node and mongodb full stack app.",
   "main": "index.js",
   "proxy": "http://localhost:5000",
   "scripts": {
